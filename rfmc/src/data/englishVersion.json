@@ -1,0 +1,14 @@
+{
+  "nav": [
+    {"label": "Home" }, 
+    {"label": "Company" },
+    {"label": "What We Do?" },
+    {"label": "Why RFMC" },
+    {"label": "Products" },
+    {"label": "Contact"}
+  ],
+  "menu": [
+    {"title": "teste"},
+    {"content": "teste-content"}
+  ]
+}

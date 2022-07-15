@@ -1,0 +1,56 @@
+@mixin tablet {
+    @media screen and (min-width: 500px) and (max-width: 991.98px) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media screen and (min-width: 992px) {
+      @content;
+    }
+  }
+  
+  @mixin color-fontSize($color: null, $fontSize: null) {
+    @if ($color != null) {
+      color: $color;
+    }
+    @if ($fontSize != null) {
+      font-size: $fontSize;
+    }
+  }
+  
+  @mixin height-width($height: null, $width: null) {
+    @if ($height != null) {
+      height: $height;
+    }
+    @if ($width != null) {
+      width: $width;
+    }
+  }
+  
+  @mixin display-flexDirection($display: null, $flexDirection: null) {
+    @if ($display != null) {
+      display: $display;
+    }
+    @if ($flexDirection != null) {
+      flex-direction: $flexDirection;
+    }
+  }
+  
+  @mixin alignItens-justifyContent($align: null, $justify: null) {
+    @if ($align != null) {
+      align-items: $align;
+    }
+    @if ($justify != null) {
+      justify-content: $justify;
+    }
+  }
+  
+  @mixin fontStyle-fontWeight($fontStyle: null, $fontWeight: null) {
+    @if ($fontStyle != null) {
+      font-style: $fontStyle;
+    }
+    @if ($fontWeight != null) {
+      font-weight: $fontWeight;
+    }
+  }
