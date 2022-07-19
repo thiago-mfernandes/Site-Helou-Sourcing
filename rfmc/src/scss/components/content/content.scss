@@ -1,0 +1,8 @@
+@import '../../mixins/mixins.scss';
+
+.contentHeader {
+    @include color-fontSize(white, 1.25rem);
+    text-align: center;
+    opacity: .9;
+    margin-top: 10%;
+}

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Menu from 'components/menu';
+import Header from 'components/header';
 
 
 export default function App() {
@@ -10,17 +11,7 @@ export default function App() {
     <main>
       {/* inicio header e menu */}
       <Menu language={language} setLanguage={setLanguage}/>
-      <div>
-        {/* aqui vai o background img 100%*/}
-        <div>
-          {/* aqui vai o container com as margens laterais*/}
-          <div>
-            {/* aqui vai o container do titulo e subtitulo*/}
-            <h1>Metais - Ferros - Catalisadores</h1>
-            <p>Qualidade, Confiabilidade e Sustentabilidade</p>
-          </div>
-        </div>
-      </div>
+      <Header />
       {/* fim header e menu */}
 
       {/* inicio companhia */}

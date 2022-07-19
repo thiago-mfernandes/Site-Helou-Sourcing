@@ -1,0 +1,27 @@
+@import '../../scss/styles.scss';
+
+.header {
+  background-image: url("../../assets/headerBg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  //rotate: 90deg;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+
+  &__container {
+    padding: 0 2.5%;
+    height: calc(100vh);
+
+
+    &___boxContent {
+      @include display-flexDirection(flex, column);
+      @include alignItens-justifyContent(center, center);
+      @include height-width(100vh, 100%);
+    }
+  }
+}
+
+.headerTitle {
+  @extend .headerTitle;
+}

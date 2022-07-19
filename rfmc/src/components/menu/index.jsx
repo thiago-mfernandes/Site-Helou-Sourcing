@@ -32,7 +32,7 @@ function Menu({ language, setLanguage }) {
 
         <nav className={
           menuState ? 
-            `${styles.header__nav} ${styles.menuOpen}` : 
+            `${styles.header__nav} ${styles.menuOpen} `: 
             `${styles.header__nav} ${styles.menuClose}`
         }>
           <button 
