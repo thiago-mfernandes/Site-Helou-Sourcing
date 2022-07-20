@@ -22,12 +22,12 @@ function Menu({ language, setLanguage }) {
         <button onClick={() => setLanguage(!language)}>Language</button>
 
         <div
-          className={'icone mobile - ou icone desktop'}
+          className={styles.hamburguerIcon}
           onClick={() => setMenuState(!menuState)}
         >
-          <div className={`${styles.hamburguer} ${styles.hamburguerIcon}`} />
-          <div className={`${styles.hamburguer} ${styles.hamburguerIcon}`} />
-          <div className={`${styles.hamburguer} ${styles.hamburguerIcon}`} />
+          <div className={styles.hamburguer} />
+          <div className={styles.hamburguer} />
+          <div className={styles.hamburguer} />
         </div>
 
         <nav className={
