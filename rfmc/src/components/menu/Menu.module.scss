@@ -97,4 +97,12 @@
     border-radius: 4px;
     padding: 8px;
     color: rgba(255,255,255,80%);
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        background-color: #fff;
+        color: #000;
+        transform: translateY(-5px);
+        transition: all 0.3s ease-out;
+    }
 }

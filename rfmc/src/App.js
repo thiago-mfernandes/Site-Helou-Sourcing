@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Menu from 'components/menu';
 import Header from 'components/header';
+import Company from 'components/company';
 import { AnimateSharedLayout }  from  'framer-motion';
 
 
@@ -11,46 +12,10 @@ export default function App() {
   return (
     <AnimateSharedLayout>
       <main>
-        {/* inicio header e menu */}
         <Menu language={language} setLanguage={setLanguage}/>
         <Header language={language}/>
-        {/* fim header e menu */}
-        {/* inicio companhia */}
-        <section>
-          <div>
-            <img src="" alt="companhia" />
-            <div>
-              {' '}
-              {/* container */}
-              <span>Quem é a RFCM?</span>
-              <h2>Companhia</h2>
-              <p>
-                Somos uma corretora comercial, com sede em São Paulo, Brasil,
-                trabalhando diligentemente no fornecimento de commodities
-                específicas ou na busca de um mercado para seus produtos, onde
-                estendemos nossa experiência de 30 anos para fornecer as soluções
-                necessárias por meio de nossa rede global.
-              </p>
-              <p>
-                Nossa principal prioridade é estabelecer e manter um
-                relacionamento comercial positivo e de longo prazo com nossos
-                clientes e fornecedores.
-              </p>
-              <p>
-                A RFMC firmou parceria de sucesso com fabricantes renomados e
-                conceituados em todo o mundo, garantindo aos nossos clientes nossa
-                capacidade de fornecer produtos de alta qualidade a preços
-                competitivos, respaldados pelo suporte técnico e metalúrgico
-                necessário.
-              </p>
-              <p>
-                Ao mesmo tempo, estamos comprometidos com nossos fornecedores em
-                fornecer a eles um suporte consistente de mercado.
-              </p>
-            </div>
-          </div>
-        </section>
-        {/* fim companhia */}
+        <Company />
+        
         {/* inicio o que fazemos*/}
         <section>
           <div>

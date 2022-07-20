@@ -4,7 +4,6 @@ import propTypes from 'prop-types';
 import portuguese from 'data/portugueseVersion.json';
 import english from 'data/englishVersion.json';
 
-
 export default function Header({language}) {
 
   let handleLanguage = language ? portuguese : english;
@@ -12,12 +11,10 @@ export default function Header({language}) {
   //console.log(portuguese);
   //console.log(english);
 
-
   return (
     <div className={styles.header}>
-      {/* aqui vai o background img 100%*/}
-      <div className={styles.header__container}>{/* aqui vai o container com as margens laterais*/}
-        <div className={styles.header__container___boxContent}>{/* aqui vai o container do titulo e subtitulo*/}
+      <div className={styles.container}>
+        <div className={styles.header__boxContent}>
           <motion.div
             initial={{ opacity:0, y:-30 }}
             animate={{ opacity:1, y:0, animationTimingFunction: 'ease-in-out' }} 
