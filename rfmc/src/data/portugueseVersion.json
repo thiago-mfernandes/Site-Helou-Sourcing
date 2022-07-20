@@ -7,8 +7,8 @@
     {"label": "Produtos" },
     {"label": "Contato"}
   ],
-  "menu": [
-    {"title": "teste"},
-    {"content": "teste-content"}
+  "header": [
+    {"title": "Metais Ferros Catalisadores"},
+    {"subTitle": "Qualidade, Confiabilidade e Sustentabilidade"}
   ]
 }

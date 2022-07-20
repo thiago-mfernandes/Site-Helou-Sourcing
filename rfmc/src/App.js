@@ -13,7 +13,7 @@ export default function App() {
       <main>
         {/* inicio header e menu */}
         <Menu language={language} setLanguage={setLanguage}/>
-        <Header />
+        <Header language={language}/>
         {/* fim header e menu */}
         {/* inicio companhia */}
         <section>

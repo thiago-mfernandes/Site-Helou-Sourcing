@@ -19,7 +19,10 @@ function Menu({ language, setLanguage }) {
           alt="Logotipo da empresa"
         />
 
-        <button onClick={() => setLanguage(!language)}>Language</button>
+        <button className={styles.languageButton}
+          onClick={() => setLanguage(!language)}>
+          {language ? 'English' : 'Português'}
+        </button>
 
         <div
           className={styles.hamburguerIcon}

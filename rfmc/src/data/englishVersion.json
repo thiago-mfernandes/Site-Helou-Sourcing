@@ -7,8 +7,8 @@
     {"label": "Products" },
     {"label": "Contact"}
   ],
-  "menu": [
-    {"title": "teste"},
-    {"content": "teste-content"}
+  "header": [
+    {"title": "Metals - Fe Alloys - Catalysts"},
+    {"subTitle": "Quality, Reliability and Sustainability"}
   ]
 }

@@ -90,3 +90,11 @@
     transform: translateX(100%);
     transition: all 0.5s ease-out;
 }
+
+.languageButton {
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,8%);
+    border-radius: 4px;
+    padding: 8px;
+    color: rgba(255,255,255,80%);
+}
