@@ -7,12 +7,30 @@ import { useState } from 'react';
 
 function Menu({ language, setLanguage }) {
   const [menuState, setMenuState] = useState(false);
+  const [fixedMenu, setFixedMenu] = useState(false);
+  console.log(fixedMenu);
+
+  function scrollPosition(){
+    if(scrollY > 50) {
+      setFixedMenu(true);
+    } else {
+      setFixedMenu(false);
+    }
+  }
+
+  window.addEventListener('scroll', scrollPosition);
 
   let handleLanguage = language ? portuguese : english;
 
   return (
     <section>
-      <header className={styles.header}>
+      <header 
+        className={
+          fixedMenu
+            ? `${styles.header} ${styles.stickyMenu}`
+            : `${styles.header}`
+        }
+      >
         <img
           className={styles.header__img}
           src={Logo}
@@ -24,6 +42,7 @@ function Menu({ language, setLanguage }) {
           {language ? 'English' : 'Português'}
         </button>
 
+        {/* */}
         <div
           className={styles.hamburguerIcon}
           onClick={() => setMenuState(!menuState)}
@@ -34,9 +53,9 @@ function Menu({ language, setLanguage }) {
         </div>
 
         <nav className={
-          menuState ? 
-            `${styles.header__nav} ${styles.menuOpen} `: 
-            `${styles.header__nav} ${styles.menuClose}`
+          menuState 
+            ? `${styles.header__nav} ${styles.menuOpen}`
+            : `${styles.header__nav} ${styles.menuClose}`
         }>
           <button 
             className={styles.btnCloseMobile}

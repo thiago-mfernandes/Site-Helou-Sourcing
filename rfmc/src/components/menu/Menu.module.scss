@@ -6,8 +6,11 @@
     background-color: transparent;
     padding: 20px;
     width: 100%;
+    transition: $transition;
     @include display-flexDirection(flex, row);
     @include alignItens-justifyContent(center, space-between);
+    
+
     &__img {
         width: 25%;
     }
@@ -29,6 +32,11 @@
             font-weight: 800;
         }
     }
+}
+//background adicionado qdo a rolagem acontece
+.stickyMenu {
+    background-color: #474747;
+    transition: $transition;
 }
 
 .btnCloseMobile {
