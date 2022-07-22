@@ -11,15 +11,15 @@
     padding: $padding-lateral-5;
 
     &___img {
-      width: 55%;
       transform: rotate(90deg);
+      width: 55%;
       z-index: 1;
     }
 
     &___descriptionBox {
         @include alignItens-justifyContent(center, center);
         @include display-flexDirection(flex, column);
-        background-color: #474747;
+        background-color: $azul-secundario;
         padding: $padding-interno-10;
 
         & span {

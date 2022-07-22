@@ -1,0 +1,81 @@
+@import "../../scss/styles.scss";
+
+.whatWeDo {
+  @include alignItens-justifyContent(center, center);
+  @include display-flexDirection(flex, column);
+  padding: $padding-section;
+
+  &__container {
+    @include alignItens-justifyContent(center, center);
+    @include display-flexDirection(flex, column);
+    padding: $padding-lateral-5;
+
+    &___faq {
+      @include alignItens-justifyContent(center, center);
+      @include display-flexDirection(flex, column);
+      margin-bottom: 20%;
+      width: 100%;
+      &:nth-child(2) {
+        width: 80%;
+      }
+
+      &____box {
+        border-bottom: 1px solid $azul-primario;
+        width: 100%;
+      }
+      & [name="border-none"] {
+        border-bottom: none;
+      }
+
+      &____title {
+        @extend .title;
+        color: $azul-primario;
+      }
+
+      &____weDo {
+        @include color-fontSize($cinza, 1.5rem);
+
+        & span {
+          @include color-fontSize($azul-primario, 0.85rem);
+        }
+      }
+
+      &____content {
+        @extend .content;
+        color: $cinza;
+      }
+
+      &____boxImg {
+        border-bottom: none;
+        margin-bottom: 5%;
+        width: 100%;
+        &:hover [name="hover"] {
+          @include height-width(7.5vh, 100%);
+          background-color: $branco;
+          border-radius: 0 0 8px 8px;
+          color: $azul-primario;
+          opacity: 0.8;
+          padding: 2.5%;
+          transform: translateY(-49px);
+          transition: $transition;
+        }
+      }
+
+      &____img {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      &____hoverInfo {
+        @include height-width(7.5vh, 100%);
+        background-color: $branco;
+        border-radius: 0 0 8px 8px;
+        color: $azul-primario;
+        opacity: 0;
+        padding: 2.5%;
+        transform: translateY(-10px);
+        transition: $transition;
+      }
+    }
+  }
+}

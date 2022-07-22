@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Menu from 'components/menu';
 import Header from 'components/header';
 import Company from 'components/company';
+import WhatWeDo from 'components/whatWeDo';
 import { AnimateSharedLayout }  from  'framer-motion';
 
 
@@ -15,88 +16,8 @@ export default function App() {
         <Menu language={language} setLanguage={setLanguage}/>
         <Header language={language}/>
         <Company language={language}/>
+        <WhatWeDo language={language}/>
         
-        {/* inicio o que fazemos*/}
-        <section>
-          <div>
-            {' '}
-            {/* container */}
-            <section>
-              <div>
-                <h2>O que Fazemos?</h2>
-              </div>
-              <div>
-                <div>
-                  <h2>
-                    <span>01.</span>Trabalhamos com todos os tipos de metais e
-                    ligas de ferro.
-                  </h2>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <h2>
-                    <span>02.</span>Tambem operamos com sucata metalica em
-                    diversas variedade.
-                  </h2>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <h2>
-                    <span>03.</span>E temos a disposicao de nossos clientes
-                    catalisadores e residuos.
-                  </h2>
-                </div>
-              </div>
-            </section>
-            <section>
-              <div>
-                <h2>Negociamos em: </h2>
-              </div>
-              <div>
-                <p>
-                  <span>Cobalto</span>(Minério/Conc, CoOH, CoSO4)
-                </p>
-              </div>
-              <div>
-                <p>
-                  <span>Manganês</span>(Minério, Conc, MnSO4)
-                </p>
-              </div>
-              <div>
-                <p>
-                  <span>Zinco</span>(Minério/Conc, ZnSO4, ZnO)
-                </p>
-              </div>
-              <div>
-                <p>
-                  <span>Cobre</span>(Minério/Conc, CuSO4, CuO)
-                </p>
-              </div>
-              <div>
-                <p>
-                  <span>Molibdênio</span>(MoO3 &gt; 57%)
-                </p>
-              </div>
-            </section>
-            <section>
-              <h2>Metais Não Ferrosos</h2>
-              <div>
-                <p>
-                  E em todos os tipos e formas de produtos intermediários contendo
-                  metais não ferrosos (V, Ni, Co, W, Mo, Cu, Pb, Sn, etc…) na
-                  forma de FINO, ÓXIDOS, LAMAS, METÁLICOS, CATALISADORES GASTO,
-                  etc…
-                </p>
-              </div>
-              <div>
-                <img src="" alt="fotos formas nao ferrosos" />
-              </div>
-            </section>
-          </div>
-        </section>
-        {/* fim o que fazemos */}
         {/* inicio porque a rfmc - bgcol cinza aqui */}
         <section>
           <div>

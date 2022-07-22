@@ -1,5 +1,5 @@
 import propTypes from 'prop-types';
-import Logo from 'assets/logo_rfmc.png';
+import Logo from 'assets/logo_helou.png';
 import portuguese from 'data/portugueseVersion.json';
 import english from 'data/englishVersion.json';
 import styles from './Menu.module.scss';
