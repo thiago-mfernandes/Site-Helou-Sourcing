@@ -18,5 +18,25 @@
     { "content": "Nossa principal prioridade é estabelecer e manter um relacionamento comercial positivo e de longo prazo com nossos clientes e fornecedores." },
     { "content": "A RFMC firmou parceria de sucesso com fabricantes renomados e conceituados em todo o mundo, garantindo aos nossos clientes nossa capacidade de fornecer produtos de alta qualidade a preços competitivos, respaldados pelo suporte técnico e metalúrgico necessário." },
     { "content": "Ao mesmo tempo, estamos comprometidos com nossos fornecedores em fornecer a eles um suporte consistente de mercado." }
+  ],
+  "whatWeDoComponent": [
+    {"titleSection1": "O que Fazemos?"},
+    {"label": " Trabalhamos com todos os tipos de metais e ligas de ferro;"},
+    {"label": " Também operamos com sucata metálica em diversas variedades;"},
+    {"label": " E temos a disposição de nossos clientes catalisadores e resíduos."},
+    {"titleSection2": "Negociamos em:"},
+    {"span": "Cobalto" , "paragraph": "(Minério/Conc, CoOH, CoSO4)"},
+    {"span": "Manganês" , "paragraph": "(Minério, Conc, MnSO4)"},
+    {"span": "Zinco" , "paragraph": "(Minério/Conc, ZnSO4, ZnO)"},
+    {"span": "Cobre" , "paragraph": "(Minério/Conc, CuSO4, CuO)"},
+    {"span": "Molibdênio" , "paragraph": "(MoO3 > 57%)"},
+    {"titleSection3": "Metais Não Ferrosos"},
+    {"content": "Todos os tipos e formas de produtos intermediários contendo metais não ferrosos: <br/> (V, Ni, Co, W, Mo, Cu, Pb, Sn, etc…)<br/> nas formas de FINO, ÓXIDOS, LAMAS, METÁLICOS, CATALISADORES GASTO, etc…"}
+  ],
+  "metalFormsImg": [
+    {"url": "assets/cobre.jpg", "label": "Cobre"},
+    {"url": "assets/nickel.jpg", "label": "Nickel"},
+    {"url": "assets/zinco.jpg", "label": "Zinco"},
+    {"url": "assets/nr5.jpg", "label": "nr5"}
   ]
 }

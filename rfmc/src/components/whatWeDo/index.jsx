@@ -1,111 +1,116 @@
 import propTypes from 'prop-types';
 import styles from './WhatWeDo.module.scss';
-//import portuguese from 'data/portugueseVersion.json';
-//import english from 'data/englishVersion.json';
-import cobre from 'assets/cobre.jpg';
-import nickel from 'assets/nickel.jpg';
-import zinco from 'assets/zinco.jpg';
-import nr5 from 'assets/nr5.jpg';
+import portuguese from 'data/portugueseVersion.json';
+import english from 'data/englishVersion.json';
+//import cobre from 'assets/cobre.jpg';
+//import nickel from 'assets/nickel.jpg';
+//import zinco from 'assets/zinco.jpg';
+//import nr5 from 'assets/nr5.jpg';
 
-export default function whatWeDo() {
+export default function whatWeDo({language}) {
 
-  //let handleLanguage = language ? portuguese : english;
+  let handleLanguage = language ? portuguese : english;
+  console.log(handleLanguage.metalFormsImg);
 
-  const formasDosMetais = [cobre, nickel, zinco, nr5];
+  //const formasDosMetais = [cobre, nickel, zinco, nr5];
   
   return (
     <section className={styles.whatWeDo}>
-      <div className={styles.whatWeDo__container}>{/* container */}
+      <div className={styles.whatWeDo__container}>
         <section className={styles.whatWeDo__container___faq}>
           <div>
-            <h2 className={styles.whatWeDo__container___faq____title}>O que Fazemos?</h2>
-          </div>
-          <div className={styles.whatWeDo__container___faq____box}>
-            <h2 className={styles.whatWeDo__container___faq____weDo}>
-              <span>01.</span>Trabalhamos com todos os tipos de metais e
-              ligas de ferro;
+            <h2 className={styles.whatWeDo__container___faq____title}>
+              {handleLanguage.whatWeDoComponent[0].titleSection1}
             </h2>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <h2 className={styles.whatWeDo__container___faq____weDo}>
-              <span>02.</span>Também operamos com sucata metálica em
-              diversas variedades;
+              <span>01.</span>
+              {handleLanguage.whatWeDoComponent[1].label}
             </h2>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <h2 className={styles.whatWeDo__container___faq____weDo}>
-              <span>03.</span>E temos a disposição de nossos clientes
-              catalisadores e resíduos.
+              <span>02.</span>
+              {handleLanguage.whatWeDoComponent[2].label}
+            </h2>
+          </div>
+          <div className={styles.whatWeDo__container___faq____box}>
+            <h2 className={styles.whatWeDo__container___faq____weDo}>
+              <span>03.</span>
+              {handleLanguage.whatWeDoComponent[3].label}
             </h2>
           </div>
         </section>
 
         <section className={styles.whatWeDo__container___faq}>
           <div className={styles.whatWeDo__container___faq____box}>
-            <h2 className={styles.whatWeDo__container___faq____title}>Negociamos em: </h2>
+            <h2 className={styles.whatWeDo__container___faq____title}>
+              {handleLanguage.whatWeDoComponent[4].titleSection2}
+            </h2>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <p>
-              <span>Cobalto</span>(Minério/Conc, CoOH, CoSO4)
+              <span>{handleLanguage.whatWeDoComponent[5].span}</span>
+              {handleLanguage.whatWeDoComponent[5].paragraph}
             </p>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <p>
-              <span>Manganês</span>(Minério, Conc, MnSO4)
+              <span>{handleLanguage.whatWeDoComponent[6].span}</span>
+              {handleLanguage.whatWeDoComponent[6].paragraph}
             </p>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <p>
-              <span>Zinco</span>(Minério/Conc, ZnSO4, ZnO)
+              <span>{handleLanguage.whatWeDoComponent[7].span}</span>
+              {handleLanguage.whatWeDoComponent[7].paragraph}
             </p>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <p>
-              <span>Cobre</span>(Minério/Conc, CuSO4, CuO)
+              <span>{handleLanguage.whatWeDoComponent[8].span}</span>
+              {handleLanguage.whatWeDoComponent[8].paragraph}
             </p>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <p>
-              <span>Molibdênio</span>(MoO3 &gt; 57%)
+              <span>{handleLanguage.whatWeDoComponent[9].span}</span>
+              {handleLanguage.whatWeDoComponent[9].paragraph}
             </p>
           </div>
         </section>
 
         <section className={styles.whatWeDo__container___faq}>
           <div className={styles.whatWeDo__container___faq____box}>
-            <h2 className={styles.whatWeDo__container___faq____title}>Metais Não Ferrosos</h2>
+            <h2 className={styles.whatWeDo__container___faq____title}>
+              {handleLanguage.whatWeDoComponent[10].titleSection3}
+            </h2>
           </div>
           <div className={styles.whatWeDo__container___faq____box} name="border-none" >
             <p className={styles.whatWeDo__container___faq____content}>
-              E em todos os tipos e formas de produtos intermediários contendo
-              metais não ferrosos: 
-              <br/> (V, Ni, Co, W, Mo, Cu, Pb, Sn, etc…)<br/> nas
-              formas de FINO, ÓXIDOS, LAMAS, METÁLICOS, CATALISADORES GASTO,
-              etc…
+              {handleLanguage.whatWeDoComponent[11].content}
             </p>
           </div>
           {
-            formasDosMetais.map((item, index) => (
+            handleLanguage.metalFormsImg.map((item, index) => (
               <div 
                 key={index} 
                 className={styles.whatWeDo__container___faq____boxImg}
               >
                 <img 
-                  src={item} 
+                  src={item.url}
                   alt="Material em forma não ferrosa" 
                   className={styles.whatWeDo__container___faq____img}
                 />
-                <div className={styles.whatWeDo__container___faq____hoverInfo} name="hover">
-                  {/* mocar os dados aqui */}
-                  Cobre
+                <div className={styles.whatWeDo__container___faq____hoverInfo} name="hover">{item.label}
                 </div>
               </div>
             ))
           }
         </section>
       </div>
-    </section>
-    
+    </section>    
   );
 }
 
