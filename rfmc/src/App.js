@@ -14,7 +14,7 @@ export default function App() {
       <main>
         <Menu language={language} setLanguage={setLanguage}/>
         <Header language={language}/>
-        <Company />
+        <Company language={language}/>
         
         {/* inicio o que fazemos*/}
         <section>

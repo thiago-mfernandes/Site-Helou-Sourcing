@@ -10,5 +10,13 @@
   "header": [
     {"title": "Metals - Fe Alloys - Catalysts"},
     {"subTitle": "Quality, Reliability and Sustainability"}
+  ],
+  "companyComponent": [
+    { "whoWeAre": "Who is RFCM?" },
+    { "title": "Company" },
+    { "content": "We are a trading brokerage, based in São Paulo, Brazil, working diligently sourcing specific commodities or finding a market for your products, where we extend our 30Year experience to provide you with the necessary solutions through our global network."},
+    { "content": "Our top priority is to establish and maintain a positive, long-term business relationship with our customers and suppliers."},
+    { "content": "RFMC has successfully partnered with renowned and reputable manufacturers around the world, assuring our customers of our ability to provide high quality products at competitive prices, backed by the necessary technical and metallurgical support."},
+    { "content": "At the same time, we are committed to our suppliers to provide them with consistent market support."}
   ]
 }

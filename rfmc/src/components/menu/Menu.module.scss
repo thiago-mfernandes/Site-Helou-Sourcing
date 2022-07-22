@@ -7,6 +7,7 @@
     padding: 20px;
     width: 100%;
     transition: $transition;
+    z-index: 10;
     @include display-flexDirection(flex, row);
     @include alignItens-justifyContent(center, space-between);
     

@@ -1,40 +1,41 @@
 import styles from './Company.module.scss';
 import OurCompany from 'assets/headerBg.jpg';
+import propTypes from 'prop-types';
+import portuguese from 'data/portugueseVersion.json';
+import english from 'data/englishVersion.json';
 
-export default function Company() {
+export default function Company({language}) {
+  let handleLanguage = language ? portuguese : english;
+
   return (
     <section className={styles.company}>
       <div className={styles.company__container}>
         <img src={OurCompany} className={styles.company__container___img}/>
         <div className={styles.company__container___descriptionBox}>
           {/* container */}
-          <span>Quem é a RFCM?</span>
-          <h2 className={styles.company__container___descriptionBox____title}>Companhia</h2>
+          <span>
+            {handleLanguage.companyComponent[0].whoWeAre}
+          </span>
+          <h2 className={styles.company__container___descriptionBox____title}>         {handleLanguage.companyComponent[1].title}
+          </h2>
           <p className={styles.company__container___descriptionBox____content}>
-            Somos uma corretora comercial, com sede em São Paulo, Brasil,
-            trabalhando diligentemente no fornecimento de commodities
-            específicas ou na busca de um mercado para seus produtos, onde
-            estendemos nossa experiência de 30 anos para fornecer as soluções
-            necessárias por meio de nossa rede global.
+            {handleLanguage.companyComponent[2].content}
           </p>
           <p className={styles.company__container___descriptionBox____content}>
-            Nossa principal prioridade é estabelecer e manter um
-            relacionamento comercial positivo e de longo prazo com nossos
-            clientes e fornecedores.
+            {handleLanguage.companyComponent[3].content}
           </p>
           <p className={styles.company__container___descriptionBox____content}>
-            A RFMC firmou parceria de sucesso com fabricantes renomados e
-            conceituados em todo o mundo, garantindo aos nossos clientes nossa
-            capacidade de fornecer produtos de alta qualidade a preços
-            competitivos, respaldados pelo suporte técnico e metalúrgico
-            necessário.
+            {handleLanguage.companyComponent[4].content}
           </p>
           <p className={styles.company__container___descriptionBox____content}>
-            Ao mesmo tempo, estamos comprometidos com nossos fornecedores em
-            fornecer a eles um suporte consistente de mercado.
+            {handleLanguage.companyComponent[5].content}
           </p>
         </div>
       </div>
     </section>
   );
 }
+
+Company.propTypes = {
+  language: propTypes.bool.isRequired,
+};
