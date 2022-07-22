@@ -3,6 +3,7 @@ import Menu from 'components/menu';
 import Header from 'components/header';
 import Company from 'components/company';
 import WhatWeDo from 'components/whatWeDo';
+import WhyUs from 'components/whyUs';
 import { AnimateSharedLayout }  from  'framer-motion';
 
 
@@ -17,36 +18,7 @@ export default function App() {
         <Header language={language}/>
         <Company language={language}/>
         <WhatWeDo language={language}/>
-        
-        {/* inicio porque a rfmc - bgcol cinza aqui */}
-        <section>
-          <div>
-            {/* container */}
-            <div>
-              <h2>porque a rfmc</h2>
-            </div>
-            <div>
-              <p>
-                Somos especializados no comércio internacional de metais e na
-                gestão de resíduos industriais. Acreditamos que nossas ações
-                operacionais de reciclagem de resíduos nos permitem não apenas
-                economizar recursos minerais naturais, mas principalmente proteger
-                o meio ambiente do uso incorreto e do descarte e disposição
-                inadequada dos referidos resíduos.
-              </p>
-              <img src="" alt="imagem sustentabilidade" />
-            </div>
-            <div>
-              <p>
-                Nós da RFMC, acreditamos que para fazer diferente é preciso
-                paixão. Sabemos que não somos perfeitos, mas nos esforçamos para
-                fazer a nossa parte. Venha conhecer mais sobre nosso trabalho e
-                como estamos fazendo a diferença.
-              </p>
-            </div>
-          </div>
-        </section>
-        {/* fim inicio porque a rfmc */}
+        <WhyUs />
         {/* inicio produtos */}
         <section>
           <div>
