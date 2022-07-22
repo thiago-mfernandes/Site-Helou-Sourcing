@@ -1,8 +1,15 @@
 @import '../../mixins/mixins.scss';
 
 .contentHeader {
-    @include color-fontSize(white, 1.25rem);
+    @include color-fontSize($branco, 1.25rem);
     text-align: center;
     opacity: .9;
     margin-top: 10%;
+}
+
+.content {
+    @include color-fontSize($branco, 1.125rem);
+    text-align: justify;
+    opacity: .7;
+    line-height: 1.6;
 }

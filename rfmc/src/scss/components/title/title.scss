@@ -1,7 +1,13 @@
-@import '../../mixins/mixins.scss';
+@import "../../mixins/mixins.scss", "../../variables/variables.scss";
 
 .headerTitle {
-    @include color-fontSize(white, 1.75rem);
-    text-align: center;
-    text-transform: uppercase;
+  @include color-fontSize($branco, 1.75rem);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title {
+  @include color-fontSize($branco, 1.75rem);
+  text-align: center;
+  text-transform: uppercase;
 }

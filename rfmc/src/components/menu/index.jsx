@@ -8,7 +8,6 @@ import { useState } from 'react';
 function Menu({ language, setLanguage }) {
   const [menuState, setMenuState] = useState(false);
   const [fixedMenu, setFixedMenu] = useState(false);
-  console.log(fixedMenu);
 
   function scrollPosition(){
     if(scrollY > 50) {
