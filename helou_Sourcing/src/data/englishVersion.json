@@ -38,5 +38,11 @@
     {"url": "assets/nickel.jpg", "label": "Nickel"},
     {"url": "assets/zinco.jpg", "label": "Zinc"},
     {"url": "assets/nr5.jpg", "label": "nr5"}
+  ],
+  "whyUs": [
+    { "title": "Why Helou Sourcing" },
+    { "content": "We specialize in international metal trade and in management of industrial waste. We believe that our operational actions of recycling of wastes allow us not only to save natural mineral resources, but specially to protect the environment from the incorrect use and inadequate dumping and disposition of the referred wastes." },
+    { "forAltImg": "Sustainability" },
+    { "content": "We at Helou Sourcing, believe that to do different, it takes passion. We know that we are not perfect, but we strive to do our part. Come and learn more about our work and how we are making a difference." }
   ]
 }

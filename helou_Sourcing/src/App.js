@@ -18,7 +18,7 @@ export default function App() {
         <Header language={language}/>
         <Company language={language}/>
         <WhatWeDo language={language}/>
-        <WhyUs />
+        <WhyUs language={language} />
         {/* inicio produtos */}
         <section>
           <div>

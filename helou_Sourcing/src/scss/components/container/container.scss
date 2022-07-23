@@ -1,5 +1,17 @@
-@import '../../mixins/mixins.scss';
+@import "../../mixins/mixins.scss";
 
 .container {
-    padding: 0 2.5%;
+  padding: 0 2.5%;
+}
+
+.divContainer {
+  @include alignItens-justifyContent(center, center);
+  @include display-flexDirection(flex, column);
+  padding: $padding-lateral-5;
+}
+
+.sectionContainer {
+  @include alignItens-justifyContent(center, center);
+  @include display-flexDirection(flex, column);
+  padding: $padding-section;
 }

@@ -1,16 +1,10 @@
 @import "../../scss/styles.scss";
 
 .whatWeDo {
-  //sections sao iguais, componentizar isso e olhar os proximos
-  @include alignItens-justifyContent(center, center);
-  @include display-flexDirection(flex, column);
-  padding: $padding-section;
+  @extend .sectionContainer;
 
   &__container {
-    //div sao iguais, componentizar isso e olhar os proximos
-    @include alignItens-justifyContent(center, center);
-    @include display-flexDirection(flex, column);
-    padding: $padding-lateral-5;
+    @extend .divContainer;
 
     &___faq {
       @include alignItens-justifyContent(center, center);

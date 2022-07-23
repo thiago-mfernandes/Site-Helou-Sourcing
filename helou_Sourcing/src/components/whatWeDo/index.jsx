@@ -2,17 +2,10 @@ import propTypes from 'prop-types';
 import styles from './WhatWeDo.module.scss';
 import portuguese from 'data/portugueseVersion.json';
 import english from 'data/englishVersion.json';
-//import cobre from 'assets/cobre.jpg';
-//import nickel from 'assets/nickel.jpg';
-//import zinco from 'assets/zinco.jpg';
-//import nr5 from 'assets/nr5.jpg';
 
 export default function whatWeDo({language}) {
 
   let handleLanguage = language ? portuguese : english;
-  console.log(handleLanguage.metalFormsImg);
-
-  //const formasDosMetais = [cobre, nickel, zinco, nr5];
   
   return (
     <section className={styles.whatWeDo}>
@@ -100,7 +93,7 @@ export default function whatWeDo({language}) {
               >
                 <img 
                   src={item.url}
-                  alt="Material em forma não ferrosa" 
+                  alt="Material em forma não ferrosa | Non-ferrous Metals" 
                   className={styles.whatWeDo__container___faq____img}
                 />
                 <div className={styles.whatWeDo__container___faq____hoverInfo} name="hover">{item.label}

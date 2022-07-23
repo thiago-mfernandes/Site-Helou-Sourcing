@@ -1,14 +1,10 @@
 @import "../../scss/styles.scss";
 
 .company {
-  @include alignItens-justifyContent(center, center);
-  @include display-flexDirection(flex, column);
-  padding: $padding-section;
+  @extend .sectionContainer;
 
   &__container {
-    @include alignItens-justifyContent(center, center);
-    @include display-flexDirection(flex, column);
-    padding: $padding-lateral-5;
+    @extend .divContainer;
 
     &___img {
       transform: rotate(90deg);
