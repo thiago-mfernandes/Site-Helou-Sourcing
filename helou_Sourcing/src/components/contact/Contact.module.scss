@@ -10,6 +10,13 @@
     &___box {
       width: 100%;
 
+      &____boxContent {
+        background-color: $branco;
+        border-radius: 8px;
+        padding: 5%;
+        margin-bottom: 10%
+      }
+
       &____content {
         @extend .content;
         color: $cinza;
@@ -30,6 +37,19 @@
 
       &____btnForm {
         @extend .btnForm;
+      }
+
+      &____addressTitle {
+        @extend .subTitle;
+        color: $cinza;
+        text-align: start;
+        margin: 0;
+      }
+
+      &____addressContent {
+        @extend .content;
+        color: $cinza;
+        margin: 0 0 7.5%;
       }
     }
   }

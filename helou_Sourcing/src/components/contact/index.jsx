@@ -18,7 +18,7 @@ export default function Contact() {
         </div>
 
         <div className={styles.contact__container___box}>
-          <form action="">
+          <form className={styles.contact__container___box____boxContent} action="">
             <h2 className={styles.contact__container___box____subTitle}>Formulário</h2>
             <div className={styles.contact__container___box}>
               <label htmlFor="name">Nome</label>
@@ -69,13 +69,13 @@ export default function Contact() {
             </div>
           </form>
         </div>
-        <div className={styles.contact__container___box}>
-          <p>endereco</p>
-          <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
-          <p>telefone</p>
-          <p>+123 456 789</p>
-          <p>email</p>
-          <p>seuemail@dominio.com</p>
+        <div className={styles.contact__container___box____boxContent}>
+          <p className={styles.contact__container___box____addressTitle}>endereco</p>
+          <p className={styles.contact__container___box____addressContent}>203 Fake St. Mountain View, San Francisco, California, USA</p>
+          <p className={styles.contact__container___box____addressTitle}>telefone</p>
+          <p className={styles.contact__container___box____addressContent}>+123 456 789</p>
+          <p className={styles.contact__container___box____addressTitle}>email</p>
+          <p className={styles.contact__container___box____addressContent}>seuemail@dominio.com</p>
         </div>
       </div>
     </section>

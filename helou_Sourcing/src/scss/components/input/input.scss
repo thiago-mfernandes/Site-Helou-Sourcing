@@ -2,7 +2,7 @@
 
 .inputForm {
   @include color-fontSize($cinza, 1rem);
-  background-color: $branco;
+  background-color: $cinzaClaroBg;
   border: 1px solid $cinzaBg;
   border-radius: 8px;
   height: calc(2.25rem + 2px);
