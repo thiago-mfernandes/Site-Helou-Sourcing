@@ -22,7 +22,7 @@ export default function App() {
         <WhatWeDo language={language}/>
         <WhyUs language={language} />
         <Products />
-        <Contact />
+        <Contact language={language}/>
         {/* inicio footer */}
         <footer>
           <div>

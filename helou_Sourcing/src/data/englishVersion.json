@@ -44,5 +44,22 @@
     { "content": "We specialize in international metal trade and in management of industrial waste. We believe that our operational actions of recycling of wastes allow us not only to save natural mineral resources, but specially to protect the environment from the incorrect use and inadequate dumping and disposition of the referred wastes." },
     { "forAltImg": "Sustainability" },
     { "content": "We at Helou Sourcing, believe that to do different, it takes passion. We know that we are not perfect, but we strive to do our part. Come and learn more about our work and how we are making a difference." }
+  ],
+  "products": [
+
+  ],
+  "contact": [
+    { "content" : "To request a quotation please contact us by phone or e-mail and we will provide you with experienced, professional and reliable services." },
+    { "callToAction" : "Contact Us" },
+    { "content" : "Your partner for strategic materials: Oxides, Metals, Ferro Alloys and Catalysts" },
+    { "form" : "Form" },
+    { "label" : "Name", "placeHolder": "Complete name.." },
+    { "label" : "Email", "placeHolder": "name@domain.com" },
+    { "label" : "Subject", "placeHolder": "Request a quotation.." },
+    { "label" : "Message", "placeHolder": "Write your notes or questions here.." },
+    { "btn" : "", "value": "Submit" },
+    { "addressTitle": "Adress", "addressContent": "203 Fake Street"},
+    { "addressTitle": "Phone", "addressContent": "+ 123 456 789"},
+    { "addressTitle": "Email", "addressContent": "helou@sourcing.com"}
   ]
 }

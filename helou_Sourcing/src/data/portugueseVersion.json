@@ -56,5 +56,22 @@
     { "content": " Somos especializados no comércio internacional de metais e na gestão de resíduos industriais. Acreditamos que nossas ações operacionais de reciclagem de resíduos nos permitem não apenas economizar recursos minerais naturais, mas principalmente proteger o meio ambiente do uso incorreto e do descarte e disposição inadequada dos referidos resíduos." },
     { "forAltImg": "Sustentabilidade" },
     { "content": "Nós da Helou Sourcing, acreditamos que para fazer diferente é preciso paixão. Sabemos que não somos perfeitos, mas nós nos esforçamos para fazer a nossa parte. Venha conhecer mais sobre nosso trabalho e como estamos fazendo a diferença." }
+  ],
+  "products": [
+
+  ],
+  "contact": [
+    { "content" : "Para solicitar um orçamento, entre em contato conosco por telefone ou e-mail e forneceremos serviços experientes, profissionais e confiáveis." },
+    { "callToAction" : "Contate-nos" },
+    { "content" : "Seu parceiro para materiais estratégicos: Óxidos, Metais, Ferro Ligas e Catalisadores" },
+    { "form" : "Formulario" },
+    { "label" : "Nome", "placeHolder": "Nome completo.." },
+    { "label" : "Email", "placeHolder": "nome@dominio.com" },
+    { "label" : "Assunto", "placeHolder": "Cotação de valores.." },
+    { "label" : "Mensagem", "placeHolder": "Descreva suas dúvidas.." },
+    { "btn" : "", "value": "Enviar Mensagem" },
+    { "addressTitle": "Endereço", "addressContent": "Rua sem nome, 123"},
+    { "addressTitle": "Telefone", "addressContent": "+ 123 456 789"},
+    { "addressTitle": "Email", "addressContent": "hello@sourcing.com"}
   ]
 }
