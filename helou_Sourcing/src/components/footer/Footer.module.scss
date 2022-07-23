@@ -1,0 +1,31 @@
+@import "../../scss/styles.scss";
+
+.footer {
+  background-color: $cinza;
+
+  &__container {
+    @extend .divContainer;
+    padding: 0 5%;
+
+    &___copy {
+      margin: 5%;
+      text-align: center;
+      font-size: 0.8rem;;
+    }
+
+    &___buildBy {
+      text-align: center;
+      font-size: 0.8rem;
+      color: $cinzaBg;
+      & a {
+        text-decoration: none;
+        color: $cinzaBg;
+        transition: $transition;
+        &:hover {
+          color: $azul-primario;
+          transition: $transition;
+        }
+      }
+    }
+  }
+}

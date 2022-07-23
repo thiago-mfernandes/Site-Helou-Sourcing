@@ -6,8 +6,8 @@ import WhatWeDo from 'components/whatWeDo';
 import WhyUs from 'components/whyUs';
 import Products from 'components/products';
 import Contact from 'components/contact';
+import Footer from 'components/footer';
 import { AnimateSharedLayout }  from  'framer-motion';
-
 
 export default function App() {
   
@@ -23,16 +23,7 @@ export default function App() {
         <WhyUs language={language} />
         <Products />
         <Contact language={language}/>
-        {/* inicio footer */}
-        <footer>
-          <div>
-            {/* container */}
-            <p>incluir apenas um sobre nos</p>
-            <p>incluir um copyright</p>
-          </div>
-        </footer>
-        {/* fim footer */}
-
+        <Footer />
       </main>
     </AnimateSharedLayout>
   );
