@@ -1,0 +1,25 @@
+@import "../../mixins/mixins.scss", "../../variables/variables.scss";
+
+.btnForm {
+  border: none;
+  border-radius: 8px;
+  background: $gradiente;
+  color: $branco;
+  height: 10vh;
+  margin-bottom: 10%;
+  transition: $transition;
+  width: 50%;
+
+  &:hover {
+    box-shadow: $box-shadow-24;
+    transform: translateY(-5px);
+    transition: $transition;
+  }
+
+  &:active {
+    background: $azul-primario;
+    box-shadow: $box-shadow-24;
+    transform: translateY(-5px);
+    transition: $transition;
+  }
+}

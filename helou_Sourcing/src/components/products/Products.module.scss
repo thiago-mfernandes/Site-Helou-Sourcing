@@ -18,9 +18,9 @@
     &___card {
       @include height-width(null, 100%);
       @include display-flexDirection(flex, column);
-      background-color: $cinzaBg;
+      background-color: $cinzaClaroBg;
       border-radius: 8px;
-      box-shadow: $box-shadow-4;
+      box-shadow: $box-shadow-8;
       transition: $transition;
       &:hover {
         transform: translateY(-5px);

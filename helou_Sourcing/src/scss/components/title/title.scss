@@ -11,3 +11,9 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+.subTitle {
+  @include color-fontSize($azul-primario, 1.25rem);
+  text-align: center;
+  text-transform: uppercase;
+}

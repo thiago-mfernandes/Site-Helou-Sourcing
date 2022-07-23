@@ -1,0 +1,14 @@
+@import "../../mixins/mixins.scss", "../../variables/variables.scss";
+
+.inputForm {
+  @include color-fontSize($cinza, 1rem);
+  background-color: $branco;
+  border: 1px solid $cinzaBg;
+  border-radius: 8px;
+  height: calc(2.25rem + 2px);
+  line-height: 1.5;
+  margin-bottom: 7.5%;
+  padding: 0.375rem 0.75rem;
+  outline: 0;
+  width: 100%;
+}

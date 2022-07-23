@@ -1,0 +1,36 @@
+@import "../../scss/styles.scss";
+
+.contact {
+  @extend .sectionContainer;
+  background-color: $cinzaClaroBg;
+
+  &__container {
+    @extend .divContainer;
+
+    &___box {
+      width: 100%;
+
+      &____content {
+        @extend .content;
+        color: $cinza;
+      }
+
+      &____subTitle {
+        @extend .subTitle;
+      }
+
+      &____input {
+        @extend .inputForm;
+      }
+
+      &____textArea {
+        @extend .inputForm;
+        height: 100px;
+      }
+
+      &____btnForm {
+        @extend .btnForm;
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@ import Company from 'components/company';
 import WhatWeDo from 'components/whatWeDo';
 import WhyUs from 'components/whyUs';
 import Products from 'components/products';
+import Contact from 'components/contact';
 import { AnimateSharedLayout }  from  'framer-motion';
 
 
@@ -21,55 +22,7 @@ export default function App() {
         <WhatWeDo language={language}/>
         <WhyUs language={language} />
         <Products />
-
-        {/* inicio contato */}
-        <section>
-          <div>
-            {/* container */}
-            <div>
-              <p>
-                Para solicitar um orçamento, entre em contato conosco por telefone
-                ou e-mail e forneceremos serviços experientes, profissionais e
-                confiáveis.
-              </p>
-              <h3>Contate-nos</h3>
-              <p>
-                Seu parceiro para materiais estratégicos: Óxidos, Metais, Ferro
-                Ligas e Catalisadores
-              </p>
-            </div>
-            <div>
-              <form action="">
-                <h2>Formulario</h2>
-                <div>
-                  <label htmlFor=""></label>
-                  <input type="text" />
-                </div>
-                <div>
-                  <label htmlFor=""></label>
-                  <input type="text" />
-                </div>
-                <div>
-                  <label htmlFor=""></label>
-                  <input type="text" />
-                </div>
-                <div>
-                  <input type="submit" value="Enviar Mensagem" />
-                </div>
-              </form>
-            </div>
-            <div>
-              <p>endereco</p>
-              <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
-              <p>telefone</p>
-              <p>+123 456 789</p>
-              <p>email</p>
-              <p>seuemail@dominio.com</p>
-            </div>
-          </div>
-        </section>
-        {/* fim contato */}
-
+        <Contact />
         {/* inicio footer */}
         <footer>
           <div>
