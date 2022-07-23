@@ -1,5 +1,5 @@
 import styles from './Company.module.scss';
-import OurCompany from 'assets/headerBg.jpg';
+import OurCompany from 'assets/company.jpg';
 import propTypes from 'prop-types';
 import portuguese from 'data/portugueseVersion.json';
 import english from 'data/englishVersion.json';
@@ -12,7 +12,6 @@ export default function Company({language}) {
       <div className={styles.company__container}>
         <img src={OurCompany} className={styles.company__container___img}/>
         <div className={styles.company__container___descriptionBox}>
-          {/* container */}
           <span>
             {handleLanguage.companyComponent[0].whoWeAre}
           </span>

@@ -7,8 +7,7 @@
     @extend .divContainer;
 
     &___img {
-      transform: rotate(90deg);
-      width: 55%;
+      width: 100%;
       z-index: 1;
     }
 
