@@ -1,0 +1,50 @@
+@import "../../scss/styles.scss";
+
+.products {
+  @extend .sectionContainer;
+
+  &__container {
+    @extend .divContainer;
+
+    &___box {
+        width: 100%;
+
+      &____title {
+        @extend .title;
+        color: $azul-primario;
+      }
+    }
+
+    &___card {
+      @include height-width(null, 100%);
+      @include display-flexDirection(flex, column);
+      background-color: $cinzaBg;
+      border-radius: 8px;
+      box-shadow: $box-shadow-4;
+      transition: $transition;
+      &:hover {
+        transform: translateY(-5px);
+        transition: $transition;
+      }
+
+      &____img {
+        width: 100%;
+        border-radius: 8px 8px 0 0; //borda-Padrao?
+      }
+    }
+
+    &___boxContent {
+      padding: 5%;
+
+      &____title {
+        @include color-fontSize($azul-secundario, 1.25rem);
+        margin: 0;
+      }
+
+      &____content {
+        @include color-fontSize($cinza, 0.8rem);
+        margin: 0;
+      }
+    }
+  }
+}

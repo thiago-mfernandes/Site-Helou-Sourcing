@@ -4,6 +4,7 @@ import Header from 'components/header';
 import Company from 'components/company';
 import WhatWeDo from 'components/whatWeDo';
 import WhyUs from 'components/whyUs';
+import Products from 'components/products';
 import { AnimateSharedLayout }  from  'framer-motion';
 
 
@@ -19,51 +20,8 @@ export default function App() {
         <Company language={language}/>
         <WhatWeDo language={language}/>
         <WhyUs language={language} />
-        {/* inicio produtos */}
-        <section>
-          <div>
-            {/* container */}
-            <div>
-              <h2>
-                Abaixo estão os <span>METAIS E LIGAS DE FERRO</span> que
-                comercializamos:
-              </h2>
-            </div>
-            <div>
-              <div>
-                {/* card produto */}
-                <img src="" alt="produto" />
-                <div>
-                  <h3>Ferro Silicio</h3>
-                  <p>
-                    Si &gt; 70 / 75% C &lt; 0,1 / 0,2% Al &lt; 0,5 / 1,5 / 2,0%
-                  </p>
-                </div>
-              </div>
-              <div>
-                {/* card produto */}
-                <img src="" alt="produto" />
-                <div>
-                  <h3>Ferro Silicio</h3>
-                  <p>
-                    Si &gt; 70 / 75% C &lt; 0,1 / 0,2% Al &lt; 0,5 / 1,5 / 2,0%
-                  </p>
-                </div>
-              </div>
-              <div>
-                {/* card produto */}
-                <img src="" alt="produto" />
-                <div>
-                  <h3>Ferro Silicio</h3>
-                  <p>
-                    Si &gt; 70 / 75% C &lt; 0,1 / 0,2% Al &lt; 0,5 / 1,5 / 2,0%
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* fim produtos produtos */}
+        <Products />
+
         {/* inicio contato */}
         <section>
           <div>
@@ -111,6 +69,7 @@ export default function App() {
           </div>
         </section>
         {/* fim contato */}
+
         {/* inicio footer */}
         <footer>
           <div>
@@ -120,6 +79,7 @@ export default function App() {
           </div>
         </footer>
         {/* fim footer */}
+
       </main>
     </AnimateSharedLayout>
   );
