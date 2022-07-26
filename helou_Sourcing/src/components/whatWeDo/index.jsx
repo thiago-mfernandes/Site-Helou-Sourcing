@@ -8,7 +8,7 @@ export default function whatWeDo({language}) {
   let handleLanguage = language ? portuguese : english;
   
   return (
-    <section className={styles.whatWeDo}>
+    <section className={styles.whatWeDo} id="whatWeDo">
       <div className={styles.whatWeDo__container}>
         <section className={styles.whatWeDo__container___faq}>
           <div className={styles.whatWeDo__container___faq____boxTitle}>

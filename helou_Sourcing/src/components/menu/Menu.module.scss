@@ -19,7 +19,7 @@
   &__containerButtons {
     @include alignItens-justifyContent(center, space-between);
     @include display-flexDirection(flex, row);
-    width: 40%;
+    width: 45%;
     //---------------------------------------->
     @include tablet {
         width: 25%;
@@ -40,15 +40,21 @@
     &___itens {
       padding: 0;
       list-style: none;
+      text-decoration: none;
     }
 
-    &___item {
+    &___itemLi {
       margin: 2px 0;
       cursor: pointer;
     }
 
-    &___item:hover {
+    &___itemLi:hover {
       font-weight: 800;
+    }
+
+    &___itemAnchor {
+      text-decoration: none;
+      color: $cinza;
     }
   }
 }
@@ -81,6 +87,7 @@
   @include display-flexDirection(flex, column);
   @include height-width(35px, fit-content);
   cursor: pointer;
+  margin-left: 2.5%;
 }
 
 .hamburguer {

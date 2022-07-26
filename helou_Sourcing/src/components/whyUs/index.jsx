@@ -9,7 +9,7 @@ export default function whyUs({language}) {
   let handleLanguage = language ? portuguese : english;
 
   return (
-    <section className={styles.whyUs}>
+    <section className={styles.whyUs} id="whyUs">
       <div className={styles.whyUs__container}>
         <div className={styles.whyUs__container___box}>
           <h2 className={styles.whyUs__container___title}>{handleLanguage.whyUs[0].title}</h2>

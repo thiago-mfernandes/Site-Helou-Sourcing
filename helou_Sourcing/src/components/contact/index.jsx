@@ -8,7 +8,7 @@ export default function Contact({language}) {
   let handleLanguage = language ? portuguese : english;
 
   return (
-    <section className={styles.contact}>
+    <section className={styles.contact} id="contact">
       <div className={styles.contact__container}>
         <div className={styles.contact__container___box}>
           <p className={styles.contact__container___box____content}>
@@ -23,11 +23,11 @@ export default function Contact({language}) {
         </div>
 
         <div className={styles.contact__container___box}>
-          <form className={styles.contact__container___box____boxContent} action="">
+          <form className={styles.contact__container___box____boxContent} action="" name="form">
             <h2 className={styles.contact__container___box____subTitle}>
               {handleLanguage.contact[3].form}
             </h2>
-            <div className={styles.contact__container___box}>
+            <div className={styles.contact__container___box} name="name">
               <label htmlFor="name">
                 {handleLanguage.contact[4].label}
               </label>

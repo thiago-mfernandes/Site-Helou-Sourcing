@@ -8,7 +8,7 @@ export default function Company({language}) {
   let handleLanguage = language ? portuguese : english;
 
   return (
-    <section className={styles.company}>
+    <section className={styles.company} id="company">
       <div className={styles.company__container}>
         <img src={OurCompany} className={styles.company__container___img}/>
         <div className={styles.company__container___descriptionBox}>

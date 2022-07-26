@@ -4,6 +4,7 @@ import portuguese from 'data/portugueseVersion.json';
 import english from 'data/englishVersion.json';
 import styles from './Menu.module.scss';
 import { useState } from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 function Menu({ language, setLanguage }) {
   const [menuState, setMenuState] = useState(false);
@@ -61,11 +62,71 @@ function Menu({ language, setLanguage }) {
             onClick={() => setMenuState(false)}
           >x</button>
           <ul className={styles.header__nav___itens}>
-            {handleLanguage.nav.map((item, index) => (
-              <li className={styles.header__nav___item} key={index}>
-                {item.label}
-              </li>
-            ))}
+            <li className={styles.header__nav___itemLi}>
+              <AnchorLink 
+                className={styles.header__nav___itemAnchor} 
+                href='#home' 
+                offset='100'
+                onClick={() => setMenuState(false)}
+              >
+                {handleLanguage.nav[0].label}
+              </AnchorLink>
+            </li>
+
+            <li className={styles.header__nav___itemLi}>
+              <AnchorLink 
+                className={styles.header__nav___itemAnchor} 
+                href='#company' 
+                offset='90' 
+                onClick={() => setMenuState(false)}
+              >
+                {handleLanguage.nav[1].label}
+              </AnchorLink>
+            </li>
+
+            <li className={styles.header__nav___itemLi}>
+              <AnchorLink 
+                className={styles.header__nav___itemAnchor} 
+                href='#whatWeDo' 
+                offset='90'
+                onClick={() => setMenuState(false)}
+              >
+                {handleLanguage.nav[2].label}
+              </AnchorLink>
+            </li>
+
+            <li className={styles.header__nav___itemLi}>
+              <AnchorLink 
+                className={styles.header__nav___itemAnchor} 
+                href='#whyUs' 
+                offset='90'
+                onClick={() => setMenuState(false)}
+              >
+                {handleLanguage.nav[3].label}
+              </AnchorLink>
+            </li>
+
+            <li className={styles.header__nav___itemLi}>
+              <AnchorLink 
+                className={styles.header__nav___itemAnchor} 
+                href='#products' 
+                offset='90'
+                onClick={() => setMenuState(false)}
+              >
+                {handleLanguage.nav[4].label}
+              </AnchorLink>
+            </li>
+
+            <li className={styles.header__nav___itemLi}>
+              <AnchorLink 
+                className={styles.header__nav___itemAnchor} 
+                href='#contact' 
+                offset='90'
+                onClick={() => setMenuState(false)}
+              >
+                {handleLanguage.nav[5].label}
+              </AnchorLink>
+            </li>
           </ul>
         </nav>
       </header>
@@ -76,6 +137,8 @@ function Menu({ language, setLanguage }) {
 Menu.propTypes = {
   language: propTypes.bool.isRequired,
   setLanguage: propTypes.func.isRequired,
+  //header: propTypes.any.isRequired,
+  //scrollToSection: propTypes.func.isRequired
 };
 
 export default Menu;

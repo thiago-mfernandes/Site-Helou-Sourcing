@@ -12,7 +12,7 @@ export default function Header({language}) {
   //console.log(english);
 
   return (
-    <div className={styles.header}>
+    <div className={styles.header} id="home">
       <div className={styles.container}>
         <div className={styles.header__boxContent}>
           <motion.div

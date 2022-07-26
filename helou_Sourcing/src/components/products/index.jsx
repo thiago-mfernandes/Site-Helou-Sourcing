@@ -3,7 +3,7 @@ import ferroSilicio from 'assets/ferro-silicio.png';
 
 export default function Products() {
   return (
-    <section className={styles.products}>
+    <section className={styles.products} id="products">
       <div className={styles.products__container}>        
         <div className={styles.products__container___box}>
           <h2 className={styles.products__container___box____title}>
