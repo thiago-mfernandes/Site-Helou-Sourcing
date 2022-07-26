@@ -4,6 +4,10 @@
   @include color-fontSize($branco, 1.75rem);
   text-align: center;
   text-transform: uppercase;
+  //--------------------------------------------->
+  @include tablet {
+    @include color-fontSize($branco, 2.25rem);
+  }
 }
 
 .title {

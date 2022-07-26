@@ -5,6 +5,10 @@
     text-align: center;
     opacity: .9;
     margin-top: 10%;
+    //----------------------------------------->
+    @include tablet {
+        @include color-fontSize($branco, 1.5rem);
+    }
 }
 
 .content {

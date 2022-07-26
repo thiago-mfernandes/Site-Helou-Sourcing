@@ -8,6 +8,15 @@
 
     &___box {
         width: 100%;
+        //---------------------------------------------------->
+        @include tablet {
+          &:last-of-type {
+            @include display-flexDirection(flex, row);
+            @include alignItens-justifyContent(center, space-between);
+            flex-wrap: wrap;
+            gap: 5%;
+          }
+        }
 
       &____title {
         @extend .title;
@@ -25,6 +34,10 @@
       &:hover {
         transform: translateY(-5px);
         transition: $transition;
+      }
+      //--------------------------->
+      @include tablet {
+        width: 47.5%;
       }
 
       &____img {

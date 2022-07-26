@@ -11,7 +11,7 @@ export default function whatWeDo({language}) {
     <section className={styles.whatWeDo}>
       <div className={styles.whatWeDo__container}>
         <section className={styles.whatWeDo__container___faq}>
-          <div>
+          <div className={styles.whatWeDo__container___faq____boxTitle}>
             <h2 className={styles.whatWeDo__container___faq____title}>
               {handleLanguage.whatWeDoComponent[0].titleSection1}
             </h2>
@@ -37,7 +37,7 @@ export default function whatWeDo({language}) {
         </section>
 
         <section className={styles.whatWeDo__container___faq}>
-          <div className={styles.whatWeDo__container___faq____box}>
+          <div className={styles.whatWeDo__container___faq____boxTitle}>
             <h2 className={styles.whatWeDo__container___faq____title}>
               {handleLanguage.whatWeDoComponent[4].titleSection2}
             </h2>
@@ -75,12 +75,12 @@ export default function whatWeDo({language}) {
         </section>
 
         <section className={styles.whatWeDo__container___faq}>
-          <div className={styles.whatWeDo__container___faq____box}>
+          <div className={styles.whatWeDo__container___faq____boxTitle}>
             <h2 className={styles.whatWeDo__container___faq____title}>
               {handleLanguage.whatWeDoComponent[10].titleSection3}
             </h2>
           </div>
-          <div className={styles.whatWeDo__container___faq____box} name="border-none" >
+          <div className={styles.whatWeDo__container___faq____boxTitle} name="border-none" >
             <p className={styles.whatWeDo__container___faq____content}>
               {handleLanguage.whatWeDoComponent[11].content}
             </p>

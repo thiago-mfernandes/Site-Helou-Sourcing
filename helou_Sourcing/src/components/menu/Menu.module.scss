@@ -1,115 +1,130 @@
-@import '../../scss/styles.scss';
+@import "../../scss/styles.scss";
 
 .header {
-    position: fixed;
-    top: 0;
-    background-color: transparent;
-    padding: 20px;
-    width: 100%;
-    transition: $transition;
-    z-index: 10;
-    @include display-flexDirection(flex, row);
+  position: fixed;
+  top: 0;
+  background-color: transparent;
+  padding: 20px;
+  width: 100%;
+  transition: $transition;
+  z-index: 10;
+  border-bottom: 1px solid $menuBordaBranca;
+  @include display-flexDirection(flex, row);
+  @include alignItens-justifyContent(center, space-between);
+  //---------------------------------------->
+  @include tablet {
+    @include height-width(120px, 100%);
+  }
+
+  &__containerButtons {
     @include alignItens-justifyContent(center, space-between);
-    &:nth-child(2) {
-        justify-content: flex-end;
+    @include display-flexDirection(flex, row);
+    width: 40%;
+    //---------------------------------------->
+    @include tablet {
+        width: 25%;
     }
-    
+  }
 
-    &__img {
-        width: 30%;
+  &__img {
+    width: 30%;
+    //---------------------------------------->
+    @include tablet {
+      width: 22.5%;
+    }
+  }
+
+  &__nav {
+    @include display-flexDirection(flex, column);
+
+    &___itens {
+      padding: 0;
+      list-style: none;
     }
 
-    &__nav {
-        @include display-flexDirection(flex, column);
-
-        &___itens {
-            padding: 0;
-            list-style: none;
-        }
-
-        &___item {
-            margin: 2px 0;
-            cursor: pointer;
-        }
-
-        &___item:hover {
-            font-weight: 800;
-        }
+    &___item {
+      margin: 2px 0;
+      cursor: pointer;
     }
+
+    &___item:hover {
+      font-weight: 800;
+    }
+  }
 }
 //background adicionado qdo a rolagem acontece
 .stickyMenu {
-    background-color: $cinza;
-    box-shadow: $box-shadow-24;
-    transition: $transition;
+  background-color: $cinza;
+  border-bottom: none;
+  box-shadow: $box-shadow-24;
+  transition: $transition;
 }
 
 .btnCloseMobile {
-    @include color-fontSize($cinza, 3rem);
-    @include height-width(50px, 25%);
-    background-color: transparent;
-    padding: 0;
-    margin: 5% 0;
-    border: none;
-    text-align: left;
+  @include color-fontSize($cinza, 3rem);
+  @include height-width(50px, 25%);
+  background-color: transparent;
+  padding: 0;
+  margin: 5% 0;
+  border: none;
+  text-align: left;
+  transition: $transition;
+
+  &:hover {
+    color: #000;
     transition: $transition;
-    
-    &:hover{
-        color: #000;
-        transition: $transition;
-    }
+  }
 }
 
 .hamburguerIcon {
-    @include alignItens-justifyContent(center, center);
-    @include display-flexDirection(flex, column);
-    @include height-width(35px, fit-content);
-    cursor: pointer;
+  @include alignItens-justifyContent(center, center);
+  @include display-flexDirection(flex, column);
+  @include height-width(35px, fit-content);
+  cursor: pointer;
 }
 
 .hamburguer {
-    @include height-width(4px, 40px);
-    right: 10%;
-    background-color: $branco;
-    border-radius: 4px;
-    margin: 3px 0;
-    transition: $transition;
+  @include height-width(4px, 40px);
+  right: 10%;
+  background-color: $branco;
+  border-radius: 4px;
+  margin: 3px 0;
+  transition: $transition;
 }
 
 .menuOpen {
-    @include height-width(100vh, 300px);
-    background: $branco;
-    box-shadow: -10px 0px 8px rgba(0,0,0,8%);
-    padding: 5%;
-    position: absolute;
-    right: 0px;
-    top: 0;
-    transform: translateX(0%);
-    transition: $transition;
+  @include height-width(100vh, 300px);
+  background: $branco;
+  box-shadow: -10px 0px 8px rgba(0, 0, 0, 8%);
+  padding: 5%;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  transform: translateX(0%);
+  transition: $transition;
 }
 
 .menuClose {
-    @include height-width(100vh, 300px);
-    position: absolute;
-    right: 0px;
-    top: 0;
-    transform: translateX(100%);
-    transition: $transition;
+  @include height-width(100vh, 300px);
+  position: absolute;
+  right: 0px;
+  top: 0;
+  transform: translateX(100%);
+  transition: $transition;
 }
 
 .languageButton {
-    justify-self: flex-end;
-    background-color: transparent;
-    border: 1px solid rgba(255,255,255,8%);
-    border-radius: 4px;
-    padding: 8px;
-    color: $corBotaoHamburguer;
-    transition: $transition;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 8%);
+  border-radius: 4px;
+  padding: 8px;
+  color: $corBotaoHamburguer;
+  transition: $transition;
 
-    &:hover {
-        background-color: $azul-secundario;
-        color: $branco;
-        transform: translateY(-5px);
-        transition: $transition;
-    }
+  &:hover {
+    background-color: $azul-secundario;
+    color: $branco;
+    transform: translateY(-5px);
+    transition: $transition;
+  }
 }

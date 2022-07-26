@@ -64,7 +64,7 @@
     { "content" : "Para solicitar um orçamento, entre em contato conosco por telefone ou e-mail e forneceremos serviços experientes, profissionais e confiáveis." },
     { "callToAction" : "Contate-nos" },
     { "content" : "Seu parceiro para materiais estratégicos: Óxidos, Metais, Ferro Ligas e Catalisadores" },
-    { "form" : "Formulario" },
+    { "form" : "Formulário" },
     { "label" : "Nome", "placeHolder": "Nome completo.." },
     { "label" : "Email", "placeHolder": "nome@dominio.com" },
     { "label" : "Assunto", "placeHolder": "Cotação de valores.." },

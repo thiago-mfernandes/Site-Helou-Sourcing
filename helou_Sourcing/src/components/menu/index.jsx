@@ -36,19 +36,19 @@ function Menu({ language, setLanguage }) {
           alt="Logotipo da empresa"
         />
 
-        <button className={styles.languageButton}
-          onClick={() => setLanguage(!language)}>
-          {language ? 'English' : 'Português'}
-        </button>
-
-        {/* */}
-        <div
-          className={styles.hamburguerIcon}
-          onClick={() => setMenuState(!menuState)}
-        >
-          <div className={styles.hamburguer} />
-          <div className={styles.hamburguer} />
-          <div className={styles.hamburguer} />
+        <div className={styles.header__containerButtons}>
+          <button className={styles.languageButton}
+            onClick={() => setLanguage(!language)}>
+            {language ? 'English' : 'Português'}
+          </button>
+          <div
+            className={styles.hamburguerIcon}
+            onClick={() => setMenuState(!menuState)}
+          >
+            <div className={styles.hamburguer} />
+            <div className={styles.hamburguer} />
+            <div className={styles.hamburguer} />
+          </div>
         </div>
 
         <nav className={
