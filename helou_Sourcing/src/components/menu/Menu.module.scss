@@ -15,6 +15,10 @@
   @include tablet {
     @include height-width(120px, 100%);
   }
+  //---------------------------------------->
+  @include desktop {
+    //position: none;
+  }
 
   &__containerButtons {
     @include alignItens-justifyContent(center, space-between);
@@ -24,6 +28,11 @@
     @include tablet {
         width: 25%;
     }
+    //---------------------------------------->
+    @include desktop {
+      width: 10%;
+      z-index: 10;
+  }
   }
 
   &__img {
@@ -31,6 +40,10 @@
     //---------------------------------------->
     @include tablet {
       width: 22.5%;
+    }
+    //---------------------------------------->
+    @include desktop {
+      width: 10%;
     }
   }
 
@@ -41,6 +54,12 @@
       padding: 0;
       list-style: none;
       text-decoration: none;
+      //------------------------------------------->
+      @include desktop {
+        @include display-flexDirection(flex, row);
+        @include alignItens-justifyContent(center, space-between);
+        width: 80%;
+    }
     }
 
     &___itemLi {
@@ -55,6 +74,11 @@
     &___itemAnchor {
       text-decoration: none;
       color: $cinza;
+      //----------------------------->
+      @include desktop {
+        color: $branco;
+        opacity: 0.8;
+      }
     }
   }
 }
@@ -80,6 +104,10 @@
     color: #000;
     transition: $transition;
   }
+  //------------------------------------>
+  @include desktop {
+    display: none;
+  }
 }
 
 .hamburguerIcon {
@@ -88,6 +116,10 @@
   @include height-width(35px, fit-content);
   cursor: pointer;
   margin-left: 2.5%;
+  //---------------------------------------------------->
+  @include desktop {
+    display: none;
+  }
 }
 
 .hamburguer {
@@ -118,6 +150,15 @@
   top: 0;
   transform: translateX(100%);
   transition: $transition;
+  //----------------------------------------------->
+  @include desktop {
+    @include height-width(80px, 75%);
+    @include alignItens-justifyContent(flex-start, flex-end);
+    position: none;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(0%);
+  }
 }
 
 .languageButton {

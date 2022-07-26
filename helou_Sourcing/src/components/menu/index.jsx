@@ -9,6 +9,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 function Menu({ language, setLanguage }) {
   const [menuState, setMenuState] = useState(false);
   const [fixedMenu, setFixedMenu] = useState(false);
+  const width = window.innerWidth;
 
   function scrollPosition(){
     if(scrollY > 50) {
@@ -53,7 +54,7 @@ function Menu({ language, setLanguage }) {
         </div>
 
         <nav className={
-          menuState 
+          width < 1000 && menuState 
             ? `${styles.header__nav} ${styles.menuOpen}`
             : `${styles.header__nav} ${styles.menuClose}`
         }>
@@ -61,6 +62,8 @@ function Menu({ language, setLanguage }) {
             className={styles.btnCloseMobile}
             onClick={() => setMenuState(false)}
           >x</button>
+
+          {/* o menu foi declarado sem uso de map para o AnchorLink funcionar */}
           <ul className={styles.header__nav___itens}>
             <li className={styles.header__nav___itemLi}>
               <AnchorLink 
