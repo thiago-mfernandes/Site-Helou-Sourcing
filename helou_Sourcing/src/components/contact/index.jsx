@@ -1,10 +1,9 @@
 import styles from './Contact.module.scss';
 import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
-import { HandleLanguage } from 'services/HandleLanguage';
 
 export default function Contact() {
-  const {language} = useContext(LanguageContext);
+  const{language, HandleLanguage} = useContext(LanguageContext);
   let idiom = HandleLanguage(language);
 
   return (

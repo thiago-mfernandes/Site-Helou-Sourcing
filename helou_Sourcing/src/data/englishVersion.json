@@ -61,7 +61,7 @@
     },
        
     "products": [
-      { "title": "Abaixo estão os metais e loigas de ferro que comercializamos:"},
+      { "title": "Below are metals and ferro-alloys we trade:"},
       { "url": "", "product": "Ferro Silicon", "label": "Si > 70 / 75% C < 0,1 / 0,2% Al < 0,5 / 1,5 / 2,0%"},
       { "url": "", "product": "Zinc", "label": "Si > 70 / 75% C < 0,1 / 0,2% Al < 0,5 / 1,5 / 2,0%"},
       { "url": "", "product": "Manganese", "label": "Si > 70 / 75% C < 0,1 / 0,2% Al < 0,5 / 1,5 / 2,0%"},

@@ -3,18 +3,15 @@ import styles from './Menu.module.scss';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { useContext, useState } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
-import { HandleLanguage } from 'services/HandleLanguage';
 
 export default function Menu() {
   
-  const {language, setLanguage} = useContext(LanguageContext);
-
+  const {language, setLanguage, HandleLanguage} = useContext(LanguageContext);
   const [menuState, setMenuState] = useState(false);  
   const [fixedMenu, setFixedMenu] = useState(false);
   const width = window.innerWidth;
   
   let idiom = HandleLanguage(language);
-  console.log(idiom.nav.label1);
 
   function scrollPosition(){
     if(scrollY > 50) {

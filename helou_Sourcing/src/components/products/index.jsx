@@ -2,7 +2,6 @@ import styles from './Products.module.scss';
 import ferroSilicio from 'assets/ferro-silicio.png';
 import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
-import { HandleLanguage } from 'services/HandleLanguage';
 
 //1. criar um estado para decidir se vai usar portugues ou ingles
 //2. passar o estado para o componente (o estado esta acima do componente)
@@ -11,7 +10,7 @@ import { HandleLanguage } from 'services/HandleLanguage';
 
 export default function Products() {
 
-  const {language} = useContext(LanguageContext);
+  const{language, HandleLanguage} = useContext(LanguageContext);
   let idiom = HandleLanguage(language);
 
   return (

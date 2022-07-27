@@ -2,11 +2,10 @@ import { motion } from 'framer-motion';
 import styles from './Header.module.scss';
 import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
-import { HandleLanguage } from 'services/HandleLanguage';
 
 export default function Header() {
 
-  const {language} = useContext(LanguageContext);
+  const{language, HandleLanguage} = useContext(LanguageContext);
   let idiom = HandleLanguage(language);
 
   return (

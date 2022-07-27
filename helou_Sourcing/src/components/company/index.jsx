@@ -2,10 +2,9 @@ import styles from './Company.module.scss';
 import OurCompany from 'assets/company.jpg';
 import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
-import { HandleLanguage } from 'services/HandleLanguage';
 
 export default function Company() {
-  const{language} = useContext(LanguageContext);
+  const{language, HandleLanguage} = useContext(LanguageContext);
   let idiom = HandleLanguage(language);
 
   return (
