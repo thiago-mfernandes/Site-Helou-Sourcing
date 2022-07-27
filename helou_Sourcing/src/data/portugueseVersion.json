@@ -58,7 +58,11 @@
     { "content": "Nós da Helou Sourcing, acreditamos que para fazer diferente é preciso paixão. Sabemos que não somos perfeitos, mas nós nos esforçamos para fazer a nossa parte. Venha conhecer mais sobre nosso trabalho e como estamos fazendo a diferença." }
   ],
   "products": [
-
+    { "title": "Abaixo estão os metais e loigas de ferro que comercializamos:"},
+    { "url": "", "product": "Ferro Silício", "label": "Si > 70 / 75% C < 0,1 / 0,2% Al < 0,5 / 1,5 / 2,0%"},
+    { "url": "", "product": "Zinco", "label": "Si > 70 / 75% C < 0,1 / 0,2% Al < 0,5 / 1,5 / 2,0%"},
+    { "url": "", "product": "Manganes", "label": "Si > 70 / 75% C < 0,1 / 0,2% Al < 0,5 / 1,5 / 2,0%"},
+    { "url": "", "product": "Cobre", "label": "Si > 70 / 75% C < 0,1 / 0,2% Al < 0,5 / 1,5 / 2,0%"}
   ],
   "contact": [
     { "content" : "Para solicitar um orçamento, entre em contato conosco por telefone ou e-mail e forneceremos serviços experientes, profissionais e confiáveis." },

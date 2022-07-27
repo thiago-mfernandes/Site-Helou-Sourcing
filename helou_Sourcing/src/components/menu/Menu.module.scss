@@ -16,6 +16,11 @@
     @include height-width(120px, 100%);
   }
 
+  //---------------------------------------->
+  @include desktop {
+    @include height-width(80px, 100%);
+  }
+
   &__containerButtons {
     @include alignItens-justifyContent(center, space-between);
     @include display-flexDirection(flex, row);
@@ -148,7 +153,7 @@
   transition: $transition;
   //----------------------------------------------->
   @include desktop {
-    @include height-width(80px, 75%);
+    @include height-width(70px, 75%);
     @include alignItens-justifyContent(flex-start, flex-end);
     position: none;
     display: flex;

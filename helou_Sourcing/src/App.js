@@ -11,6 +11,8 @@ import { AnimateSharedLayout }  from  'framer-motion';
 
 export default function App() {
   
+  //true: portugues; 
+  //false: ingles;
   let [language, setLanguage] = useState(true);
 
   return (
@@ -20,8 +22,8 @@ export default function App() {
         <Header language={language}/>
         <Company language={language}/>
         <WhatWeDo language={language}/>
-        <WhyUs language={language} />
-        <Products />
+        <WhyUs language={language}/>
+        <Products language={language}/>
         <Contact language={language}/>
         <Footer />
       </main>

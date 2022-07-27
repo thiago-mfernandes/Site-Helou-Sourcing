@@ -121,7 +121,7 @@
         }
         //-------------------------------------->
         @include desktop {
-          min-height: 150px;
+          max-height: 140px;
           &:hover {
             box-shadow: $box-shadow-8;
             transition: $transition;

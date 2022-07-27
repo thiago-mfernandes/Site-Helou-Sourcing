@@ -46,7 +46,11 @@
     { "content": "We at Helou Sourcing, believe that to do different, it takes passion. We know that we are not perfect, but we strive to do our part. Come and learn more about our work and how we are making a difference." }
   ],
   "products": [
-
+    { "title": "Below are metals and ferro-alloys we trade:"},
+    { "url": "", "product": "Ferro Silicon", "label": "Si > 70 / 75% C < 0,1 / 0,2% Al < 0,5 / 1,5 / 2,0%"},
+    { "url": "", "product": "Zinc", "label": "Si > 70 / 75% C < 0,1 / 0,2% Al < 0,5 / 1,5 / 2,0%"},
+    { "url": "", "product": "Manganese", "label": "Si > 70 / 75% C < 0,1 / 0,2% Al < 0,5 / 1,5 / 2,0%"},
+    { "url": "", "product": "Copper", "label": "Si > 70 / 75% C < 0,1 / 0,2% Al < 0,5 / 1,5 / 2,0%"}
   ],
   "contact": [
     { "content" : "To request a quotation please contact us by phone or e-mail and we will provide you with experienced, professional and reliable services." },

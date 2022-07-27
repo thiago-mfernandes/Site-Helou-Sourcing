@@ -7,7 +7,7 @@ import { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 function Menu({ language, setLanguage }) {
-  const [menuState, setMenuState] = useState(false);
+  const [menuState, setMenuState] = useState(false);  
   const [fixedMenu, setFixedMenu] = useState(false);
   const width = window.innerWidth;
 

@@ -21,6 +21,14 @@
             gap: 5%;
           }
         }
+        //---------------------------------------------------->
+        @include desktop {
+          &:nth-child(2) {
+            @include display-flexDirection(flex, row);
+            @include alignItens-justifyContent(center, space-between);
+            flex-wrap: wrap;
+          }
+        }
 
       &____title {
         @extend .title;
@@ -47,6 +55,7 @@
       //--------------------------->
       @include desktop {
         width: 22.5%;
+        margin-bottom: 2.5%;
       }
 
       &____img {
