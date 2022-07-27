@@ -19,7 +19,7 @@ export default function Header() {
             transition={{ delay: 0.6, duration: 2 }}
             className={styles.headerTitle}
           >
-            {idiom.header[0].title}
+            {idiom.header.title}
           </motion.div>
           <motion.div 
             initial={{ opacity:0, y:-40 }}
@@ -27,7 +27,7 @@ export default function Header() {
             transition={{ delay: 1.8, duration: 2 }}
             className={styles.contentHeader}
           >
-            {idiom.header[1].subTitle}
+            {idiom.header.subTitle}
           </motion.div>
         </div>
       </div>

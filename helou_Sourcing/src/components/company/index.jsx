@@ -14,21 +14,21 @@ export default function Company() {
         <img src={OurCompany} className={styles.company__container___img}/>
         <div className={styles.company__container___descriptionBox}>
           <span>
-            {idiom.companyComponent[0].whoWeAre}
+            {idiom.companyComponent.whoWeAre}
           </span>
-          <h2 className={styles.company__container___descriptionBox____title}>         {idiom.companyComponent[1].title}
+          <h2 className={styles.company__container___descriptionBox____title}>         {idiom.companyComponent.title}
           </h2>
           <p className={styles.company__container___descriptionBox____content}>
-            {idiom.companyComponent[2].content}
+            {idiom.companyComponent.content1}
           </p>
           <p className={styles.company__container___descriptionBox____content}>
-            {idiom.companyComponent[3].content}
+            {idiom.companyComponent.content2}
           </p>
           <p className={styles.company__container___descriptionBox____content}>
-            {idiom.companyComponent[4].content}
+            {idiom.companyComponent.content3}
           </p>
           <p className={styles.company__container___descriptionBox____content}>
-            {idiom.companyComponent[5].content}
+            {idiom.companyComponent.content4}
           </p>
         </div>
       </div>

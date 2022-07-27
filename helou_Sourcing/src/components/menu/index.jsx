@@ -7,12 +7,14 @@ import { HandleLanguage } from 'services/HandleLanguage';
 
 export default function Menu() {
   
-
   const {language, setLanguage} = useContext(LanguageContext);
+
   const [menuState, setMenuState] = useState(false);  
   const [fixedMenu, setFixedMenu] = useState(false);
   const width = window.innerWidth;
+  
   let idiom = HandleLanguage(language);
+  console.log(idiom.nav.label1);
 
   function scrollPosition(){
     if(scrollY > 50) {
@@ -73,7 +75,7 @@ export default function Menu() {
                 offset={width < 992 ? '100' : '0'}
                 onClick={() => setMenuState(false)}
               >
-                {idiom.nav[0].label}
+                {idiom.nav.label1}
               </AnchorLink>
             </li>
 
@@ -84,7 +86,7 @@ export default function Menu() {
                 offset={width < 992 ? '90' : '0'}
                 onClick={() => setMenuState(false)}
               >
-                {idiom.nav[1].label}
+                {idiom.nav.label2}
               </AnchorLink>
             </li>
 
@@ -95,7 +97,7 @@ export default function Menu() {
                 offset={width < 992 ? '90' : '0'}
                 onClick={() => setMenuState(false)}
               >
-                {idiom.nav[2].label}
+                {idiom.nav.label3}
               </AnchorLink>
             </li>
 
@@ -106,7 +108,7 @@ export default function Menu() {
                 offset={width < 992 ? '90' : '0'}
                 onClick={() => setMenuState(false)}
               >
-                {idiom.nav[3].label}
+                {idiom.nav.label4}
               </AnchorLink>
             </li>
 
@@ -117,7 +119,7 @@ export default function Menu() {
                 offset={width < 992 ? '90' : '0'}
                 onClick={() => setMenuState(false)}
               >
-                {idiom.nav[4].label}
+                {idiom.nav.label5}
               </AnchorLink>
             </li>
 
@@ -125,10 +127,10 @@ export default function Menu() {
               <AnchorLink 
                 className={styles.header__nav___itemAnchor} 
                 href='#contact'
-                //offset={width < 992 ? '90' : '0'}
+                offset={width < 992 ? '90' : '0'}
                 onClick={() => setMenuState(false)}
               >
-                {idiom.nav[5].label}
+                {idiom.nav.label5}
               </AnchorLink>
             </li>
           </ul>

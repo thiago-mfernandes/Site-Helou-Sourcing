@@ -1,62 +1,65 @@
 {
-  "nav": [
-    { "label": "Home" },
-    { "label": "Companhia" },
-    { "label": "O Que Fazemos?" },
-    { "label": "Porque a Helou Sourcing" },
-    { "label": "Produtos" },
-    { "label": "Contato" }
-  ],
-  "header": [
-    { "title": "Metais Ferros Catalisadores" },
-    { "subTitle": "Qualidade, Confiabilidade e Sustentabilidade" }
-  ],
-  "companyComponent": [
-    { "whoWeAre": "Quem é a Helou Sourcing?" },
-    { "title": "Companhia" },
-    {
-      "content": "Somos uma corretora comercial, com sede em São Paulo, Brasil trabalhando diligentemente no fornecimento de commodities específicas ou na busca de um mercado para seus produtos, onde estendemos nossa experiência de 30 anos para fornecer as soluções necessárias por meio de nossa rede global."
+  "nav": 
+    { 
+      "label1": "Home", 
+      "label2": "Companhia", 
+      "label3": "O Que Fazemos?", 
+      "label4": "Porque a Helou Sourcing", 
+      "label5": "Produtos", 
+      "label6": "Contato" 
     },
-    {
-      "content": "Nossa principal prioridade é estabelecer e manter um relacionamento comercial positivo e de longo prazo com nossos clientes e fornecedores."
+
+  "header": 
+    { 
+      "title": "Metais - Ferros - Catalisadores",
+      "subTitle": "Qualidade, Confiabilidade e Sustentabilidade"
+    },  
+
+  "companyComponent":
+    { 
+      "whoWeAre": "Quem é a Helou Sourcing?",
+      "title": "Companhia",
+      "content1": "Somos uma corretora comercial, com sede em São Paulo, Brasil trabalhando diligentemente no fornecimento de commodities específicas ou na busca de um mercado para seus produtos, onde estendemos nossa experiência de 30 anos para fornecer as soluções necessárias por meio de nossa rede global.",
+      "content2": "Nossa principal prioridade é estabelecer e manter um relacionamento comercial positivo e de longo prazo com nossos clientes e fornecedores.",
+      "content3": "A Helou Sourcing firmou parceria de sucesso com fabricantes renomados e conceituados em todo o mundo, garantindo aos nossos clientes nossa capacidade de fornecer produtos de alta qualidade a preços competitivos, respaldados pelo suporte técnico e metalúrgico necessário.",
+      "content4": "Ao mesmo tempo, estamos comprometidos com nossos fornecedores em fornecer a eles um suporte consistente de mercado."
     },
-    {
-      "content": "A Helou Sourcing firmou parceria de sucesso com fabricantes renomados e conceituados em todo o mundo, garantindo aos nossos clientes nossa capacidade de fornecer produtos de alta qualidade a preços competitivos, respaldados pelo suporte técnico e metalúrgico necessário."
-    },
-    {
-      "content": "Ao mesmo tempo, estamos comprometidos com nossos fornecedores em fornecer a eles um suporte consistente de mercado."
-    }
-  ],
-  "whatWeDoComponent": [
-    { "titleSection1": "O que Fazemos?" },
-    { "label": " Trabalhamos com todos os tipos de metais e ligas de ferro;" },
-    { "label": " Também operamos com sucata metálica em diversas variedades;" },
-    {
-      "label": " E temos a disposição de nossos clientes catalisadores e resíduos."
-    },
-    { "titleSection2": "Negociamos em:" },
-    { "span": "Cobalto", "paragraph": "(Minério/Conc, CoOH, CoSO4)" },
-    { "span": "Manganês", "paragraph": "(Minério, Conc, MnSO4)" },
-    { "span": "Zinco", "paragraph": "(Minério/Conc, ZnSO4, ZnO)" },
-    { "span": "Cobre", "paragraph": "(Minério/Conc, CuSO4, CuO)" },
-    { "span": "Molibdênio", "paragraph": "(MoO3 > 57%)" },
-    { "titleSection3": "Metais Não Ferrosos" },
-    {
+    
+  "whatWeDoComponent": 
+    { 
+      "titleSection1": "O que Fazemos?",
+      "label1": " Trabalhamos com todos os tipos de metais e ligas de ferro;",
+      "label2": " Também operamos com sucata metálica em diversas variedades;",
+      "label3": " E temos a disposição de nossos clientes catalisadores e resíduos.",
+      "titleSection2": "Negociamos em:",
+      "span1": "Cobalto", 
+      "paragraph1": "(Minério/Conc, CoOH, CoSO4)",
+      "span2": "Manganês", 
+      "paragraph2": "(Minério, Conc, MnSO4)",
+      "span3": "Zinco", 
+      "paragraph3": "(Minério/Conc, ZnSO4, ZnO)", 
+      "span4": "Cobre", 
+      "paragraph4": "(Minério/Conc, CuSO4, CuO)",
+      "span5": "Molibdênio", 
+      "paragraph5": "(MoO3 > 57%)",
+      "titleSection3": "Metais Não Ferrosos",
       "content": "Todos os tipos e formas de produtos intermediários contendo metais não ferrosos: (V, Ni, Co, W, Mo, Cu, Pb, Sn, etc…) nas formas de FINO, ÓXIDOS, LAMAS, METÁLICOS, CATALISADORES GASTO, etc…"
-    }
-  ],
+    },      
+    
   "metalFormsImg": [
     { "url": "assets/cobre.jpg", "label": "Cobre" },
     { "url": "assets/nickel.jpg", "label": "Nickel" },
     { "url": "assets/zinco.jpg", "label": "Zinco" },
     { "url": "assets/nr5.jpg", "label": "nr5" }
   ],
-  "whyUs": [
-    { "title": "Porque a Helou Sourcing?" },
-    { "content": " Somos especializados no comércio internacional de metais e na gestão de resíduos industriais. Acreditamos que nossas ações operacionais de reciclagem de resíduos nos permitem não apenas economizar recursos minerais naturais, mas principalmente proteger o meio ambiente do uso incorreto e do descarte e disposição inadequada dos referidos resíduos." },
-    { "forAltImg": "Sustentabilidade" },
-    { "content": "Nós da Helou Sourcing, acreditamos que para fazer diferente é preciso paixão. Sabemos que não somos perfeitos, mas nós nos esforçamos para fazer a nossa parte. Venha conhecer mais sobre nosso trabalho e como estamos fazendo a diferença." }
-  ],
+
+  "whyUs": { 
+    "title": "Porque a Helou Sourcing?",
+    "content1": " Somos especializados no comércio internacional de metais e na gestão de resíduos industriais. Acreditamos que nossas ações operacionais de reciclagem de resíduos nos permitem não apenas economizar recursos minerais naturais, mas principalmente proteger o meio ambiente do uso incorreto e do descarte e disposição inadequada dos referidos resíduos." ,
+    "forAltImg": "Sustentabilidade",
+    "content2": "Nós da Helou Sourcing, acreditamos que para fazer diferente é preciso paixão. Sabemos que não somos perfeitos, mas nós nos esforçamos para fazer a nossa parte. Venha conhecer mais sobre nosso trabalho e como estamos fazendo a diferença." 
+  },
+     
   "products": [
     { "title": "Abaixo estão os metais e loigas de ferro que comercializamos:"},
     { "url": "", "product": "Ferro Silício", "label": "Si > 70 / 75% C < 0,1 / 0,2% Al < 0,5 / 1,5 / 2,0%"},
@@ -64,18 +67,26 @@
     { "url": "", "product": "Manganes", "label": "Si > 70 / 75% C < 0,1 / 0,2% Al < 0,5 / 1,5 / 2,0%"},
     { "url": "", "product": "Cobre", "label": "Si > 70 / 75% C < 0,1 / 0,2% Al < 0,5 / 1,5 / 2,0%"}
   ],
-  "contact": [
-    { "content" : "Para solicitar um orçamento, entre em contato conosco por telefone ou e-mail e forneceremos serviços experientes, profissionais e confiáveis." },
-    { "callToAction" : "Contate-nos" },
-    { "content" : "Seu parceiro para materiais estratégicos: Óxidos, Metais, Ferro Ligas e Catalisadores" },
-    { "form" : "Formulário" },
-    { "label" : "Nome", "placeHolder": "Nome completo.." },
-    { "label" : "Email", "placeHolder": "nome@dominio.com" },
-    { "label" : "Assunto", "placeHolder": "Cotação de valores.." },
-    { "label" : "Mensagem", "placeHolder": "Descreva suas dúvidas.." },
-    { "btn" : "", "value": "Enviar Mensagem" },
-    { "addressTitle": "Endereço", "addressContent": "Rua sem nome, 123"},
-    { "addressTitle": "Telefone", "addressContent": "+ 123 456 789"},
-    { "addressTitle": "Email", "addressContent": "hello@sourcing.com"}
-  ]
+  "contact": { 
+    "content1" : "Para solicitar um orçamento, entre em contato conosco por telefone ou e-mail e forneceremos serviços experientes, profissionais e confiáveis.",
+    "callToAction" : "Contate-nos",
+    "content2" : "Seu parceiro parmateriais estratégicos: Óxidos, Metais, Ferro Ligas e Catalisadores", 
+    "form" : "Formulário",
+    "labelName" : "Nome", 
+    "placeHolderName": "Nome completo..", 
+    "labelEmail" : "Email", 
+    "placeHolderEmail": "nome@dominio.com", 
+    "labelSubject" : "Assunto", 
+    "placeHolderSubject": "Cotação de valores..", 
+    "labelMessage" : "Mensagem", 
+    "placeHolderMEssage": "Descreva suas dúvidas..", 
+    "btn" : "", 
+    "btnValue": "Enviar Mensagem", 
+    "addressTitle": "Endereço", 
+    "addressContent": "Rua sem nome, 123",
+    "addressTel": "Telefone", 
+    "addressContentTel": "+ 123 456 789",
+    "addressEmail": "Email", 
+    "addressContentEmail": "hello@sourcing.com"
+  }     
 }

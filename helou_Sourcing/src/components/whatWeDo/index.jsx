@@ -14,25 +14,25 @@ export default function whatWeDo() {
         <section className={styles.whatWeDo__container___faq}>
           <div className={styles.whatWeDo__container___faq____boxTitle}>
             <h2 className={styles.whatWeDo__container___faq____title}>
-              {idiom.whatWeDoComponent[0].titleSection1}
+              {idiom.whatWeDoComponent.titleSection1}
             </h2>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <h2 className={styles.whatWeDo__container___faq____weDo}>
               <span>01.</span>
-              {idiom.whatWeDoComponent[1].label}
+              {idiom.whatWeDoComponent.label1}
             </h2>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <h2 className={styles.whatWeDo__container___faq____weDo}>
               <span>02.</span>
-              {idiom.whatWeDoComponent[2].label}
+              {idiom.whatWeDoComponent.label2}
             </h2>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <h2 className={styles.whatWeDo__container___faq____weDo}>
               <span>03.</span>
-              {idiom.whatWeDoComponent[3].label}
+              {idiom.whatWeDoComponent.label3}
             </h2>
           </div>
         </section>
@@ -40,37 +40,37 @@ export default function whatWeDo() {
         <section className={styles.whatWeDo__container___faq}>
           <div className={styles.whatWeDo__container___faq____boxTitle}>
             <h2 className={styles.whatWeDo__container___faq____title}>
-              {idiom.whatWeDoComponent[4].titleSection2}
+              {idiom.whatWeDoComponent.titleSection2}
             </h2>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <p>
-              <span>{idiom.whatWeDoComponent[5].span}</span>
-              {idiom.whatWeDoComponent[5].paragraph}
+              <span>{idiom.whatWeDoComponent.span1}</span>
+              {idiom.whatWeDoComponent.paragraph1}
             </p>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <p>
-              <span>{idiom.whatWeDoComponent[6].span}</span>
-              {idiom.whatWeDoComponent[6].paragraph}
+              <span>{idiom.whatWeDoComponent.span2}</span>
+              {idiom.whatWeDoComponent.paragraph2}
             </p>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <p>
-              <span>{idiom.whatWeDoComponent[7].span}</span>
-              {idiom.whatWeDoComponent[7].paragraph}
+              <span>{idiom.whatWeDoComponent.span3}</span>
+              {idiom.whatWeDoComponent.paragraph3}
             </p>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <p>
-              <span>{idiom.whatWeDoComponent[8].span}</span>
-              {idiom.whatWeDoComponent[8].paragraph}
+              <span>{idiom.whatWeDoComponent.span4}</span>
+              {idiom.whatWeDoComponent.paragraph4}
             </p>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <p>
-              <span>{idiom.whatWeDoComponent[9].span}</span>
-              {idiom.whatWeDoComponent[9].paragraph}
+              <span>{idiom.whatWeDoComponent.span5}</span>
+              {idiom.whatWeDoComponent.paragraph5}
             </p>
           </div>
         </section>
@@ -78,12 +78,12 @@ export default function whatWeDo() {
         <section className={styles.whatWeDo__container___faq}>
           <div className={styles.whatWeDo__container___faq____boxTitle}>
             <h2 className={styles.whatWeDo__container___faq____title}>
-              {idiom.whatWeDoComponent[10].titleSection3}
+              {idiom.whatWeDoComponent.titleSection3}
             </h2>
           </div>
           <div className={styles.whatWeDo__container___faq____boxTitle} name="border-none" >
             <p className={styles.whatWeDo__container___faq____content}>
-              {idiom.whatWeDoComponent[11].content}
+              {idiom.whatWeDoComponent.content}
             </p>
           </div>
           {

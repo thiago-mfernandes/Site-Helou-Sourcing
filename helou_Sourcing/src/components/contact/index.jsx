@@ -12,97 +12,97 @@ export default function Contact() {
       <div className={styles.contact__container}>
         <div className={styles.contact__container___box}>
           <p className={styles.contact__container___box____content}>
-            {idiom.contact[0].content}
+            {idiom.contact.content1}
           </p>
           <h3 className={styles.contact__container___box____subTitle}>
-            {idiom.contact[1].callToAction}
+            {idiom.contact.callToAction}
           </h3>
           <p className={styles.contact__container___box____content}>
-            {idiom.contact[2].content}
+            {idiom.contact.content2}
           </p>
         </div>
 
         <div className={styles.contact__container___box}>
           <form className={styles.contact__container___box____boxContent} action="" name="form">
             <h2 className={styles.contact__container___box____subTitle}>
-              {idiom.contact[3].form}
+              {idiom.contact.form}
             </h2>
             <div className={styles.contact__container___box} name="name">
               <label htmlFor="name">
-                {idiom.contact[4].label}
+                {idiom.contact.labelName}
               </label>
               <input 
                 className={styles.contact__container___box____input} 
                 type="text" 
                 name="name" 
                 required 
-                placeholder={idiom.contact[4].placeHolder}
+                placeholder={idiom.contact.placeHolderName}
               />
             </div>
 
             <div>
               <label htmlFor="email">
-                {idiom.contact[5].label}
+                {idiom.contact.labelEmail}
               </label>
               <input 
                 className={styles.contact__container___box____input} 
                 type="email" 
                 name="email" 
                 required 
-                placeholder={idiom.contact[5].placeHolder}
+                placeholder={idiom.contact.placeHolderEmail}
               />
             </div>
             <div>
               <label htmlFor="subject">
-                {idiom.contact[6].label}
+                {idiom.contact.labelSubject}
               </label>
               <input 
                 className={styles.contact__container___box____input} 
                 type="text" 
                 name="subject" 
                 required 
-                placeholder={idiom.contact[6].placeHolder}
+                placeholder={idiom.contact.placeHolderSubject}
               />
             </div>
             <div>
               <label htmlFor="textArea">
-                {idiom.contact[7].label}
+                {idiom.contact.labelMessage}
               </label>
               <textarea 
                 className={styles.contact__container___box____textArea}
                 type="text" 
                 name="textArea" 
                 required 
-                placeholder={idiom.contact[7].placeHolder}/>
+                placeholder={idiom.contact.placeHolderMEssage}/>
             </div>
             <div>
 
               <input 
                 className={styles.contact__container___box____btnForm} 
                 type="submit" 
-                value={idiom.contact[8].value} 
+                value={idiom.contact.btnValue} 
               />
             </div>
           </form>
         </div>
         <div className={styles.contact__container___box____boxContent}>
           <p className={styles.contact__container___box____addressTitle}>
-            {idiom.contact[9].addressTitle}
+            {idiom.contact.addressTitle}
           </p>
           <p className={styles.contact__container___box____addressContent}>
-            {idiom.contact[9].addressContent}
+            {idiom.contact.addressContent}
           </p>
           <p className={styles.contact__container___box____addressTitle}>
-            {idiom.contact[10].addressTitle}
+            {idiom.contact.addressTel}
           </p>
           <p className={styles.contact__container___box____addressContent}>
-            {idiom.contact[10].addressContent}
+            {idiom.contact.addressContentTel}
           </p>
           <p className={styles.contact__container___box____addressTitle}>
-            {idiom.contact[11].addressTitle}
+            {idiom.contact.addressEmail}
           </p>
           <p className={styles.contact__container___box____addressContent}>
-            {idiom.contact[11].addressContent}
+            {idiom.contact.addressContentEmail}
           </p>
         </div>
       </div>

@@ -13,23 +13,23 @@ export default function whyUs() {
     <section className={styles.whyUs} id="whyUs">
       <div className={styles.whyUs__container}>
         <div className={styles.whyUs__container___box}>
-          <h2 className={styles.whyUs__container___title}>{idiom.whyUs[0].title}</h2>
+          <h2 className={styles.whyUs__container___title}>{idiom.whyUs.title}</h2>
         </div>
 
         <div className={styles.whyUs__container___box}>
           <p className={styles.whyUs__container___content}>
-            {idiom.whyUs[1].content}
+            {idiom.whyUs.content1}
           </p>
           <img 
             src={Sustainability} 
-            alt={idiom.whyUs[2].forAltImg} 
+            alt={idiom.whyUs.forAltImg} 
             className={styles.whyUs__container___img}
           />
         </div>
 
         <div  className={styles.whyUs__container___box}>
           <p className={styles.whyUs__container___content}>
-            {idiom.whyUs[3].content}
+            {idiom.whyUs.content2}
           </p>
         </div>
       </div>
