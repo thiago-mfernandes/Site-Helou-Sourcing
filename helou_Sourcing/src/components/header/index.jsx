@@ -1,15 +1,13 @@
 import { motion } from 'framer-motion';
 import styles from './Header.module.scss';
-import propTypes from 'prop-types';
-import portuguese from 'data/portugueseVersion.json';
-import english from 'data/englishVersion.json';
+import { useContext } from 'react';
+import { LanguageContext } from 'context/LanguageContext';
+import { HandleLanguage } from 'services/HandleLanguage';
 
-export default function Header({language}) {
+export default function Header() {
 
-  let handleLanguage = language ? portuguese : english;
-  //console.log(handleLanguage.header[0].title);
-  //console.log(portuguese);
-  //console.log(english);
+  const {language} = useContext(LanguageContext);
+  let idiom = HandleLanguage(language);
 
   return (
     <div className={styles.header} id="home">
@@ -21,7 +19,7 @@ export default function Header({language}) {
             transition={{ delay: 0.6, duration: 2 }}
             className={styles.headerTitle}
           >
-            {handleLanguage.header[0].title}
+            {idiom.header[0].title}
           </motion.div>
           <motion.div 
             initial={{ opacity:0, y:-40 }}
@@ -29,7 +27,7 @@ export default function Header({language}) {
             transition={{ delay: 1.8, duration: 2 }}
             className={styles.contentHeader}
           >
-            {handleLanguage.header[1].subTitle}
+            {idiom.header[1].subTitle}
           </motion.div>
         </div>
       </div>
@@ -37,6 +35,3 @@ export default function Header({language}) {
   );
 }
 
-Header.propTypes = {
-  language: propTypes.bool.isRequired,
-};

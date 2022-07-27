@@ -1,15 +1,18 @@
-import propTypes from 'prop-types';
 import Logo from 'assets/logo_helou.png';
-import portuguese from 'data/portugueseVersion.json';
-import english from 'data/englishVersion.json';
 import styles from './Menu.module.scss';
-import { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { useContext, useState } from 'react';
+import { LanguageContext } from 'context/LanguageContext';
+import { HandleLanguage } from 'services/HandleLanguage';
 
-function Menu({ language, setLanguage }) {
+export default function Menu() {
+  
+
+  const {language, setLanguage} = useContext(LanguageContext);
   const [menuState, setMenuState] = useState(false);  
   const [fixedMenu, setFixedMenu] = useState(false);
   const width = window.innerWidth;
+  let idiom = HandleLanguage(language);
 
   function scrollPosition(){
     if(scrollY > 50) {
@@ -18,10 +21,8 @@ function Menu({ language, setLanguage }) {
       setFixedMenu(false);
     }
   }
-
   window.addEventListener('scroll', scrollPosition);
 
-  let handleLanguage = language ? portuguese : english;
 
   return (
     <section>
@@ -72,7 +73,7 @@ function Menu({ language, setLanguage }) {
                 offset={width < 992 ? '100' : '0'}
                 onClick={() => setMenuState(false)}
               >
-                {handleLanguage.nav[0].label}
+                {idiom.nav[0].label}
               </AnchorLink>
             </li>
 
@@ -83,7 +84,7 @@ function Menu({ language, setLanguage }) {
                 offset={width < 992 ? '90' : '0'}
                 onClick={() => setMenuState(false)}
               >
-                {handleLanguage.nav[1].label}
+                {idiom.nav[1].label}
               </AnchorLink>
             </li>
 
@@ -94,7 +95,7 @@ function Menu({ language, setLanguage }) {
                 offset={width < 992 ? '90' : '0'}
                 onClick={() => setMenuState(false)}
               >
-                {handleLanguage.nav[2].label}
+                {idiom.nav[2].label}
               </AnchorLink>
             </li>
 
@@ -105,7 +106,7 @@ function Menu({ language, setLanguage }) {
                 offset={width < 992 ? '90' : '0'}
                 onClick={() => setMenuState(false)}
               >
-                {handleLanguage.nav[3].label}
+                {idiom.nav[3].label}
               </AnchorLink>
             </li>
 
@@ -116,7 +117,7 @@ function Menu({ language, setLanguage }) {
                 offset={width < 992 ? '90' : '0'}
                 onClick={() => setMenuState(false)}
               >
-                {handleLanguage.nav[4].label}
+                {idiom.nav[4].label}
               </AnchorLink>
             </li>
 
@@ -127,7 +128,7 @@ function Menu({ language, setLanguage }) {
                 //offset={width < 992 ? '90' : '0'}
                 onClick={() => setMenuState(false)}
               >
-                {handleLanguage.nav[5].label}
+                {idiom.nav[5].label}
               </AnchorLink>
             </li>
           </ul>
@@ -136,12 +137,3 @@ function Menu({ language, setLanguage }) {
     </section>
   );
 }
-
-Menu.propTypes = {
-  language: propTypes.bool.isRequired,
-  setLanguage: propTypes.func.isRequired,
-  //header: propTypes.any.isRequired,
-  //scrollToSection: propTypes.func.isRequired
-};
-
-export default Menu;

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Menu from 'components/menu';
 import Header from 'components/header';
 import Company from 'components/company';
@@ -8,25 +7,24 @@ import Products from 'components/products';
 import Contact from 'components/contact';
 import Footer from 'components/footer';
 import { AnimateSharedLayout }  from  'framer-motion';
+import { LanguageContextProvider } from 'context/LanguageContext';
 
 export default function App() {
-  
-  //true: portugues; 
-  //false: ingles;
-  let [language, setLanguage] = useState(true);
 
   return (
     <AnimateSharedLayout>
-      <main>
-        <Menu language={language} setLanguage={setLanguage}/>
-        <Header language={language}/>
-        <Company language={language}/>
-        <WhatWeDo language={language}/>
-        <WhyUs language={language}/>
-        <Products language={language}/>
-        <Contact language={language}/>
-        <Footer />
-      </main>
+      <LanguageContextProvider>
+        <main>
+          <Menu />
+          <Header />
+          <Company />
+          <WhatWeDo />
+          <WhyUs />
+          <Products />
+          <Contact />
+          <Footer />
+        </main>
+      </LanguageContextProvider>
     </AnimateSharedLayout>
   );
 }

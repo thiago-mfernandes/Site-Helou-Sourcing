@@ -1,11 +1,12 @@
-import propTypes from 'prop-types';
 import styles from './WhatWeDo.module.scss';
-import portuguese from 'data/portugueseVersion.json';
-import english from 'data/englishVersion.json';
+import { useContext } from 'react';
+import { LanguageContext } from 'context/LanguageContext';
+import { HandleLanguage } from 'services/HandleLanguage';
 
-export default function whatWeDo({language}) {
+export default function whatWeDo() {
 
-  let handleLanguage = language ? portuguese : english;
+  const {language} = useContext(LanguageContext);
+  let idiom = HandleLanguage(language);
   
   return (
     <section className={styles.whatWeDo} id="whatWeDo">
@@ -13,25 +14,25 @@ export default function whatWeDo({language}) {
         <section className={styles.whatWeDo__container___faq}>
           <div className={styles.whatWeDo__container___faq____boxTitle}>
             <h2 className={styles.whatWeDo__container___faq____title}>
-              {handleLanguage.whatWeDoComponent[0].titleSection1}
+              {idiom.whatWeDoComponent[0].titleSection1}
             </h2>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <h2 className={styles.whatWeDo__container___faq____weDo}>
               <span>01.</span>
-              {handleLanguage.whatWeDoComponent[1].label}
+              {idiom.whatWeDoComponent[1].label}
             </h2>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <h2 className={styles.whatWeDo__container___faq____weDo}>
               <span>02.</span>
-              {handleLanguage.whatWeDoComponent[2].label}
+              {idiom.whatWeDoComponent[2].label}
             </h2>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <h2 className={styles.whatWeDo__container___faq____weDo}>
               <span>03.</span>
-              {handleLanguage.whatWeDoComponent[3].label}
+              {idiom.whatWeDoComponent[3].label}
             </h2>
           </div>
         </section>
@@ -39,37 +40,37 @@ export default function whatWeDo({language}) {
         <section className={styles.whatWeDo__container___faq}>
           <div className={styles.whatWeDo__container___faq____boxTitle}>
             <h2 className={styles.whatWeDo__container___faq____title}>
-              {handleLanguage.whatWeDoComponent[4].titleSection2}
+              {idiom.whatWeDoComponent[4].titleSection2}
             </h2>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <p>
-              <span>{handleLanguage.whatWeDoComponent[5].span}</span>
-              {handleLanguage.whatWeDoComponent[5].paragraph}
+              <span>{idiom.whatWeDoComponent[5].span}</span>
+              {idiom.whatWeDoComponent[5].paragraph}
             </p>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <p>
-              <span>{handleLanguage.whatWeDoComponent[6].span}</span>
-              {handleLanguage.whatWeDoComponent[6].paragraph}
+              <span>{idiom.whatWeDoComponent[6].span}</span>
+              {idiom.whatWeDoComponent[6].paragraph}
             </p>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <p>
-              <span>{handleLanguage.whatWeDoComponent[7].span}</span>
-              {handleLanguage.whatWeDoComponent[7].paragraph}
+              <span>{idiom.whatWeDoComponent[7].span}</span>
+              {idiom.whatWeDoComponent[7].paragraph}
             </p>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <p>
-              <span>{handleLanguage.whatWeDoComponent[8].span}</span>
-              {handleLanguage.whatWeDoComponent[8].paragraph}
+              <span>{idiom.whatWeDoComponent[8].span}</span>
+              {idiom.whatWeDoComponent[8].paragraph}
             </p>
           </div>
           <div className={styles.whatWeDo__container___faq____box}>
             <p>
-              <span>{handleLanguage.whatWeDoComponent[9].span}</span>
-              {handleLanguage.whatWeDoComponent[9].paragraph}
+              <span>{idiom.whatWeDoComponent[9].span}</span>
+              {idiom.whatWeDoComponent[9].paragraph}
             </p>
           </div>
         </section>
@@ -77,16 +78,16 @@ export default function whatWeDo({language}) {
         <section className={styles.whatWeDo__container___faq}>
           <div className={styles.whatWeDo__container___faq____boxTitle}>
             <h2 className={styles.whatWeDo__container___faq____title}>
-              {handleLanguage.whatWeDoComponent[10].titleSection3}
+              {idiom.whatWeDoComponent[10].titleSection3}
             </h2>
           </div>
           <div className={styles.whatWeDo__container___faq____boxTitle} name="border-none" >
             <p className={styles.whatWeDo__container___faq____content}>
-              {handleLanguage.whatWeDoComponent[11].content}
+              {idiom.whatWeDoComponent[11].content}
             </p>
           </div>
           {
-            handleLanguage.metalFormsImg.map((item, index) => (
+            idiom.metalFormsImg.map((item, index) => (
               <div 
                 key={index} 
                 className={styles.whatWeDo__container___faq____boxImg}
@@ -106,7 +107,3 @@ export default function whatWeDo({language}) {
     </section>    
   );
 }
-
-whatWeDo.propTypes = {
-  language: propTypes.bool.isRequired,
-};
