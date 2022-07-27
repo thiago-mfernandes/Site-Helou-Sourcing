@@ -13,6 +13,13 @@
       gap: 5%;
       flex-wrap: wrap;
     }
+    //----------------------------------->
+    @include desktop {
+      @include alignItens-justifyContent(flex-start, space-between);
+      @include display-flexDirection(flex, row);
+      gap: 5%;
+      flex-wrap: wrap;
+    }
 
     &___box {
       width: 100%;
@@ -21,7 +28,15 @@
         &:nth-child(2) {
           width: 55%;
         }
-
+        & div[name="name"] {
+          width: 100%;
+        }
+      }
+      //-------------------------------------------->
+      @include desktop {
+        &:nth-child(2){
+          width: 55%;
+        }
         & div[name="name"] {
           width: 100%;
         }
@@ -41,6 +56,14 @@
             width: 100%;
           }
         }
+        //------------------------------------------>
+        @include desktop {
+          width: 40%;
+
+          &:first-child {
+            width: 100%;
+          }
+        }
       }
 
       &____content {
@@ -48,18 +71,25 @@
         color: $cinza;
         //------------------------------------------->
         @include tablet {
-
           &:last-of-type {
             margin-bottom: 10%;
           }
+        }
+        //------------------------------------------->
+        @include desktop {
+          text-align: center;
         }
       }
 
       &____subTitle {
         @extend .subTitle;
         margin: 20% 0;
-        //------------------------------------------->
+        //----------------------------------------->
         @include tablet {
+          margin: 10% 0 5%;
+        }
+        //---------------------------------------->
+        @include desktop {
           margin: 10% 0 5%;
         }
       }

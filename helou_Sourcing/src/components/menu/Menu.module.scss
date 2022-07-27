@@ -15,10 +15,6 @@
   @include tablet {
     @include height-width(120px, 100%);
   }
-  //---------------------------------------->
-  @include desktop {
-    //position: none;
-  }
 
   &__containerButtons {
     @include alignItens-justifyContent(center, space-between);

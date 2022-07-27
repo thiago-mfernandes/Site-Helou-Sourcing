@@ -2,6 +2,11 @@
 
 .company {
   @extend .sectionContainer;
+  //------------------------------------------>
+  @include desktop {
+    padding-top: 0;
+    padding: $padding-lateral-7;
+  }
 
   &__container {
     @extend .divContainer;
@@ -9,25 +14,44 @@
     &___img {
       width: 100%;
       z-index: 1;
+
+      //---------------------------------------->
+      @include desktop {
+        position: relative;
+        top: 175px;
+        left: 140px;
+        width: 55%;
+        box-shadow: $box-shadow-24;
+      }
     }
 
     &___descriptionBox {
-        @include alignItens-justifyContent(center, center);
-        @include display-flexDirection(flex, column);
-        background-color: $azul-secundario;
-        padding: $padding-interno-10;
+      @include alignItens-justifyContent(center, center);
+      @include display-flexDirection(flex, column);
+      background-color: $azul-secundario;
+      padding: $padding-interno-10;
 
-        & span {
-            @include color-fontSize($branco, 1rem);
+      & span {
+        @include color-fontSize($branco, 1rem);
+        //------------------------------------>
+        @include desktop {
+          width: 100%;
+          text-align: left;
         }
+      }
 
-        &____title {
-            @extend .title;
+      &____title {
+        @extend .title;
+        //------------------------------------>
+        @include desktop {
+          width: 100%;
+          text-align: left;
         }
+      }
 
-        &____content {
-            @extend .content;
-        }
+      &____content {
+        @extend .content;
+      }
     }
   }
 }

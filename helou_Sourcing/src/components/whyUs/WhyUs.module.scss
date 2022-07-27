@@ -3,12 +3,39 @@
 .whyUs {
   @extend .sectionContainer;
   background-color: $cinzaClaroBg;
+  //-------------------------------------->
+  @include desktop {
+    padding: 10% 0 0;
+  }
 
   &__container {
     @extend .divContainer;
+    //------------------------------------->
+    @include desktop {
+      @include display-flexDirection(flex, row);
+      @include alignItens-justifyContent(flex-start, space-between);
+      flex-wrap: wrap;
+      padding: $padding-lateral-7;
+    }
 
     &___box {
       width: 100%;
+      //----------------------------------->
+      @include desktop {
+        //n=0, -n=0. Representa do segundo até o terceiro filho
+        &:nth-child(n+2):nth-child(-n+3) {
+          width: 100%;
+        }
+        &:nth-child(2) > img {
+          width: 47.5%;
+        }
+        &:nth-child(3) > p {
+          width: 47.5%;
+          position: relative;
+          top: -380px;
+          left: 600px;
+        }
+      }
     }
 
     &___title {
@@ -19,6 +46,10 @@
     &___content {
       @extend .content;
       color: $cinza;
+      //---------------------------------->
+      @include desktop {
+        
+      }
     }
 
     &___img {

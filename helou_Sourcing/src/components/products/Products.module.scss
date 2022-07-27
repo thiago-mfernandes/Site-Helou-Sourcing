@@ -5,6 +5,10 @@
 
   &__container {
     @extend .divContainer;
+    //--------------------------------------->
+    @include desktop {
+      padding: $padding-lateral-7;
+    }
 
     &___box {
         width: 100%;
@@ -38,6 +42,11 @@
       //--------------------------->
       @include tablet {
         width: 47.5%;
+      }
+
+      //--------------------------->
+      @include desktop {
+        width: 22.5%;
       }
 
       &____img {

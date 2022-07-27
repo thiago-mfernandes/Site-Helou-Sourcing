@@ -69,7 +69,7 @@ function Menu({ language, setLanguage }) {
               <AnchorLink 
                 className={styles.header__nav___itemAnchor} 
                 href='#home' 
-                offset='100'
+                offset={width < 992 ? '100' : '0'}
                 onClick={() => setMenuState(false)}
               >
                 {handleLanguage.nav[0].label}
@@ -80,7 +80,7 @@ function Menu({ language, setLanguage }) {
               <AnchorLink 
                 className={styles.header__nav___itemAnchor} 
                 href='#company' 
-                offset='90' 
+                offset={width < 992 ? '90' : '0'}
                 onClick={() => setMenuState(false)}
               >
                 {handleLanguage.nav[1].label}
@@ -91,7 +91,7 @@ function Menu({ language, setLanguage }) {
               <AnchorLink 
                 className={styles.header__nav___itemAnchor} 
                 href='#whatWeDo' 
-                offset='90'
+                offset={width < 992 ? '90' : '0'}
                 onClick={() => setMenuState(false)}
               >
                 {handleLanguage.nav[2].label}
@@ -102,7 +102,7 @@ function Menu({ language, setLanguage }) {
               <AnchorLink 
                 className={styles.header__nav___itemAnchor} 
                 href='#whyUs' 
-                offset='90'
+                offset={width < 992 ? '90' : '0'}
                 onClick={() => setMenuState(false)}
               >
                 {handleLanguage.nav[3].label}
@@ -113,7 +113,7 @@ function Menu({ language, setLanguage }) {
               <AnchorLink 
                 className={styles.header__nav___itemAnchor} 
                 href='#products' 
-                offset='90'
+                offset={width < 992 ? '90' : '0'}
                 onClick={() => setMenuState(false)}
               >
                 {handleLanguage.nav[4].label}
@@ -123,8 +123,8 @@ function Menu({ language, setLanguage }) {
             <li className={styles.header__nav___itemLi}>
               <AnchorLink 
                 className={styles.header__nav___itemAnchor} 
-                href='#contact' 
-                offset='90'
+                href='#contact'
+                //offset={width < 992 ? '90' : '0'}
                 onClick={() => setMenuState(false)}
               >
                 {handleLanguage.nav[5].label}

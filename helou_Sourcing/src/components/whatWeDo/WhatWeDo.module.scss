@@ -5,6 +5,10 @@
 
   &__container {
     @extend .divContainer;
+    //----------------------------------->
+    @include desktop {
+      padding: $padding-lateral-7;
+    }
 
     &___faq {
       @include alignItens-justifyContent(center, center);
@@ -23,10 +27,22 @@
         gap: 5%;
         margin-bottom: 10%;
       }
+      //------------------------------------------->
+      @include desktop {
+        @include alignItens-justifyContent(flex-end, space-between);
+        @include display-flexDirection(flex, row);
+        gap: 5;
+        flex-wrap: wrap;
+        margin-bottom: 10%;
+      }
 
       &____boxTitle {
-
+        //---------------------------------------->
         @include tablet {
+          width: 100%;
+        }
+        //---------------------------------------->
+        @include desktop {
           width: 100%;
         }
       }
@@ -37,6 +53,10 @@
         //---------------------------------------------------->
         @include tablet {
           width: 47.5%;
+        }
+        //---------------------------------------->
+        @include desktop {
+          width: 30%;
         }
       }
       & [name="border-none"] {
@@ -85,14 +105,27 @@
           flex-wrap: wrap;
           width: 47.5%;
         }
+        //--------------------------------------->
+        @include desktop {
+          width: 22.5%;
+        }
       }
 
       &____img {
         width: 100%;
         border-radius: 8px;
+        transition: $transition;
         //-------------------------------------->
         @include tablet {
           max-height: 180px;
+        }
+        //-------------------------------------->
+        @include desktop {
+          min-height: 150px;
+          &:hover {
+            box-shadow: $box-shadow-8;
+            transition: $transition;
+          }
         }
       }
 
