@@ -7,10 +7,18 @@
     @extend .divContainer;
     padding: 0 5%;
 
+    &___logo {
+      //------------------------->
+      @include desktop {
+        width: 20%;
+        margin: 5%;
+      }
+    }
+
     &___copy {
-      margin: 5%;
+      //margin: 5%;
       text-align: center;
-      font-size: 0.8rem;;
+      font-size: 0.8rem;
     }
 
     &___buildBy {

@@ -20,9 +20,6 @@ export function LanguageContextProvider({children}) {
   );
 }
 
-
-
-
 LanguageContextProvider.propTypes = {
   children: propTypes.any,
 };

@@ -2,18 +2,22 @@
 
 .contentHeader {
     @include color-fontSize($branco, 1.25rem);
-    text-align: center;
-    opacity: .9;
     margin-top: 10%;
+    opacity: .9;
+    text-align: center;
     //----------------------------------------->
     @include tablet {
         @include color-fontSize($branco, 1.5rem);
     }
+    //------------------------------------------>
+    @include desktop {
+        margin: 0;
+        @include color-fontSize($branco, 1.75rem);
+    }
 }
 
 .content {
-    @include color-fontSize($branco, 1.125rem);
+    @include color-fontSize($cinza, 1.125rem);
     text-align: justify;
-    opacity: .8;
     line-height: 1.6;
 }

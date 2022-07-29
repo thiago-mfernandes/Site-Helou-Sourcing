@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Logo from 'assets/logo_branco.png';
 import styles from './Header.module.scss';
 import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
@@ -12,6 +13,7 @@ export default function Header() {
     <div className={styles.header} id="home">
       <div className={styles.container}>
         <div className={styles.header__boxContent}>
+          <img src={Logo} alt="Logotipo Hello Sourcing"className={styles.container__img} />
           <motion.div
             initial={{ opacity:0, y:-30 }}
             animate={{ opacity:1, y:0, animationTimingFunction: 'ease-in-out' }} 

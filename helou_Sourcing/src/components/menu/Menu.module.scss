@@ -3,7 +3,7 @@
 .header {
   position: fixed;
   top: 0;
-  background-color: transparent;
+  background-color: $branco;
   padding: 20px;
   width: 100%;
   transition: $transition;
@@ -44,7 +44,8 @@
     }
     //---------------------------------------->
     @include desktop {
-      width: 10%;
+      width: 5%;
+      margin-left: 5%;
     }
   }
 
@@ -77,7 +78,7 @@
       color: $cinza;
       //----------------------------->
       @include desktop {
-        color: $branco;
+        color: $azul-primario;
         opacity: 0.8;
       }
     }
@@ -89,6 +90,9 @@
   border-bottom: none;
   box-shadow: $box-shadow-24;
   transition: $transition;
+  & nav ul li a {
+    color: $branco;
+  }
 }
 
 .btnCloseMobile {
@@ -163,11 +167,11 @@
 }
 
 .languageButton {
-  background-color: transparent;
+  background-color: $azul-primario;
   border: 1px solid rgba(255, 255, 255, 8%);
   border-radius: 4px;
   padding: 8px;
-  color: $corBotaoHamburguer;
+  color: $branco;
   transition: $transition;
 
   &:hover {
@@ -176,4 +180,8 @@
     transform: translateY(-5px);
     transition: $transition;
   }
+}
+
+.icon {
+  @extend .icon;
 }

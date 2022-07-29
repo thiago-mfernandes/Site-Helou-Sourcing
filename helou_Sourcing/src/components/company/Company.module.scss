@@ -5,11 +5,17 @@
   //------------------------------------------>
   @include desktop {
     padding-top: 0;
-    padding: $padding-lateral-7;
+    padding-bottom: 0;
   }
 
   &__container {
     @extend .divContainer;
+    //----------------------------------->
+    @include desktop {
+      padding: 0;
+      flex-direction: row-reverse;
+      width: 100%;
+    }
 
     &___img {
       width: 100%;
@@ -17,10 +23,7 @@
 
       //---------------------------------------->
       @include desktop {
-        position: relative;
-        top: 175px;
-        left: 140px;
-        width: 55%;
+        width: 50%;
         box-shadow: $box-shadow-24;
       }
     }
@@ -28,11 +31,16 @@
     &___descriptionBox {
       @include alignItens-justifyContent(center, center);
       @include display-flexDirection(flex, column);
-      background-color: $azul-secundario;
+      background-color: $branco;
       padding: $padding-interno-10;
 
+      @include desktop {
+        padding: 5%;
+        width: 100%;
+      }
+
       & span {
-        @include color-fontSize($branco, 1rem);
+        @include color-fontSize($cinza, 1rem);
         //------------------------------------>
         @include desktop {
           width: 100%;
@@ -42,15 +50,23 @@
 
       &____title {
         @extend .title;
+        color: $cinza;
         //------------------------------------>
         @include desktop {
           width: 100%;
           text-align: left;
+          margin: 0;
         }
       }
 
       &____content {
         @extend .content;
+
+        //-------------------------------------->
+        @include desktop {
+          margin: 1% 0;
+          font-size: 1rem;
+        }
       }
     }
   }

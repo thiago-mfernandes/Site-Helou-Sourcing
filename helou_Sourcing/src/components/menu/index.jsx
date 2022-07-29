@@ -1,4 +1,4 @@
-import Logo from 'assets/logo_helou.png';
+import Logo from 'assets/logo-azul.png';
 import styles from './Menu.module.scss';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { useContext, useState } from 'react';
@@ -127,7 +127,7 @@ export default function Menu() {
                 offset={width < 992 ? '90' : '0'}
                 onClick={() => setMenuState(false)}
               >
-                {idiom.nav.label5}
+                {idiom.nav.label6}
               </AnchorLink>
             </li>
           </ul>

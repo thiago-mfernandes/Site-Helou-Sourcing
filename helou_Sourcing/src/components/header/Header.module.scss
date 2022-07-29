@@ -22,4 +22,19 @@
 .container {
   @extend .container;
   height: calc(100vh);
+
+  //-------------------------------->
+  @include desktop {
+    @include alignItens-justifyContent(center, center);
+    @include display-flexDirection(flex, column);
+  }
+  
+  &__img {
+
+    //----------------------------->
+    @include desktop {
+      margin: 0 0 5%;
+      width: 20%;
+    }
+  }
 }
