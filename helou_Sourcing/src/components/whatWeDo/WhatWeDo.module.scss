@@ -19,6 +19,7 @@
       width: 100%;
       &:nth-child(1) {
         background-color: $azul-primario;
+        padding: 5%;
       }
       &:nth-child(2) {
         width: 80%;
@@ -38,6 +39,12 @@
         @include display-flexDirection(flex, row);
         flex-wrap: wrap;
         margin-bottom: 10%;
+        &:nth-child(2) h2 {
+          color: $cinza;
+        }
+        &:nth-child(3) h2 {
+          color: $cinza;
+        }
       }
 
       &____boxTitle {
@@ -93,71 +100,15 @@
         @include tablet {
           width: 100%;
         }
+        //---------------------------------------------------->
+        @include desktop {
+          width: 100%;          
+        }
       }
 
       &____weDo {
         @include color-fontSize($branco, 1.15rem);
         text-align: center;
-      }
-
-      &____content {
-        @extend .content;
-        color: $cinza;
-      }
-
-      &____boxImg {
-        border-bottom: none;
-        margin-bottom: 5%;
-        width: 100%;
-        &:hover [name="hover"] {
-          @include height-width(7.5vh, 100%);
-          background-color: $branco;
-          border-radius: 0 0 8px 8px;
-          color: $azul-primario;
-          opacity: 0.8;
-          padding: 2.5%;
-          transform: translateY(-49px);
-          transition: $transition;
-        }
-        //-------------------------------------->
-        @include tablet {
-          align-self: stretch;
-          flex-wrap: wrap;
-          width: 47.5%;
-        }
-        //--------------------------------------->
-        @include desktop {
-          width: 22.5%;
-        }
-      }
-
-      &____img {
-        width: 100%;
-        border-radius: 8px;
-        transition: $transition;
-        //-------------------------------------->
-        @include tablet {
-          max-height: 180px;
-        }
-        //-------------------------------------->
-        @include desktop {
-          max-height: 140px;
-          &:hover {
-            box-shadow: $box-shadow-8;
-            transition: $transition;
-          }
-        }
-      }
-
-      &____hoverInfo {
-        @include height-width(7.5vh, 100%);
-        background-color: $branco;
-        border-radius: 0 0 8px 8px;
-        color: $azul-primario;
-        opacity: 0;
-        padding: 2.5%;
-        transform: translateY(-10px);
-        transition: $transition;
       }
     }
   }

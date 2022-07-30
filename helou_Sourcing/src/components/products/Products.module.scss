@@ -2,79 +2,101 @@
 
 .products {
   @extend .sectionContainer;
+  padding: $padding-lateral-7;
+  padding-bottom: 10%;
 
-  &__container {
-    @extend .divContainer;
-    //--------------------------------------->
+  //-------------------------------->
+
+  &__title {
+    @extend .title;
+
+    //------------------------------>
     @include desktop {
-      padding: $padding-lateral-7;
+      color: $azul-secundario;
+      width: 100%;
+    }
+  }
+
+  &__subTitle {
+    @extend .subTitle;
+
+    //------------------------------>
+    @include desktop {
+      margin: 0 0 10%;
+      width: 100%;
+    }
+  }
+
+  &__productsBox {
+    width: 100%;
+
+    @include desktop {
+      @include display-flexDirection(flex, row);
+      @include alignItens-justifyContent(center, space-between);
+      flex-wrap: wrap;
     }
 
-    &___box {
-        width: 100%;
-        //---------------------------------------------------->
-        @include tablet {
-          &:last-of-type {
-            @include display-flexDirection(flex, row);
-            @include alignItens-justifyContent(center, space-between);
-            flex-wrap: wrap;
-            gap: 5%;
-          }
-        }
-        //---------------------------------------------------->
-        @include desktop {
-          &:nth-child(2) {
-            @include display-flexDirection(flex, row);
-            @include alignItens-justifyContent(center, space-between);
-            flex-wrap: wrap;
-          }
-        }
-
-      &____title {
-        @extend .title;
-        color: $azul-primario;
-      }
-    }
-
-    &___card {
-      @include height-width(null, 100%);
-      @include display-flexDirection(flex, column);
-      background-color: $cinzaClaroBg;
-      border-radius: 8px;
-      box-shadow: $box-shadow-8;
-      transition: $transition;
-      &:hover {
-        transform: translateY(-5px);
-        transition: $transition;
-      }
-      //--------------------------->
-      @include tablet {
-        width: 47.5%;
-      }
-
-      //--------------------------->
+    &___container {
+      //--------------------------------------->
       @include desktop {
-        width: 22.5%;
-        margin-bottom: 2.5%;
+        @include display-flexDirection(flex, row);
+        @include alignItens-justifyContent(center, flex-start);
+        width: 48%;
       }
 
-      &____img {
-        width: 100%;
-        border-radius: 8px 8px 0 0; //borda-imagem
-      }
-    }
-
-    &___boxContent {
-      padding: 5%;
-
-      &____title {
-        @include color-fontSize($azul-secundario, 1.25rem);
-        margin: 0;
+      &____span {
+        @extend .content;
+        color: $cinza;
+        font-weight: 500;
+        margin-right: 10px;
       }
 
       &____content {
-        @include color-fontSize($cinza, 0.8rem);
+        @extend .content;
         margin: 0;
+      }
+    }
+  }
+
+  &__productsBoxImg {
+    width: 100%;
+
+    @include desktop {
+      @include display-flexDirection(flex, row);
+      @include alignItens-justifyContent(center, space-between);
+    }
+
+    &___img {
+      border-radius: 4px;
+      margin: 5% 0;
+      width: 30%;
+    }
+  }
+
+  &__productsBoxAnd {
+    width: 100;
+
+    @include desktop {
+      @include alignItens-justifyContent(flex-start, space-between);
+      @include display-flexDirection(flex, row);
+    }
+
+    &___span {
+      @extend .content;
+      color: $azul-primario;
+
+      @include desktop {
+        margin-right: 5px;
+        text-align: left;
+      }
+    }
+
+    &___content {
+      @extend .content;
+
+      @include desktop {
+        margin: 0;
+        width: 72.5%;
       }
     }
   }

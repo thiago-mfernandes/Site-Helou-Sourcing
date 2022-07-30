@@ -19,8 +19,8 @@ export default function App() {
           <Header />
           <Company />
           <WhatWeDo />
-          <WhyUs />
           <Products />
+          <WhyUs />
           <Contact />
           <Footer />
         </main>

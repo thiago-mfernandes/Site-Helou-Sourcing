@@ -1,12 +1,7 @@
 import styles from './Products.module.scss';
-import ferroSilicio from 'assets/ferro-silicio.png';
+import Ferro from 'assets/ferro-silicio.png';
 import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
-
-//1. criar um estado para decidir se vai usar portugues ou ingles
-//2. passar o estado para o componente (o estado esta acima do componente)
-//3. receber o estado no componente
-//4. criar uma variavel que armazena o estado true ou false
 
 export default function Products() {
 
@@ -14,136 +9,54 @@ export default function Products() {
   let idiom = HandleLanguage(language);
 
   return (
-    <section className={styles.products} id="products">
-      <div className={styles.products__container}>        
-        <div className={styles.products__container___box}>
-          <h2 className={styles.products__container___box____title}>
-            {idiom.products[0].title}
-          </h2>
-        </div>
-        <div className={styles.products__container___box}>
-
-          <div className={styles.products__container___card}>
-            <img 
-              className={styles.products__container___card____img} 
-              src={ferroSilicio} 
-              alt="produto" />
-            <div className={styles.products__container___boxContent}>
-              <h3 className={styles.products__container___boxContent____title}>
-                {idiom.products[1].product}
-              </h3>
-              <p className={styles.products__container___boxContent____content}>
-                {idiom.products[1].label}
+    <section className={styles.products}>
+      <h2 className={styles.products__title}>Produtos e Serviços</h2>
+      <h3 className={styles.products__subTitle}>Metais e ligas de ferro que comercializamos:</h3>
+      <div className={styles.products__productsBox}>
+        {
+          idiom.products.map((item, index) => (
+            <div key={index} className={styles.products__productsBox___container}>
+              <span className={styles.products__productsBox___container____span}>
+                {item.span}
+              </span>
+              <p className={styles.products__productsBox___container____content}>
+                {item.content}
               </p>
             </div>
-          </div>
-
-          <div className={styles.products__container___card}>
-            <img 
-              className={styles.products__container___card____img} 
-              src={ferroSilicio} 
-              alt="produto" />
-            <div className={styles.products__container___boxContent}>
-              <h3 className={styles.products__container___boxContent____title}>
-                {idiom.products[2].product}
-              </h3>
-              <p className={styles.products__container___boxContent____content}>
-                {idiom.products[2].label}
-              </p>
-            </div>
-          </div>
-
-          <div className={styles.products__container___card}>
-            <img 
-              className={styles.products__container___card____img} 
-              src={ferroSilicio} 
-              alt="produto" />
-            <div className={styles.products__container___boxContent}>
-              <h3 className={styles.products__container___boxContent____title}>
-                {idiom.products[3].product}
-              </h3>
-              <p className={styles.products__container___boxContent____content}>
-                {idiom.products[3].label}
-              </p>
-            </div>
-          </div>
-
-          <div className={styles.products__container___card}>
-            <img 
-              className={styles.products__container___card____img} 
-              src={ferroSilicio} 
-              alt="produto" />
-            <div className={styles.products__container___boxContent}>
-              <h3 className={styles.products__container___boxContent____title}>
-                {idiom.products[4].product}
-              </h3>
-              <p className={styles.products__container___boxContent____content}>
-                {idiom.products[4].label}
-              </p>
-            </div>
-          </div>
-
-          <div className={styles.products__container___card}>
-            <img 
-              className={styles.products__container___card____img} 
-              src={ferroSilicio} 
-              alt="produto" />
-            <div className={styles.products__container___boxContent}>
-              <h3 className={styles.products__container___boxContent____title}>
-                {idiom.products[1].product}
-              </h3>
-              <p className={styles.products__container___boxContent____content}>
-                {idiom.products[1].label}
-              </p>
-            </div>
-          </div>
-
-          <div className={styles.products__container___card}>
-            <img 
-              className={styles.products__container___card____img} 
-              src={ferroSilicio} 
-              alt="produto" />
-            <div className={styles.products__container___boxContent}>
-              <h3 className={styles.products__container___boxContent____title}>
-                {idiom.products[2].product}
-              </h3>
-              <p className={styles.products__container___boxContent____content}>
-                {idiom.products[2].label}
-              </p>
-            </div>
-          </div>
-
-          <div className={styles.products__container___card}>
-            <img 
-              className={styles.products__container___card____img} 
-              src={ferroSilicio} 
-              alt="produto" />
-            <div className={styles.products__container___boxContent}>
-              <h3 className={styles.products__container___boxContent____title}>
-                {idiom.products[3].product}
-              </h3>
-              <p className={styles.products__container___boxContent____content}>
-                {idiom.products[3].label}
-              </p>
-            </div>
-          </div>
-
-          <div className={styles.products__container___card}>
-            <img 
-              className={styles.products__container___card____img} 
-              src={ferroSilicio} 
-              alt="produto" />
-            <div className={styles.products__container___boxContent}>
-              <h3 className={styles.products__container___boxContent____title}>
-                {idiom.products[4].product}
-              </h3>
-              <p className={styles.products__container___boxContent____content}>
-                {idiom.products[4].label}
-              </p>
-            </div>
-          </div>
-        </div>
+          ))
+        }
       </div>
+
+      {/* div que vai os 3 cards */}
+      <div className={styles.products__productsBoxImg}>
+        <img src={Ferro} alt="card" className={styles.products__productsBoxImg___img}/>
+        <img src={Ferro} alt="card" className={styles.products__productsBoxImg___img}/>
+        <img src={Ferro} alt="card" className={styles.products__productsBoxImg___img}/>
+      </div>
+
+      <div className={styles.products__productsBoxAnd}>
+        <span className={styles.products__productsBoxAnd___span}>Tambem Negociamos em:</span>
+        <p className={styles.products__productsBoxAnd___content}>
+          COBALTO(Minério/Conc, CoOH, CoSO4) 
+          MANGANÊS(Minério, Conc, MnSO4)
+          ZINCO(Minério/Conc, ZnSO4, ZnO) 
+          COBRE(Minério/Conc, CuSO4, CuO) 
+          MOLIBDÊNIO(MoO3 &gt; 57%)
+        </p>
+      </div>
+
+      {/* div que vai os 3 cards */}
+      <div className={styles.products__productsBoxImg}>
+        <img src={Ferro} alt="card" className={styles.products__productsBoxImg___img}/>
+        <img src={Ferro} alt="card" className={styles.products__productsBoxImg___img}/>
+        <img src={Ferro} alt="card" className={styles.products__productsBoxImg___img}/>
+      </div>
+
+      <div className={styles.products__productsBoxAnd}>
+        <span className={styles.products__productsBoxAnd___span}>Metais Não Ferrosos:</span>
+        <p className={styles.products__productsBoxAnd___content}>Todos os tipos e formas de produtos intermediários contendo metais não ferrosos  (V, Ni, Co, W, Mo, Cu, Pb, Sn, etc…)  na forma de FINO, ÓXIDOS, LAMAS, METÁLICOS, CATALISADORES GASTO, etc…</p>
+      </div>
+
     </section>
   );
 }

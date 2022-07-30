@@ -1,5 +1,5 @@
 import styles from './Footer.module.scss';
-import Logo from 'assets/logo_branco.png';
+import Logo from 'assets/logo-rodape.png';
 
 export default function Footer() {
   return (
