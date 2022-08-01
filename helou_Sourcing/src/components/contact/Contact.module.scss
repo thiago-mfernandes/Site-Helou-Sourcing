@@ -2,7 +2,14 @@
 
 .contact {
   @extend .sectionContainer;
-  background-color: $cinzaClaroBg;
+  //background-color: $cinzaClaroBg;
+  background-image: url("../../assets/banner-contato.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include desktop {
+    padding: 2% 0;
+  }
 
   &__container {
     @extend .divContainer;
@@ -19,6 +26,9 @@
       @include display-flexDirection(flex, row);
       gap: 5%;
       flex-wrap: wrap;
+      &:first-of-type {
+        width: 100%;
+      }
     }
 
     &___box {
@@ -39,6 +49,10 @@
         }
         & div[name="name"] {
           width: 100%;
+        }
+
+        &:nth-child(1) h3 {
+          margin: 2.5% 0;
         }
       }
 
@@ -78,6 +92,14 @@
         //------------------------------------------->
         @include desktop {
           text-align: center;
+          &:nth-child(1) {
+            color: $branco;  
+            margin: 0;
+          }
+          & {
+            color: $branco;  
+            margin: 0 0 15%;
+          }
         }
       }
 
@@ -91,8 +113,8 @@
         //---------------------------------------->
         @include desktop {
           margin: 10% 0 5%;
+          }
         }
-      }
 
       &____input {
         @extend .inputForm;

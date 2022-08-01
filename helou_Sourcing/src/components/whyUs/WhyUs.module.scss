@@ -5,7 +5,17 @@
   background-color: $cinzaClaroBg;
   //-------------------------------------->
   @include desktop {
-    padding: 10% 0 0;
+    @include display-flexDirection(flex, row);
+    @include alignItens-justifyContent(center, space-between);
+    padding: 10% 0;
+    width: 100%;
+  }
+
+  &__img {
+
+    @include desktop {
+      width: 49.5%;
+    }
   }
 
   &__container {
@@ -13,48 +23,27 @@
     //------------------------------------->
     @include desktop {
       @include display-flexDirection(flex, row);
-      @include alignItens-justifyContent(flex-start, space-between);
+      @include alignItens-justifyContent(flex-start, center);
       flex-wrap: wrap;
-      padding: $padding-lateral-7;
-    }
-
-    &___box {
-      width: 100%;
-      //----------------------------------->
-      @include desktop {
-        //n=0, -n=0. Representa do segundo até o terceiro filho
-        &:nth-child(n+2):nth-child(-n+3) {
-          width: 100%;
-        }
-        &:nth-child(2) > img {
-          width: 47.5%;
-        }
-        &:nth-child(3) > p {
-          width: 47.5%;
-          position: relative;
-          top: -380px;
-          left: 600px;
-        }
-      }
+      padding: 0;
+      padding-left: 2.5%;
+      width: 49.5%;
     }
 
     &___title {
         @extend .title;
         color: $azul-primario;
+        margin: 0;
     }
 
     &___content {
       @extend .content;
       color: $cinza;
+      margin: 2%;
       //---------------------------------->
       @include desktop {
-        
+        text-align: left;
       }
-    }
-
-    &___img {
-      width: 100%;
-      border-radius: 8px;
     }
   }
 }
