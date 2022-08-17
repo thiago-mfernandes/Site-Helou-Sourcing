@@ -1,5 +1,5 @@
 import styles from './Footer.module.scss';
-import Logo from 'assets/logo-rodape.png';
+import Logo from 'assets/logo/logo_branco.png';
 
 export default function Footer() {
   return (
@@ -9,7 +9,7 @@ export default function Footer() {
         <p  className={styles.footer__container___copy}>&copy; 2022 Helou Sourcing | All rights reserved.</p>
         <p  className={styles.footer__container___buildBy}>Desenvolvido por 
           <a href="https://corework.com.br/" target="_blank" rel="noreferrer">
-             CoreWork
+            CoreWork
           </a> Soluções em Comunicação.</p>
       </div>
     </footer>

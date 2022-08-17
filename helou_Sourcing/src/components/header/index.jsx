@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import Logo from 'assets/logo_branco.png';
+import Logo from 'assets/logo/logo_branco.png';
 import styles from './Header.module.scss';
 import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';

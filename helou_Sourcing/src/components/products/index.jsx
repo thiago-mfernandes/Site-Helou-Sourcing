@@ -1,5 +1,5 @@
 import styles from './Products.module.scss';
-import Ferro from 'assets/ferro-silicio.png';
+import Ferro from 'assets/img/ferro-silicio.png';
 import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
 

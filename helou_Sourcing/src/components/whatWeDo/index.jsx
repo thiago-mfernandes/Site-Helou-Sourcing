@@ -1,9 +1,9 @@
 import styles from './WhatWeDo.module.scss';
 import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
-import MetalIcon from 'assets/beam.png';
-import SucataIcon from 'assets/waste.png';
-import ResiduoIcon from 'assets/scrap.png';
+import MetalIcon from 'assets/icons/beam.png';
+import SucataIcon from 'assets/icons/waste.png';
+import ResiduoIcon from 'assets/icons/scrap.png';
 
 export default function whatWeDo() {
 

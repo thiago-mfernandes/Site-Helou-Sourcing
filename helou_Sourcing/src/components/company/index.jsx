@@ -1,5 +1,5 @@
 import styles from './Company.module.scss';
-import OurCompany from 'assets/company.jpg';
+import OurCompany from 'assets/img/company.jpg';
 import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
 

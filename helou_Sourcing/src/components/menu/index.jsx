@@ -1,4 +1,4 @@
-import Logo from 'assets/logo-topo.png';
+import Logo from 'assets/logo/logo-topo.png';
 import styles from './Menu.module.scss';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { useContext, useState } from 'react';
