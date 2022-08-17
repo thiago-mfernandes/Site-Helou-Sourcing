@@ -1,5 +1,4 @@
 import styles from './Products.module.scss';
-import Ferro from 'assets/img/ferro-silicio.png';
 import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
 
@@ -27,13 +26,6 @@ export default function Products() {
         }
       </div>
 
-      {/* div que vai os 3 cards */}
-      <div className={styles.products__productsBoxImg}>
-        <img src={Ferro} alt="card" className={styles.products__productsBoxImg___img}/>
-        <img src={Ferro} alt="card" className={styles.products__productsBoxImg___img}/>
-        <img src={Ferro} alt="card" className={styles.products__productsBoxImg___img}/>
-      </div>
-
       <div className={styles.products__productsBoxAnd}>
         <span className={styles.products__productsBoxAnd___span}>Tambem Negociamos em:</span>
         <p className={styles.products__productsBoxAnd___content}>
@@ -43,13 +35,6 @@ export default function Products() {
           COBRE(Minério/Conc, CuSO4, CuO) 
           MOLIBDÊNIO(MoO3 &gt; 57%)
         </p>
-      </div>
-
-      {/* div que vai os 3 cards */}
-      <div className={styles.products__productsBoxImg}>
-        <img src={Ferro} alt="card" className={styles.products__productsBoxImg___img}/>
-        <img src={Ferro} alt="card" className={styles.products__productsBoxImg___img}/>
-        <img src={Ferro} alt="card" className={styles.products__productsBoxImg___img}/>
       </div>
 
       <div className={styles.products__productsBoxAnd}>

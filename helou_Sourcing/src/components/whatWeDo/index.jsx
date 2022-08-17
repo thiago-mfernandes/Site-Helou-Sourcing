@@ -13,7 +13,7 @@ export default function whatWeDo() {
   return (
     <section className={styles.whatWeDo} id="whatWeDo">
       <div className={styles.whatWeDo__container}>
-        <section className={styles.whatWeDo__container___faq}>
+        <div className={styles.whatWeDo__container___faq}>
           <div className={styles.whatWeDo__container___faq____boxTitle}>
             <h2 className={styles.whatWeDo__container___faq____title}>
               {idiom.whatWeDoComponent.titleSection1}
@@ -43,7 +43,7 @@ export default function whatWeDo() {
               {idiom.whatWeDoComponent.label3}
             </h2>
           </div>
-        </section>   
+        </div>   
       </div>
     </section>    
   );

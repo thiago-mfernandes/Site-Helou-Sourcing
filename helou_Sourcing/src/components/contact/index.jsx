@@ -9,14 +9,15 @@ export default function Contact() {
   return (
     <section className={styles.contact} id="contact">
       <div className={styles.contact__container}>
-        <div className={styles.contact__container___box}>
-          <p className={styles.contact__container___box____content}>
+        
+        <div className={styles.contact__container___callToAction}>
+          <p className={styles.contact__container___callToAction____content}>
             {idiom.contact.content1}
           </p>
-          <h3 className={styles.contact__container___box____subTitle}>
+          <h3 className={styles.contact__container___callToAction____subTitle}>
             {idiom.contact.callToAction}
           </h3>
-          <p className={styles.contact__container___box____content}>
+          <p className={styles.contact__container___callToAction____content}>
             {idiom.contact.content2}
           </p>
         </div>

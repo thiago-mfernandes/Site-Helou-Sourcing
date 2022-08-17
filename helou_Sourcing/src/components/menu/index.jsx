@@ -1,8 +1,10 @@
-import Logo from 'assets/logo/logo-topo.png';
+import LogoAzul from 'assets/logo/logo-topo.png';
+import LogoBranco from 'assets/logo/logo_branco.png';
 import styles from './Menu.module.scss';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { useContext, useState } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
+import { FiMenu } from 'react-icons/fi';
+import ItemNav from './itemNav';
 
 export default function Menu() {
   
@@ -12,6 +14,7 @@ export default function Menu() {
   const width = window.innerWidth;
   
   let idiom = HandleLanguage(language);
+  
 
   function scrollPosition(){
     if(scrollY > 50) {
@@ -34,7 +37,7 @@ export default function Menu() {
       >
         <img
           className={styles.header__img}
-          src={Logo}
+          src={fixedMenu ? LogoBranco : LogoAzul}
           alt="Logotipo da empresa"
         />
 
@@ -47,9 +50,11 @@ export default function Menu() {
             className={styles.hamburguerIcon}
             onClick={() => setMenuState(!menuState)}
           >
-            <div className={styles.hamburguer} />
-            <div className={styles.hamburguer} />
-            <div className={styles.hamburguer} />
+            <FiMenu className={
+              fixedMenu 
+                ? styles.hamburguerWhite 
+                : styles.hamburguerBlue
+            }/>
           </div>
         </div>
 
@@ -63,73 +68,18 @@ export default function Menu() {
             onClick={() => setMenuState(false)}
           >x</button>
 
-          {/* o menu foi declarado sem uso de map para o AnchorLink funcionar */}
           <ul className={styles.header__nav___itens}>
-            <li className={styles.header__nav___itemLi}>
-              <AnchorLink 
-                className={styles.header__nav___itemAnchor} 
-                href='#home' 
-                offset={width < 992 ? '100' : '0'}
-                onClick={() => setMenuState(false)}
-              >
-                {idiom.nav.label1}
-              </AnchorLink>
-            </li>
-
-            <li className={styles.header__nav___itemLi}>
-              <AnchorLink 
-                className={styles.header__nav___itemAnchor} 
-                href='#company' 
-                offset={width < 992 ? '90' : '0'}
-                onClick={() => setMenuState(false)}
-              >
-                {idiom.nav.label2}
-              </AnchorLink>
-            </li>
-
-            <li className={styles.header__nav___itemLi}>
-              <AnchorLink 
-                className={styles.header__nav___itemAnchor} 
-                href='#whatWeDo' 
-                offset={width < 992 ? '90' : '0'}
-                onClick={() => setMenuState(false)}
-              >
-                {idiom.nav.label3}
-              </AnchorLink>
-            </li>
-
-            <li className={styles.header__nav___itemLi}>
-              <AnchorLink 
-                className={styles.header__nav___itemAnchor} 
-                href='#whyUs' 
-                offset={width < 992 ? '90' : '0'}
-                onClick={() => setMenuState(false)}
-              >
-                {idiom.nav.label4}
-              </AnchorLink>
-            </li>
-
-            <li className={styles.header__nav___itemLi}>
-              <AnchorLink 
-                className={styles.header__nav___itemAnchor} 
-                href='#products' 
-                offset={width < 992 ? '90' : '0'}
-                onClick={() => setMenuState(false)}
-              >
-                {idiom.nav.label5}
-              </AnchorLink>
-            </li>
-
-            <li className={styles.header__nav___itemLi}>
-              <AnchorLink 
-                className={styles.header__nav___itemAnchor} 
-                href='#contact'
-                offset={width < 992 ? '90' : '0'}
-                onClick={() => setMenuState(false)}
-              >
-                {idiom.nav.label6}
-              </AnchorLink>
-            </li>
+            {
+              idiom.nav.map((navItem, index) => (
+                <ItemNav 
+                  key={index} 
+                  setState={setMenuState}
+                  label={navItem.label}
+                  href={navItem.href}
+                  offset={navItem.offset}
+                />          
+              ))
+            }   
           </ul>
         </nav>
       </header>

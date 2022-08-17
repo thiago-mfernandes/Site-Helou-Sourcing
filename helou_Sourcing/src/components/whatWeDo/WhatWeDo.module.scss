@@ -38,7 +38,7 @@
         @include alignItens-justifyContent(flex-end, space-between);
         @include display-flexDirection(flex, row);
         flex-wrap: wrap;
-        margin-bottom: 10%;
+        margin-bottom: $mb5;
         &:nth-child(2) h2 {
           color: $cinza;
         }

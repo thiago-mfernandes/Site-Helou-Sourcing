@@ -1,116 +1,122 @@
 {
-    "nav": 
-      { 
-        "label1": "Home", 
-        "label2": "Company", 
-        "label3": "What We Do?", 
-        "label4": "Why Helou Sourcing", 
-        "label5": "Products", 
-        "label6": "Contact" 
-      },
-  
-    "header": 
-      { 
-        "title": "Metals Fe Alloys Catalysts",
-        "subTitle": "Quality, Reliability and Sustainability"
-      },  
-  
-    "companyComponent":
-      { 
-        "whoWeAre": "Who is Helou Sourcing?",
-        "title": "Company",
-        "content1": "We are a trading brokerage, based in São Paulo, Brazil, working diligently sourcing specific commodities or finding a market for your products, where we extend our 30Year experience to provide you with the necessary solutions through our global network.",
-        "content2": "Our top priority is to establish and maintain a positive, long-term business relationship with our customers and suppliers.",
-        "content3": "Helou Sourcing has successfully partnered with renowned and reputable manufacturers around the world, assuring our customers of our ability to provide high quality products at competitive prices, backed by the necessary technical and metallurgical support.",
-        "content4": "At the same time, we are committed to our suppliers to provide them with consistent market support."
-      },
-      
-    "whatWeDoComponent": 
-      { 
-        "titleSection1": "What We Do?",
-        "label1": " Helou Sourcing deals with all kinds of metals and ferroalloys;",
-        "label2": " We also operate with metal scrap in several varieties;",
-        "label3": " And we have catalysts and waste at our customers' disposal.",
-        "titleSection2": "Also Trading in:",
-        "span1": "Cobalt", 
-        "paragraph1": "(Ore/Conc, CoOH, CoSO4)",
-        "span2": "Manganês", 
-        "paragraph2": "(Ore, Conc, MnSO4)",
-        "span3": "Zinc", 
-        "paragraph3": "(Ore/Conc, ZnSO4, ZnO)", 
-        "span4": "Copper", 
-        "paragraph4": "(Ore/Conc, CuSO4, CuO)",
-        "span5": "Molybdenum", 
-        "paragraph5": "(MoO3 > 57%)",
-        "titleSection3": "Non-Ferrous Metals",
-        "content": "And in all types and forms of intermediary products containing non-ferrous metals: (V, Ni, Co, W, Mo, Cu, Pb, Sn, etc…) in form of FINES, OXIDES, SLUDGES, METALLIC, SPENT CATALYSTS,etc…"
-      },      
-      
-    "metalFormsImg": [
-      { "url": "assets/cobre.jpg", "label": "Copper" },
-      { "url": "assets/nickel.jpg", "label": "Nickel" },
-      { "url": "assets/zinco.jpg", "label": "Zinc" },
-      { "url": "assets/nr5.jpg", "label": "nr5" }
-    ],
-  
-    "whyUs": { 
-      "title": "Why Helou Sourcing",
-      "content1": " We specialize in international metal trade and in management of industrial waste. We believe that our operational actions of recycling of wastes allow us not only to save natural mineral resources, but specially to protect the environment from the incorrect use and inadequate dumping and disposition of the referred wastes." ,
-      "forAltImg": "Sustainability",
-      "content2": "We at Helou Sourcing, believe that to do different, it takes passion. We know that we are not perfect, but we strive to do our part. Come and learn more about our work and how we are making a difference." 
+  "nav": [
+    { "label": "Home", "href": "#home", "offset": "100" },
+    { "label": "Company", "href": "#company", "offset": "90" },
+    { "label": "What We Do?", "href": "#whatWeDo", "offset": "90" },
+    { "label": "Why Helou Sourcing", "href": "#whyUs", "offset": "90" },
+    { "label": "Products", "href": "#products", "offset": "90" },
+    { "label": "Contact", "href": "#contact", "offset": "90" }
+  ],
+
+  "header": {
+    "title": "Metals Fe Alloys Catalysts",
+    "subTitle": "Quality, Reliability and Sustainability"
+  },
+
+  "companyComponent": {
+    "whoWeAre": "Who is Helou Sourcing?",
+    "title": "Company",
+    "content1": "We are a trading brokerage, based in São Paulo, Brazil, working diligently sourcing specific commodities or finding a market for your products, where we extend our 30Year experience to provide you with the necessary solutions through our global network.",
+    "content2": "Our top priority is to establish and maintain a positive, long-term business relationship with our customers and suppliers.",
+    "content3": "Helou Sourcing has successfully partnered with renowned and reputable manufacturers around the world, assuring our customers of our ability to provide high quality products at competitive prices, backed by the necessary technical and metallurgical support.",
+    "content4": "At the same time, we are committed to our suppliers to provide them with consistent market support."
+  },
+
+  "whatWeDoComponent": {
+    "titleSection1": "What We Do?",
+    "label1": " Helou Sourcing deals with all kinds of metals and ferroalloys;",
+    "label2": " We also operate with metal scrap in several varieties;",
+    "label3": " And we have catalysts and waste at our customers' disposal.",
+    "titleSection2": "Also Trading in:",
+    "span1": "Cobalt",
+    "paragraph1": "(Ore/Conc, CoOH, CoSO4)",
+    "span2": "Manganês",
+    "paragraph2": "(Ore, Conc, MnSO4)",
+    "span3": "Zinc",
+    "paragraph3": "(Ore/Conc, ZnSO4, ZnO)",
+    "span4": "Copper",
+    "paragraph4": "(Ore/Conc, CuSO4, CuO)",
+    "span5": "Molybdenum",
+    "paragraph5": "(MoO3 > 57%)",
+    "titleSection3": "Non-Ferrous Metals",
+    "content": "And in all types and forms of intermediary products containing non-ferrous metals: (V, Ni, Co, W, Mo, Cu, Pb, Sn, etc…) in form of FINES, OXIDES, SLUDGES, METALLIC, SPENT CATALYSTS,etc…"
+  },
+
+  "metalFormsImg": [
+    { "url": "assets/cobre.jpg", "label": "Copper" },
+    { "url": "assets/nickel.jpg", "label": "Nickel" },
+    { "url": "assets/zinco.jpg", "label": "Zinc" },
+    { "url": "assets/nr5.jpg", "label": "nr5" }
+  ],
+
+  "whyUs": {
+    "title": "Why Helou Sourcing",
+    "content1": " We specialize in international metal trade and in management of industrial waste. We believe that our operational actions of recycling of wastes allow us not only to save natural mineral resources, but specially to protect the environment from the incorrect use and inadequate dumping and disposition of the referred wastes.",
+    "forAltImg": "Sustainability",
+    "content2": "We at Helou Sourcing, believe that to do different, it takes passion. We know that we are not perfect, but we strive to do our part. Come and learn more about our work and how we are making a difference."
+  },
+
+  "products": [
+    {
+      "span": "FeSi",
+      "content": "70 / 75% C < 0,1 / 0,2% Al < 0,5 / 1,5 / 2,0%"
     },
-       
-    "products": [
-      { "span": "FeSi", "content": "70 / 75% C < 0,1 / 0,2% Al < 0,5 / 1,5 / 2,0%"},
-      { "span": "SiMn", "content": "Si > 14 / 16% Mn > 60 / 65% C < 2,0 / 2,5% P < 0,20 / 0,35%"},
-      { "span": "CaSi", "content": "Ca > 28 / 32% Si > 55 / 65%"},
-      { "span": "FeB", "content": "B > 15 / 18% Al < 0,5%"},
-      { "span": "FeCr", "content": "LC Cr > 60% C < 0,1%"},
-      { "span": "FeCr", "content": "HC Cr > 60% Si < 3,0 / 3,5%"},
-      { "span": "FeP", "content": "P > 21 / 25% C < 1%"},
-      { "span": "FeS", "content": "S > 28%"},
-      { "span": "FeMo", "content": "Mo > 60 / 65% Cu < 0,5 / 1,0%"},
-      { "span": "FeTi", "content": "Ti > 30 / 35% Si < 3,0%"},
-      { "span": "FeTi", "content": "Ti > 68 / 72%"},
-      { "span": "FeW", "content": "W > 72 / 75-78%"},
-      { "span": "FeV", "content": "V > 50% P < 0.1%"},
-      { "span": "FeV", "content": "V > 78-82% P < 0,1%"},
-      { "span": "Mg", "content": "Mg > 99,95%"},
-      { "span": "Mn", "content": "Mn > 99,7%"},
-      { "span": "Ca", "content": "Ca > 98,5%"},
-      { "span": "FeMnLC", "content": "Mn > 75 / 78% C < 0,1 - 0,5%"},
-      { "span": "FeMnMC", "content": "Mn > 70 / 75% - 80% C < 1,5%"},
-      { "span": "FeMnHC", "content": "Mn > 65 / 70 / 75 / 76% Si < 1,5% P < 0,20 / 0,30 / 0,35%"},
-      { "span": "FeSiMg", "content": "Si > 45-47% Mg < 4-6 / 6-8%"},
-      { "span": "Ni", "content": "Ni > 99%"},
-      { "span": "Si", "content": "Si > 98,5% Ca < 0,3% Fe < 0,5% Al < 0,5%"},
-      { "span": "Si", "content": "Si > 99,0% Ca < 0,1% Fe < 0,4% Al < 0,4%"},
-      { "span": "Si", "content": "Si > 99,0% Ca < 0,03% Fe < 0,35% Al < 0,35%"},
-      { "span": "Si", "content": "Si > 99,0% Ca < 0,03% Fe < 0,15% Al < 0,3%"},
-      { "span": "N-Mn", "content": "Mn > 90% N > 6/8%"},
-      { "span": "N-FeMn", "content": "Mn > 70/75% C < 1,5% N >6/8%"},
-      { "span": "FeAl", "content": "Al > 30/35%"}
-    ],
-    "contact": { 
-      "content1" : "To request a quotation please contact us by phone or e-mail and we will provide you with experienced, professional and reliable services.",
-      "callToAction" : "Contact Us",
-      "content2" : "Your partner for strategic materials: Oxides, Metals, Ferro Alloys and Catalysts", 
-      "form" : "Form",
-      "labelName" : "Name", 
-      "placeHolderName": "Complete name..", 
-      "labelEmail" : "Email", 
-      "placeHolderEmail": "name@domain.com", 
-      "labelSubject" : "Subject", 
-      "placeHolderSubject": "Request a quotation..", 
-      "labelMessage" : "Message", 
-      "placeHolderMEssage": "Write your notes or questions here..", 
-      "btn" : "", 
-      "btnValue": "Submit", 
-      "addressTitle": "Address", 
-      "addressContent": "203 Fake Street",
-      "addressTel": "Phone", 
-      "addressContentTel": "+ 123 456 789",
-      "addressEmail": "Email", 
-      "addressContentEmail": "hello@sourcing.com"
-    }     
+    {
+      "span": "SiMn",
+      "content": "Si > 14 / 16% Mn > 60 / 65% C < 2,0 / 2,5% P < 0,20 / 0,35%"
+    },
+    { "span": "CaSi", "content": "Ca > 28 / 32% Si > 55 / 65%" },
+    { "span": "FeB", "content": "B > 15 / 18% Al < 0,5%" },
+    { "span": "FeCr", "content": "LC Cr > 60% C < 0,1%" },
+    { "span": "FeCr", "content": "HC Cr > 60% Si < 3,0 / 3,5%" },
+    { "span": "FeP", "content": "P > 21 / 25% C < 1%" },
+    { "span": "FeS", "content": "S > 28%" },
+    { "span": "FeMo", "content": "Mo > 60 / 65% Cu < 0,5 / 1,0%" },
+    { "span": "FeTi", "content": "Ti > 30 / 35% Si < 3,0%" },
+    { "span": "FeTi", "content": "Ti > 68 / 72%" },
+    { "span": "FeW", "content": "W > 72 / 75-78%" },
+    { "span": "FeV", "content": "V > 50% P < 0.1%" },
+    { "span": "FeV", "content": "V > 78-82% P < 0,1%" },
+    { "span": "Mg", "content": "Mg > 99,95%" },
+    { "span": "Mn", "content": "Mn > 99,7%" },
+    { "span": "Ca", "content": "Ca > 98,5%" },
+    { "span": "FeMnLC", "content": "Mn > 75 / 78% C < 0,1 - 0,5%" },
+    { "span": "FeMnMC", "content": "Mn > 70 / 75% - 80% C < 1,5%" },
+    {
+      "span": "FeMnHC",
+      "content": "Mn > 65 / 70 / 75 / 76% Si < 1,5% P < 0,20 / 0,30 / 0,35%"
+    },
+    { "span": "FeSiMg", "content": "Si > 45-47% Mg < 4-6 / 6-8%" },
+    { "span": "Ni", "content": "Ni > 99%" },
+    { "span": "Si", "content": "Si > 98,5% Ca < 0,3% Fe < 0,5% Al < 0,5%" },
+    { "span": "Si", "content": "Si > 99,0% Ca < 0,1% Fe < 0,4% Al < 0,4%" },
+    { "span": "Si", "content": "Si > 99,0% Ca < 0,03% Fe < 0,35% Al < 0,35%" },
+    { "span": "Si", "content": "Si > 99,0% Ca < 0,03% Fe < 0,15% Al < 0,3%" },
+    { "span": "N-Mn", "content": "Mn > 90% N > 6/8%" },
+    { "span": "N-FeMn", "content": "Mn > 70/75% C < 1,5% N >6/8%" },
+    { "span": "FeAl", "content": "Al > 30/35%" }
+  ],
+
+  "contact": {
+    "content1": "To request a quotation please contact us by phone or e-mail and we will provide you with experienced, professional and reliable services.",
+    "callToAction": "Contact Us",
+    "content2": "Your partner for strategic materials: Oxides, Metals, Ferro Alloys and Catalysts",
+    "form": "Form",
+    "labelName": "Name",
+    "placeHolderName": "Complete name..",
+    "labelEmail": "Email",
+    "placeHolderEmail": "name@domain.com",
+    "labelSubject": "Subject",
+    "placeHolderSubject": "Request a quotation..",
+    "labelMessage": "Message",
+    "placeHolderMEssage": "Write your notes or questions here..",
+    "btn": "",
+    "btnValue": "Submit",
+    "addressTitle": "Address",
+    "addressContent": "Francesc Layret, 144 - Barcelona",
+    "addressTel": "Phone",
+    "addressContentTel": "+34 663 85 38 86",
+    "addressEmail": "Email",
+    "addressContentEmail": "silvia.diaz@helousourcing.com"
   }
+}

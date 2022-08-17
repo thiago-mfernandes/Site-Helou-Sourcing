@@ -2,17 +2,18 @@
 
 .contact {
   @extend .sectionContainer;
-  //background-color: $cinzaClaroBg;
-  background-image: url("../../assets/img/banner-contato.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-
+   
+  //----------------------------------------------->
   @include desktop {
-    padding: 2% 0;
+    padding: 0;
   }
 
   &__container {
     @extend .divContainer;
+    background-image: url("../../assets/img/banner-contato.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
     //----------------------------------->
     @include tablet {
       @include alignItens-justifyContent(flex-start, space-between);
@@ -31,6 +32,53 @@
       }
     }
 
+    &___callToAction {
+
+      //------------------------------------------------>
+      @include desktop {
+        @include display-flexDirection(flex, column);
+        @include alignItens-justifyContent(center, center);
+        width: 100%;
+        margin: 10% 0;
+      }
+
+      &____content {
+        @extend .content;
+        color: $cinza;
+        //------------------------------------------->
+        @include tablet {
+          &:last-of-type {
+            margin-bottom: 10%;
+          }
+        }
+        //------------------------------------------->
+        @include desktop {
+          text-align: center;
+          &:nth-child(1) {
+            color: $branco;
+            margin: 0;
+          }
+          & {
+            color: $branco;
+            margin: 0 0 0;
+          }
+        }
+      }
+
+      &____subTitle {
+        @extend .subTitle;
+        margin: 20% 0;
+        //----------------------------------------->
+        @include tablet {
+          margin: 10% 0 5%;
+        }
+        //---------------------------------------->
+        @include desktop {
+          margin: 0;
+        }
+      }
+    }
+
     &___box {
       width: 100%;
       //-------------------------------------------->
@@ -44,7 +92,8 @@
       }
       //-------------------------------------------->
       @include desktop {
-        &:nth-child(2){
+        &:nth-child(2) {
+          margin-top: 2%;
           width: 55%;
         }
         & div[name="name"] {
@@ -72,6 +121,8 @@
         }
         //------------------------------------------>
         @include desktop {
+          margin-top: 5%;
+          padding-top: 10%;
           width: 40%;
 
           &:first-child {
@@ -93,11 +144,11 @@
         @include desktop {
           text-align: center;
           &:nth-child(1) {
-            color: $branco;  
+            color: $branco;
             margin: 0;
           }
           & {
-            color: $branco;  
+            color: $branco;
             margin: 0 0 15%;
           }
         }
@@ -113,8 +164,8 @@
         //---------------------------------------->
         @include desktop {
           margin: 10% 0 5%;
-          }
         }
+      }
 
       &____input {
         @extend .inputForm;

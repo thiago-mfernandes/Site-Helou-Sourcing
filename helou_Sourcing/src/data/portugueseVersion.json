@@ -1,13 +1,13 @@
 {
   "nav": 
-    { 
-      "label1": "Home", 
-      "label2": "Companhia", 
-      "label3": "O Que Fazemos?", 
-      "label4": "Porque a Helou Sourcing", 
-      "label5": "Produtos", 
-      "label6": "Contato" 
-    },
+    [ 
+      {"label": "Home", "href": "#home", "offset": "100"}, 
+      {"label": "Companhia", "href": "#company", "offset": "90"}, 
+      {"label": "O Que Fazemos?", "href": "#whatWeDo", "offset": "90"}, 
+      {"label": "Porque a Helou Sourcing", "href": "#whyUs", "offset": "90"}, 
+      {"label": "Produtos", "href": "#products", "offset": "90"}, 
+      {"label": "Contato", "href": "#contact", "offset": "100"} 
+    ],
 
   "header": 
     { 
@@ -91,6 +91,8 @@
     { "span": "N-FeMn", "content": "Mn > 70/75% C < 1,5% N >6/8%"},
     { "span": "FeAl", "content": "Al > 30/35%"}
   ],
+
+
   "contact": { 
     "content1" : "Para solicitar um orçamento, entre em contato conosco por telefone ou e-mail e forneceremos serviços experientes, profissionais e confiáveis.",
     "callToAction" : "Contate-nos",
@@ -107,10 +109,10 @@
     "btn" : "", 
     "btnValue": "Enviar Mensagem", 
     "addressTitle": "Endereço", 
-    "addressContent": "Rua sem nome, 123",
+    "addressContent": "Francesc Layret, 144 - Barcelona",
     "addressTel": "Telefone", 
-    "addressContentTel": "+ 123 456 789",
+    "addressContentTel": "+34 663 85 38 86",
     "addressEmail": "Email", 
-    "addressContentEmail": "hello@sourcing.com"
+    "addressContentEmail": "silvia.diaz@helousourcing.com"
   }     
 }

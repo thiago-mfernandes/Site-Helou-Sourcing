@@ -1,0 +1,19 @@
+@import "../../../scss/styles.scss";
+
+.itemLi {
+  margin: 2px 0;
+  cursor: pointer;
+  &:hover {
+    font-weight: 800;
+  }
+}
+
+.itemAnchor {
+  text-decoration: none;
+  color: $cinza;
+  //----------------------------->
+  @include desktop {
+    color: $azul-primario;
+    opacity: 0.8;
+  }
+}

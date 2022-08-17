@@ -10,8 +10,8 @@
     &___logo {
       //------------------------->
       @include desktop {
-        width: 20%;
-        margin: 5%;
+        width: 15%;
+        margin-top: $mt5;
       }
     }
 
