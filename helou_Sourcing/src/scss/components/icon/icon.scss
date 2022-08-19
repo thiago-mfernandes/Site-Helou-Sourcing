@@ -1,7 +1,10 @@
-@import '../../mixins/mixins.scss', '../../variables/variables.scss';
+@import "../../mixins/mixins.scss", "../../variables/variables.scss";
 
 .icon {
-    filter: brightness(0) saturate(100%) invert(21%) sepia(28%) saturate(126%) hue-rotate(152deg) brightness(96%) contrast(91%);
-    width: 50%;
-    height: 50%;
+  @include height-width(25%, 25%);
+  filter: $filterIcon;
+  @include desktop {
+    @include height-width(50%, 50%);
+    filter: $filterIcon;
+  }
 }

@@ -59,6 +59,8 @@
       }
 
       &____box {
+        @include display-flexDirection(flex, column);
+        @include alignItens-justifyContent(center, center);
         border-bottom: 1px solid $azul-primario;
         width: 100%;
         //---------------------------------------------------->
@@ -82,6 +84,12 @@
       }
 
       &____boxIcon {
+          @include alignItens-justifyContent(center, center);
+          @include display-flexDirection(flex, row);
+          @include height-width(100px, 30%);
+          background-color: $branco;
+          border-radius: 50%;
+          margin: 10% 0;
         //----------------------------------------->
         @include desktop {
           @include alignItens-justifyContent(center, center);

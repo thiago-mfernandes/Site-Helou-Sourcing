@@ -9,7 +9,7 @@
 
   &__title {
     @extend .title;
-
+    color: $azul-secundario;
     //------------------------------>
     @include desktop {
       color: $azul-secundario;

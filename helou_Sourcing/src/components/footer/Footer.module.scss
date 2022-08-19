@@ -8,10 +8,12 @@
     padding: 0 5%;
 
     &___logo {
+      margin-top: $mt5;
+      width: 50%;
       //------------------------->
       @include desktop {
-        width: 15%;
         margin-top: $mt5;
+        width: 15%;
       }
     }
 

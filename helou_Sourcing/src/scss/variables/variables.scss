@@ -15,7 +15,8 @@ $padding-lateral-5: 0 5%;
 $padding-lateral-7: 0 7.5%;
 $padding-interno-10: 10%;
 
-
+$filterIcon: brightness(0) saturate(100%) invert(21%) sepia(28%) saturate(126%)
+hue-rotate(152deg) brightness(96%) contrast(91%);
 
 $box-shadow-4: 4px 4px 4px rgba(0, 0, 0, 8%);
 $box-shadow-8: 4px 4px 8px rgba(0, 0, 0, 16%);
