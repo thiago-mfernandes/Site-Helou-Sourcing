@@ -1,47 +1,11 @@
 import styles from './Contact.module.scss';
 import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
-import { useState } from 'react';
-import axios from 'axios';
 
 export default function Contact() {
   const{language, HandleLanguage} = useContext(LanguageContext);
   let idiom = HandleLanguage(language);
 
-  const[name, setName] = useState('');
-  const[email, setEmail] = useState('');
-  const[subject, setSubject] = useState('');
-  const[message, setMessage] = useState('');
-  const[sent, setSent] = useState(false);
-  
-  function formSubmit(e){
-    
-    e.preventDefault();
-    
-    let formData = {
-      name: name,
-      email: email,
-      subject: subject,
-      message: message
-    };
-
-    axios.post('/api/forma', formData)
-      .then(resp => {
-        setSent(true);
-      }, resetForm())
-      .catch((err) => console.log(err));
-  }
-
-  function resetForm() {
-    setName(''),
-    setEmail(''),
-    setSubject(''),
-    setMessage(''),
-
-    setTimeout(() => {
-      setSent(false);
-    }, 3000);
-  }
 
   return (
     <section className={styles.contact} id="contact">
@@ -60,7 +24,7 @@ export default function Contact() {
         </div>
 
         <div className={styles.contact__container___box}>
-          <form className={styles.contact__container___box____boxContent} action="" name="form" onSubmit={formSubmit}>
+          <form className={styles.contact__container___box____boxContent} action="" name="form" >
             <h2 className={styles.contact__container___box____subTitle}>
               {idiom.contact.form}
             </h2>
@@ -74,8 +38,6 @@ export default function Contact() {
                 name="name" 
                 required 
                 placeholder={idiom.contact.placeHolderName}
-                onChange={(e) => setName(e.target.value)}
-                value={name}
               />
             </div>
 
@@ -89,8 +51,6 @@ export default function Contact() {
                 name="email" 
                 required 
                 placeholder={idiom.contact.placeHolderEmail}
-                onChange={(e) => setEmail(e.target.value)}
-                value={email}
               />
             </div>
             <div className={styles.contact__container___box}>
@@ -103,8 +63,6 @@ export default function Contact() {
                 name="subject" 
                 required 
                 placeholder={idiom.contact.placeHolderSubject}
-                onChange={(e) => setSubject(e.target.value)}
-                value={subject}
               />
             </div>
             <div className={styles.contact__container___box}>
@@ -117,8 +75,6 @@ export default function Contact() {
                 name="textArea" 
                 required 
                 placeholder={idiom.contact.placeHolderMEssage}
-                onChange={(e) => setMessage(e.target.value)}
-                value={message}
               />
             </div>
             <div className={styles.contact__container___box}>
@@ -128,7 +84,7 @@ export default function Contact() {
                 value={idiom.contact.btnValue} 
               />
               <span className={styles.contact__container___box____span}>
-                {sent ? 'Mensagem Enviada!' : ''}
+                {}
               </span>
             </div>
           </form>

@@ -10,6 +10,7 @@
 
   &__container {
     @extend .divContainer;
+    padding: 0;
 
     //----------------------------------->
     @include tablet {
@@ -36,13 +37,13 @@
       background-repeat: no-repeat;
       background-size: cover;
       padding: 5%;
-      width: 115%;
+      width: 100%;
       //------------------------------------------------>
       @include desktop {
         @include display-flexDirection(flex, column);
         @include alignItens-justifyContent(center, center);
         width: 100%;
-        margin: 10% 0;
+        margin: 2.5% 0;
       }
 
       &____content {
@@ -96,6 +97,7 @@
       }
       //-------------------------------------------->
       @include desktop {
+        padding-left: 7.5%;
         &:nth-child(2) {
           margin-top: 2%;
           width: 55%;
@@ -132,6 +134,7 @@
         @include desktop {
           margin-top: 5%;
           padding-top: 10%;
+          padding-right: 7.5%;
           width: 40%;
 
           &:first-child {
