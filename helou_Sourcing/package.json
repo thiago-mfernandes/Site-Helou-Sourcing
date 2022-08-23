@@ -2,10 +2,12 @@
   "name": "helou_Sourcing",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.27.2",
     "framer-motion": "^6.5.1",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.8.1",

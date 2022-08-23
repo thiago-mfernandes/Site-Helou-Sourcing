@@ -84,6 +84,7 @@
 
     &___box {
       width: 100%;
+      @include display-flexDirection(flex, column);
       //-------------------------------------------->
       @include tablet {
         &:nth-child(2) {
@@ -108,12 +109,17 @@
         }
       }
 
+      &____span {
+        width: 100%;
+      }
+
       &____boxContent {
         background-color: $branco;
         border-radius: 8px;
         padding: 5%;
         margin-bottom: 10%;
         width: 100%;
+        @include display-flexDirection(flex, column);
         //------------------------------------------>
         @include tablet {
           width: 40%;
