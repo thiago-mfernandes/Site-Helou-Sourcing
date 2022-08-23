@@ -38,10 +38,15 @@
     }
 
     &___container {
+      @include display-flexDirection(flex, row);
+      @include alignItens-justifyContent(flex-start, flex-start);
+      margin-bottom: $mb5;
+      width: 100%;
       //--------------------------------------->
       @include desktop {
         @include display-flexDirection(flex, row);
         @include alignItens-justifyContent(center, flex-start);
+        margin-bottom: $mb2;
         width: 48%;
       }
 

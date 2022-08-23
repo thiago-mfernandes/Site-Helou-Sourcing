@@ -2,7 +2,7 @@
 
 .contact {
   @extend .sectionContainer;
-   
+
   //----------------------------------------------->
   @include desktop {
     padding: 0;
@@ -10,9 +10,6 @@
 
   &__container {
     @extend .divContainer;
-    background-image: url("../../assets/img/banner-contato.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
 
     //----------------------------------->
     @include tablet {
@@ -33,7 +30,13 @@
     }
 
     &___callToAction {
-
+      @include display-flexDirection(flex, column);
+      @include alignItens-justifyContent(center, center);
+      background-image: url("../../assets/img/banner-contato.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 5%;
+      width: 115%;
       //------------------------------------------------>
       @include desktop {
         @include display-flexDirection(flex, column);
@@ -44,7 +47,7 @@
 
       &____content {
         @extend .content;
-        color: $cinza;
+        color: $branco;
         //------------------------------------------->
         @include tablet {
           &:last-of-type {
@@ -67,7 +70,7 @@
 
       &____subTitle {
         @extend .subTitle;
-        margin: 20% 0;
+        margin: 5% 0;
         //----------------------------------------->
         @include tablet {
           margin: 10% 0 5%;
