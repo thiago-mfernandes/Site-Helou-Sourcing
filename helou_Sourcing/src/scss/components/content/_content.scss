@@ -1,4 +1,4 @@
-@import '../../mixins/mixins.scss';
+@import '../../mixins/mixins.scss', '../../variables/variables.scss';
 
 .contentHeader {
     @include color-fontSize($branco, 1.25rem);
@@ -20,4 +20,5 @@
     @include color-fontSize($cinza, 1.125rem);
     text-align: justify;
     line-height: 1.6;
+    font-weight: 400;
 }

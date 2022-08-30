@@ -2,8 +2,10 @@ import styles from './Company.module.scss';
 import OurCompany from 'assets/img/company.jpg';
 import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
+import Content from 'components/content';
 
 export default function Company() {
+
   const{language, HandleLanguage} = useContext(LanguageContext);
   let idiom = HandleLanguage(language);
 
@@ -15,20 +17,14 @@ export default function Company() {
           <span>
             {idiom.companyComponent.whoWeAre}
           </span>
-          <h2 className={styles.company__container___descriptionBox____title}>         {idiom.companyComponent.title}
+          <h2 className={styles.company__container___descriptionBox____title}>
+            {idiom.companyComponent.title}
           </h2>
-          <p className={styles.company__container___descriptionBox____content}>
-            {idiom.companyComponent.content1}
-          </p>
-          <p className={styles.company__container___descriptionBox____content}>
-            {idiom.companyComponent.content2}
-          </p>
-          <p className={styles.company__container___descriptionBox____content}>
-            {idiom.companyComponent.content3}
-          </p>
-          <p className={styles.company__container___descriptionBox____content}>
-            {idiom.companyComponent.content4}
-          </p>
+          
+          {idiom.companyComponent.contents.map((item, index) => (
+            <Content key={index} content={item.content} />
+          ))}
+          
         </div>
       </div>
     </section>

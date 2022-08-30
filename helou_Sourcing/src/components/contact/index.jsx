@@ -100,13 +100,18 @@ export default function Contact() {
             {idiom.contact.addressTel}
           </p>
           <p className={styles.contact__container___box____addressContent}>
-            {idiom.contact.addressContentTel}
+            <a href="https://wa.me/34663853886" 
+              target="_blank" rel="noreferrer">
+              {idiom.contact.addressContentTel}
+            </a>
+            
           </p>
           <p className={styles.contact__container___box____addressTitle}>
             {idiom.contact.addressEmail}
           </p>
           <p className={styles.contact__container___box____addressContent}>
-            {idiom.contact.addressContentEmail}
+            <a href="mailto:silvia.diaz@helousourcing.com">{idiom.contact.addressContentEmail}</a>
+            
           </p>
         </div>
       </div>

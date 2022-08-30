@@ -19,7 +19,21 @@
     { 
       "whoWeAre": "Quem é a Helou Sourcing?",
       "title": "Companhia",
-      "content1": "Somos uma corretora comercial, com sede em São Paulo, Brasil trabalhando diligentemente no fornecimento de commodities específicas ou na busca de um mercado para seus produtos, onde estendemos nossa experiência de 30 anos para fornecer as soluções necessárias por meio de nossa rede global.",
+      "contents": [
+        {
+          "content": "Somos uma trading mundial, com sede em Barcelona - Espanha trabalhando diligentemente no fornecimento de commodities específicas ou na busca de um mercado para seus produtos, onde estendemos nossa experiência de 30 anos para fornecer as soluções necessárias por meio de nossa rede global."
+        },
+        {
+          "content": "Nossa principal prioridade é estabelecer e manter um relacionamento comercial positivo e de longo prazo com nossos clientes e fornecedores."
+        },
+        {
+          "content": "A Helou Sourcing firmou parceria de sucesso com fabricantes renomados e conceituados em todo o mundo, garantindo aos nossos clientes nossa capacidade de fornecer produtos de alta qualidade a preços competitivos, respaldados pelo suporte técnico e metalúrgico necessário."
+        },
+        {
+          "content": "Ao mesmo tempo, estamos comprometidos com nossos fornecedores em fornecer a eles um suporte consistente de mercado."
+        }
+      ],
+      "content1": "Somos uma trading mundial, com sede em Barcelona - Espanha trabalhando diligentemente no fornecimento de commodities específicas ou na busca de um mercado para seus produtos, onde estendemos nossa experiência de 30 anos para fornecer as soluções necessárias por meio de nossa rede global.",
       "content2": "Nossa principal prioridade é estabelecer e manter um relacionamento comercial positivo e de longo prazo com nossos clientes e fornecedores.",
       "content3": "A Helou Sourcing firmou parceria de sucesso com fabricantes renomados e conceituados em todo o mundo, garantindo aos nossos clientes nossa capacidade de fornecer produtos de alta qualidade a preços competitivos, respaldados pelo suporte técnico e metalúrgico necessário.",
       "content4": "Ao mesmo tempo, estamos comprometidos com nossos fornecedores em fornecer a eles um suporte consistente de mercado."
@@ -57,7 +71,7 @@
     "title": "Porque a Helou Sourcing?",
     "content1": " Somos especializados no comércio internacional de metais e na gestão de resíduos industriais. Acreditamos que nossas ações operacionais de reciclagem de resíduos nos permitem não apenas economizar recursos minerais naturais, mas principalmente proteger o meio ambiente do uso incorreto e do descarte e disposição inadequada dos referidos resíduos." ,
     "forAltImg": "Sustentabilidade",
-    "content2": "Nós da Helou Sourcing, acreditamos que para fazer diferente é preciso paixão. Sabemos que não somos perfeitos, mas nós nos esforçamos para fazer a nossa parte. Venha conhecer mais sobre nosso trabalho e como estamos fazendo a diferença." 
+    "content2": "Nós da Helou Sourcing, acreditamos que para fazer diferente é preciso paixão. Nos esforçamos para fazer a nossa parte. Venha conhecer mais sobre nosso trabalho e como estamos fazendo a diferença." 
   },
      
   "products": [

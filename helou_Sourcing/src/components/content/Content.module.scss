@@ -1,0 +1,10 @@
+@import "../../scss/styles.scss";
+
+.content {
+  @extend .content;
+  //-------------------------------------->
+  @include desktop {
+    margin: 1% 0;
+    font-size: 1rem;
+  }
+}
