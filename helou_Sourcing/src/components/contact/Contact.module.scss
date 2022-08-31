@@ -181,10 +181,6 @@
         }
       }
 
-      &____input {
-        @extend .inputForm;
-      }
-
       &____textArea {
         @extend .inputForm;
         height: 100px;

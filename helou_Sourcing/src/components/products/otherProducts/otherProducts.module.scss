@@ -1,0 +1,30 @@
+@import "../../../scss/styles.scss";
+
+.products {
+  width: 100;
+
+  @include desktop {
+    @include alignItens-justifyContent(flex-start, space-between);
+    @include display-flexDirection(flex, row);
+    margin-bottom: $mb10;
+  }
+
+  &__span {
+    @extend .content;
+    color: $azul-primario;
+
+    @include desktop {
+      margin-right: 5px;
+      text-align: left;
+    }
+  }
+
+  &__content {
+    @extend .content;
+
+    @include desktop {
+      margin: 0;
+      width: 72.5%;
+    }
+  }
+}

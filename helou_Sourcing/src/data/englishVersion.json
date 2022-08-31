@@ -56,18 +56,16 @@
     "content": "And in all types and forms of intermediary products containing non-ferrous metals: (V, Ni, Co, W, Mo, Cu, Pb, Sn, etc…) in form of FINES, OXIDES, SLUDGES, METALLIC, SPENT CATALYSTS,etc…"
   },
 
-  "metalFormsImg": [
-    { "url": "assets/cobre.jpg", "label": "Copper" },
-    { "url": "assets/nickel.jpg", "label": "Nickel" },
-    { "url": "assets/zinco.jpg", "label": "Zinc" },
-    { "url": "assets/nr5.jpg", "label": "nr5" }
-  ],
-
   "whyUs": {
     "title": "Why Helou Sourcing",
     "content1": " We specialize in international metal trade and in management of industrial waste. We believe that our operational actions of recycling of wastes allow us not only to save natural mineral resources, but specially to protect the environment from the incorrect use and inadequate dumping and disposition of the referred wastes.",
     "forAltImg": "Sustainability",
     "content2": "We at Helou Sourcing, believe that to do different, it takes passion. We strive to do our part. Come and learn more about our work and how we are making a difference."
+  },
+
+  "productsSectionHeader": {
+    "title": "Products and Services",
+    "subTitle": "Metals and iron alloys we sell:"
   },
 
   "products": [
@@ -111,19 +109,47 @@
     { "span": "FeAl", "content": "Al > 30/35%" }
   ],
 
+  "otherProducts": [
+    {
+      "title": "Also Trading In:",
+      "content": "COBALT(Ore/Conc, CoOH, CoSO4) - MANGANESE(Ore, Conc, MnSO4) - ZINC(Ore/Conc, ZnSO4, ZnO) - COPPER(Ore/Conc, CuSO4, CuO) - MOLYBDENUM(MoO3 >; 57%)"
+    },
+    {
+      "title": "Non-Ferrous Metals:",
+      "content": "All types and forms of intermediary products containing non-ferrous metals  (V, Ni, Co, W, Mo, Cu, Pb, Sn, etc…)  in form of FINES, OXIDES, SLUDGES, METALLIC, SPENT CATALYSTS, etc…"
+    }
+  ],
+
   "contact": {
     "content1": "To request a quotation please contact us by phone or e-mail and we will provide you with experienced, professional and reliable services.",
     "callToAction": "Contact Us",
     "content2": "Your partner for strategic materials: Oxides, Metals, Ferro Alloys and Catalysts",
     "form": "Form",
-    "labelName": "Name",
-    "placeHolderName": "Complete name..",
-    "labelEmail": "Email",
-    "placeHolderEmail": "name@domain.com",
-    "labelSubject": "Subject",
-    "placeHolderSubject": "Request a quotation..",
+    "inputBox": [
+      {
+        "labelHtmlFor": "name",
+        "labelContent": "Name",
+        "inputType": "text",
+        "inputName": "name",
+        "placeholder": "Complete name.."
+      },
+      {
+        "labelHtmlFor": "email",
+        "labelContent": "Email",
+        "inputType": "email",
+        "inputName": "email",
+        "placeholder": "noame@domain.com"
+      },
+      {
+        "labelHtmlFor": "subject",
+        "labelContent": "Subject",
+        "inputType": "text",
+        "inputName": "subject",
+        "placeholder": "Ex.: Request a quotation.."
+      }
+    ],
     "labelMessage": "Message",
-    "placeHolderMEssage": "Write your notes or questions here..",
+    "placeHolderMessage": "Write your notes or questions here..",
     "btn": "",
     "btnValue": "Submit",
     "addressTitle": "Address",

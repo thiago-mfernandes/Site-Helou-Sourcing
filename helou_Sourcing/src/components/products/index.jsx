@@ -1,16 +1,18 @@
 import styles from './Products.module.scss';
 import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
+import OtherProducts from './otherProducts';
 
 export default function Products() {
 
   const{language, HandleLanguage} = useContext(LanguageContext);
   let idiom = HandleLanguage(language);
+  console.log(idiom.productsSectionHeader);
 
   return (
     <section className={styles.products}>
-      <h2 className={styles.products__title}>Produtos e Serviços</h2>
-      <h3 className={styles.products__subTitle}>Metais e ligas de ferro que comercializamos:</h3>
+      <h2 className={styles.products__title}>{idiom.productsSectionHeader.title}</h2>
+      <h3 className={styles.products__subTitle}>{idiom.productsSectionHeader.subTitle}</h3>
       <div className={styles.products__productsBox}>
         {
           idiom.products.map((item, index) => (
@@ -26,21 +28,15 @@ export default function Products() {
         }
       </div>
 
-      <div className={styles.products__productsBoxAnd}>
-        <span className={styles.products__productsBoxAnd___span}>Tambem Negociamos em:</span>
-        <p className={styles.products__productsBoxAnd___content}>
-          COBALTO(Minério/Conc, CoOH, CoSO4) 
-          MANGANÊS(Minério, Conc, MnSO4)
-          ZINCO(Minério/Conc, ZnSO4, ZnO) 
-          COBRE(Minério/Conc, CuSO4, CuO) 
-          MOLIBDÊNIO(MoO3 &gt; 57%)
-        </p>
-      </div>
-
-      <div className={styles.products__productsBoxAnd}>
-        <span className={styles.products__productsBoxAnd___span}>Metais Não Ferrosos:</span>
-        <p className={styles.products__productsBoxAnd___content}>Todos os tipos e formas de produtos intermediários contendo metais não ferrosos  (V, Ni, Co, W, Mo, Cu, Pb, Sn, etc…)  na forma de FINO, ÓXIDOS, LAMAS, METÁLICOS, CATALISADORES GASTO, etc…</p>
-      </div>
+      {
+        idiom.otherProducts.map((item, index) => (
+          <OtherProducts 
+            key={index} 
+            titleProduct={item.title} 
+            content={item.content}
+          />
+        ))
+      }
 
     </section>
   );

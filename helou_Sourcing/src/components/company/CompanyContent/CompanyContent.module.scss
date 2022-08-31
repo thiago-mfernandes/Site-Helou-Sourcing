@@ -1,7 +1,8 @@
-@import "../../scss/styles.scss";
+@import "../../../scss/styles.scss";
 
 .content {
   @extend .content;
+
   //-------------------------------------->
   @include desktop {
     margin: 1% 0;

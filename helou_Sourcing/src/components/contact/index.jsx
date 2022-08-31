@@ -1,11 +1,11 @@
 import styles from './Contact.module.scss';
 import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
+import InputBox from './InputBox';
 
 export default function Contact() {
   const{language, HandleLanguage} = useContext(LanguageContext);
   let idiom = HandleLanguage(language);
-
 
   return (
     <section className={styles.contact} id="contact">
@@ -28,43 +28,20 @@ export default function Contact() {
             <h2 className={styles.contact__container___box____subTitle}>
               {idiom.contact.form}
             </h2>
-            <div className={styles.contact__container___box} name="name">
-              <label htmlFor="name">
-                {idiom.contact.labelName}
-              </label>
-              <input 
-                className={styles.contact__container___box____input} 
-                type="text" 
-                name="name" 
-                required 
-                placeholder={idiom.contact.placeHolderName}
-              />
-            </div>
 
-            <div className={styles.contact__container___box}>
-              <label htmlFor="email">
-                {idiom.contact.labelEmail}
-              </label>
-              <input 
-                className={styles.contact__container___box____input} 
-                type="email" 
-                name="email" 
-                required 
-                placeholder={idiom.contact.placeHolderEmail}
-              />
-            </div>
-            <div className={styles.contact__container___box}>
-              <label htmlFor="subject">
-                {idiom.contact.labelSubject}
-              </label>
-              <input 
-                className={styles.contact__container___box____input} 
-                type="text" 
-                name="subject" 
-                required 
-                placeholder={idiom.contact.placeHolderSubject}
-              />
-            </div>
+            {
+              idiom.contact.inputBox.map((item, index) => (
+                <InputBox 
+                  key={index}
+                  labelHtmlFor={item.labelHtmlFor}
+                  labelContent={item.labelContent}
+                  inputType={item.inputType}
+                  inputName={item.inputName}
+                  placeholder={item.placeholder}
+                />
+              ))
+            }
+
             <div className={styles.contact__container___box}>
               <label htmlFor="textArea">
                 {idiom.contact.labelMessage}
@@ -74,9 +51,10 @@ export default function Contact() {
                 type="text" 
                 name="textArea" 
                 required 
-                placeholder={idiom.contact.placeHolderMEssage}
+                placeholder={idiom.contact.placeHolderMessage}
               />
             </div>
+
             <div className={styles.contact__container___box}>
               <input 
                 className={styles.contact__container___box____btnForm} 
@@ -87,6 +65,7 @@ export default function Contact() {
                 {}
               </span>
             </div>
+            
           </form>
         </div>
         <div className={styles.contact__container___box____boxContent}>

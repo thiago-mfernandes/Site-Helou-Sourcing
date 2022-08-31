@@ -2,7 +2,7 @@ import styles from './Company.module.scss';
 import OurCompany from 'assets/img/company.jpg';
 import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
-import Content from 'components/content';
+import CompanyContent from 'components/company/CompanyContent';
 
 export default function Company() {
 
@@ -22,7 +22,10 @@ export default function Company() {
           </h2>
           
           {idiom.companyComponent.contents.map((item, index) => (
-            <Content key={index} content={item.content} />
+            <CompanyContent 
+              key={index} 
+              content={item.content} 
+            />
           ))}
           
         </div>
