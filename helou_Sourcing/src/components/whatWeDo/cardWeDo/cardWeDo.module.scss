@@ -1,0 +1,56 @@
+@import '../../../scss//styles.scss';
+
+.box {
+  @include display-flexDirection(flex, column);
+  @include alignItens-justifyContent(center, center);
+  border-bottom: 1px solid $azul-primario;
+  width: 100%;
+  //---------------------------------------------------->
+  @include tablet {
+    width: 47.5%;
+  }
+  //---------------------------------------->
+  @include desktop {
+    transition: $transition;
+    width: 30%;
+    @include display-flexDirection(flex, column);
+    @include alignItens-justifyContent(center, center);
+    &:hover {
+      transform: translateY(-10px);
+      transition: $transition;
+    }
+  }
+}
+
+/*
+& [name="border-none"] {
+  border-bottom: none;
+}
+*/
+
+.boxIcon {
+  @include alignItens-justifyContent(center, center);
+  @include display-flexDirection(flex, row);
+  @include height-width(100px, 30%);
+  background-color: $branco;
+  border-radius: 50%;
+  margin: 10% 0;
+//----------------------------------------->
+  @include desktop {
+    @include alignItens-justifyContent(center, center);
+    @include display-flexDirection(flex, row);
+    @include height-width(100px, 30%);
+    background-color: $branco;
+    border-radius: 50%;
+    margin: 10% 0;
+  }
+
+  &__weDo {
+    @include color-fontSize($branco, 1.15rem);
+    text-align: center;
+  }
+}
+
+.icon {
+  @extend .icon;
+}

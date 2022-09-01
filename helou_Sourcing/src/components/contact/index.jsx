@@ -1,9 +1,34 @@
 import styles from './Contact.module.scss';
 import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
-import InputBox from './InputBox';
+import { useState } from 'react';
+import axios from 'axios';
 
 export default function Contact() {
+
+  const[name, setName] = useState('');
+  const[email, setEmail] = useState('');
+  const[subject, setSubject] = useState('');
+  const[message, setMessage] = useState('');
+    
+  function handleFormSubmit(event){  
+    event.preventDefault(); 
+
+    const formData = {
+      name: name,
+      email: email,
+      subject: subject,
+      message: message
+    };
+
+    axios.post('/send', formData, {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(response => alert(response.data));
+  }  
+
   const{language, HandleLanguage} = useContext(LanguageContext);
   let idiom = HandleLanguage(language);
 
@@ -24,34 +49,71 @@ export default function Contact() {
         </div>
 
         <div className={styles.contact__container___box}>
-          <form className={styles.contact__container___box____boxContent} action="" name="form" >
+
+          <form 
+            onSubmit={handleFormSubmit}
+            className={styles.contact__container___box____boxContent} 
+            name="form" 
+            method='post'
+            action='/send'
+          >
             <h2 className={styles.contact__container___box____subTitle}>
               {idiom.contact.form}
             </h2>
 
-            {
-              idiom.contact.inputBox.map((item, index) => (
-                <InputBox 
-                  key={index}
-                  labelHtmlFor={item.labelHtmlFor}
-                  labelContent={item.labelContent}
-                  inputType={item.inputType}
-                  inputName={item.inputName}
-                  placeholder={item.placeholder}
-                />
-              ))
-            }
+            <div className={styles.contact__container___box}>
+              <label htmlFor="name">
+                {idiom.contact.labelName}
+              </label>
+              <input 
+                className={styles.contact__container___box____input}
+                type="text" 
+                name="name" 
+                required 
+                placeholder={idiom.contact.placeHolderName}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </div>
 
             <div className={styles.contact__container___box}>
-              <label htmlFor="textArea">
+              <label htmlFor="email">
+                {idiom.contact.labelEmail}
+              </label>
+              <input 
+                className={styles.contact__container___box____input}
+                type="email" 
+                name="email" 
+                required 
+                placeholder={idiom.contact.placeHolderEmail}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+
+            <div className={styles.contact__container___box}>
+              <label htmlFor="subject">
+                {idiom.contact.labelSubject}
+              </label>
+              <input 
+                className={styles.contact__container___box____input}
+                type="text" 
+                name="subject" 
+                required 
+                placeholder={idiom.contact.placeHolderSubject}
+                onChange={(e) => setSubject(e.target.value)}
+              />
+            </div>
+
+            <div className={styles.contact__container___box}>
+              <label htmlFor="message">
                 {idiom.contact.labelMessage}
               </label>
               <textarea 
                 className={styles.contact__container___box____textArea}
                 type="text" 
-                name="textArea" 
+                name="message" 
                 required 
                 placeholder={idiom.contact.placeHolderMessage}
+                onChange={(e) => setMessage(e.target.value)}
               />
             </div>
 
@@ -67,7 +129,9 @@ export default function Contact() {
             </div>
             
           </form>
+
         </div>
+
         <div className={styles.contact__container___box____boxContent}>
           <p className={styles.contact__container___box____addressTitle}>
             {idiom.contact.addressTitle}
@@ -97,3 +161,11 @@ export default function Contact() {
     </section>
   );
 }
+
+{/*
+
+  1. Pegar os valores dos valores digitados nos inputs e armazena-los em estados, para que os estados sejam passados para o back-end;
+  2. qdo clicar no botao submit, os estados serao enviados
+  3. criar a funcao de handle
+  4. colocar a propriedade de onChange nos inputs, para quando houver alteracao no campo, os estados sejam alterados
+*/}

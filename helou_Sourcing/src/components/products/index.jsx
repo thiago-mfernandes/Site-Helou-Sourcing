@@ -7,7 +7,6 @@ export default function Products() {
 
   const{language, HandleLanguage} = useContext(LanguageContext);
   let idiom = HandleLanguage(language);
-  console.log(idiom.productsSectionHeader);
 
   return (
     <section className={styles.products}>

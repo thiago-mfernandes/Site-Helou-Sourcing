@@ -1,9 +1,7 @@
 import styles from './WhatWeDo.module.scss';
 import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
-import MetalIcon from 'assets/icons/beam.png';
-import SucataIcon from 'assets/icons/waste.png';
-import ResiduoIcon from 'assets/icons/scrap.png';
+import CardWeDo from './cardWeDo';
 
 export default function whatWeDo() {
 
@@ -19,30 +17,18 @@ export default function whatWeDo() {
               {idiom.whatWeDoComponent.titleSection1}
             </h2>
           </div>
-          <div className={styles.whatWeDo__container___faq____box}>
-            <div className={styles.whatWeDo__container___faq____boxIcon}>
-              <img src={MetalIcon} alt="Icone Metal" className={styles.icon} />
-            </div>
-            <h2 className={styles.whatWeDo__container___faq____weDo}>
-              {idiom.whatWeDoComponent.label1}
-            </h2>
-          </div>
-          <div className={styles.whatWeDo__container___faq____box}>
-            <div className={styles.whatWeDo__container___faq____boxIcon}>
-              <img src={ResiduoIcon} alt="Icone Sucata" className={styles.icon} />
-            </div>
-            <h2 className={styles.whatWeDo__container___faq____weDo}>
-              {idiom.whatWeDoComponent.label2}
-            </h2>
-          </div>
-          <div className={styles.whatWeDo__container___faq____box}>
-            <div className={styles.whatWeDo__container___faq____boxIcon}>
-              <img src={SucataIcon} alt="Icone Residuos" className={styles.icon} />
-            </div>
-            <h2 className={styles.whatWeDo__container___faq____weDo}>
-              {idiom.whatWeDoComponent.label3}
-            </h2>
-          </div>
+
+          {
+            idiom.whatWeDo.map((item, index) => (
+              <CardWeDo 
+                key={index}
+                alt={item.alt}
+                img={item.img}
+                content={item.content}
+              />
+            ))
+          }
+
         </div>   
       </div>
     </section>    

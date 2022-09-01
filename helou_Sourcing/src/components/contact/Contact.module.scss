@@ -111,6 +111,11 @@
         }
       }
 
+      &____input {
+        @extend .inputForm;
+      }
+
+
       &____span {
         width: 100%;
       }

@@ -1,106 +1,117 @@
 {
-  "nav": 
-    [ 
-      {"label": "Home", "href": "#home", "offset": "100"}, 
-      {"label": "Companhia", "href": "#company", "offset": "90"}, 
-      {"label": "O Que Fazemos?", "href": "#whatWeDo", "offset": "90"}, 
-      {"label": "Porque a Helou Sourcing", "href": "#whyUs", "offset": "90"}, 
-      {"label": "Produtos", "href": "#products", "offset": "90"}, 
-      {"label": "Contato", "href": "#contact", "offset": "100"} 
+  "nav": [
+    { "label": "Home", "href": "#home", "offset": "100" },
+    { "label": "Companhia", "href": "#company", "offset": "90" },
+    { "label": "O Que Fazemos?", "href": "#whatWeDo", "offset": "90" },
+    { "label": "Porque a Helou Sourcing", "href": "#whyUs", "offset": "90" },
+    { "label": "Produtos", "href": "#products", "offset": "90" },
+    { "label": "Contato", "href": "#contact", "offset": "100" }
+  ],
+
+  "header": {
+    "title": "Metais Ferros Catalisadores",
+    "subTitle": "Qualidade, Confiabilidade e Sustentabilidade"
+  },
+
+  "companyComponent": {
+    "whoWeAre": "Quem é a Helou Sourcing?",
+    "title": "Companhia",
+    "contents": [
+      {
+        "content": "Somos uma trading mundial, com sede em Barcelona - Espanha trabalhando diligentemente no fornecimento de commodities específicas ou na busca de um mercado para seus produtos, onde estendemos nossa experiência de 30 anos para fornecer as soluções necessárias por meio de nossa rede global."
+      },
+      {
+        "content": "Nossa principal prioridade é estabelecer e manter um relacionamento comercial positivo e de longo prazo com nossos clientes e fornecedores."
+      },
+      {
+        "content": "A Helou Sourcing firmou parceria de sucesso com fabricantes renomados e conceituados em todo o mundo, garantindo aos nossos clientes nossa capacidade de fornecer produtos de alta qualidade a preços competitivos, respaldados pelo suporte técnico e metalúrgico necessário."
+      },
+      {
+        "content": "Ao mesmo tempo, estamos comprometidos com nossos fornecedores em fornecer a eles um suporte consistente de mercado."
+      }
     ],
+    "content1": "Somos uma trading mundial, com sede em Barcelona - Espanha trabalhando diligentemente no fornecimento de commodities específicas ou na busca de um mercado para seus produtos, onde estendemos nossa experiência de 30 anos para fornecer as soluções necessárias por meio de nossa rede global.",
+    "content2": "Nossa principal prioridade é estabelecer e manter um relacionamento comercial positivo e de longo prazo com nossos clientes e fornecedores.",
+    "content3": "A Helou Sourcing firmou parceria de sucesso com fabricantes renomados e conceituados em todo o mundo, garantindo aos nossos clientes nossa capacidade de fornecer produtos de alta qualidade a preços competitivos, respaldados pelo suporte técnico e metalúrgico necessário.",
+    "content4": "Ao mesmo tempo, estamos comprometidos com nossos fornecedores em fornecer a eles um suporte consistente de mercado."
+  },
 
-  "header": 
-    { 
-      "title": "Metais Ferros Catalisadores",
-      "subTitle": "Qualidade, Confiabilidade e Sustentabilidade"
-    },  
-
-  "companyComponent":
-    { 
-      "whoWeAre": "Quem é a Helou Sourcing?",
-      "title": "Companhia",
-      "contents": [
-        {
-          "content": "Somos uma trading mundial, com sede em Barcelona - Espanha trabalhando diligentemente no fornecimento de commodities específicas ou na busca de um mercado para seus produtos, onde estendemos nossa experiência de 30 anos para fornecer as soluções necessárias por meio de nossa rede global."
-        },
-        {
-          "content": "Nossa principal prioridade é estabelecer e manter um relacionamento comercial positivo e de longo prazo com nossos clientes e fornecedores."
-        },
-        {
-          "content": "A Helou Sourcing firmou parceria de sucesso com fabricantes renomados e conceituados em todo o mundo, garantindo aos nossos clientes nossa capacidade de fornecer produtos de alta qualidade a preços competitivos, respaldados pelo suporte técnico e metalúrgico necessário."
-        },
-        {
-          "content": "Ao mesmo tempo, estamos comprometidos com nossos fornecedores em fornecer a eles um suporte consistente de mercado."
-        }
-      ],
-      "content1": "Somos uma trading mundial, com sede em Barcelona - Espanha trabalhando diligentemente no fornecimento de commodities específicas ou na busca de um mercado para seus produtos, onde estendemos nossa experiência de 30 anos para fornecer as soluções necessárias por meio de nossa rede global.",
-      "content2": "Nossa principal prioridade é estabelecer e manter um relacionamento comercial positivo e de longo prazo com nossos clientes e fornecedores.",
-      "content3": "A Helou Sourcing firmou parceria de sucesso com fabricantes renomados e conceituados em todo o mundo, garantindo aos nossos clientes nossa capacidade de fornecer produtos de alta qualidade a preços competitivos, respaldados pelo suporte técnico e metalúrgico necessário.",
-      "content4": "Ao mesmo tempo, estamos comprometidos com nossos fornecedores em fornecer a eles um suporte consistente de mercado."
+  "whatWeDo": [
+    {
+      "img": "assets/icons/beam.png",
+      "alt": "Ícone Metal",
+      "content": " Trabalhamos com todos os tipos de metais e ligas de ferro;"
     },
-    
-  "whatWeDoComponent": 
-    { 
-      "titleSection1": "O que Fazemos?",
-      "label1": " Trabalhamos com todos os tipos de metais e ligas de ferro;",
-      "label2": " Também operamos com sucata metálica em diversas variedades;",
-      "label3": " E temos a disposição de nossos clientes catalisadores e resíduos.",
-      "titleSection2": "Negociamos em:",
-      "span1": "Cobalto", 
-      "paragraph1": "(Minério/Conc, CoOH, CoSO4)",
-      "span2": "Manganês", 
-      "paragraph2": "(Minério, Conc, MnSO4)",
-      "span3": "Zinco", 
-      "paragraph3": "(Minério/Conc, ZnSO4, ZnO)", 
-      "span4": "Cobre", 
-      "paragraph4": "(Minério/Conc, CuSO4, CuO)",
-      "span5": "Molibdênio", 
-      "paragraph5": "(MoO3 > 57%)",
-      "titleSection3": "Metais Não Ferrosos",
-      "content": "Todos os tipos e formas de produtos intermediários contendo metais não ferrosos: (V, Ni, Co, W, Mo, Cu, Pb, Sn, etc…) nas formas de FINO, ÓXIDOS, LAMAS, METÁLICOS, CATALISADORES GASTO, etc…"
-    }, 
-  "whyUs": { 
+    {
+      "img": "assets/icons/scrap.png",
+      "alt": "Ícone Sucata",
+      "content": " Também operamos com sucata metálica em diversas variedades;"
+    },
+    {
+      "img": "assets/icons/waste.png",
+      "alt": "Ícone Resíduos",
+      "content": " E temos a disposição de nossos clientes catalisadores e resíduos."
+    }
+  ],
+
+  "whatWeDoComponent": {
+    "titleSection1": "O que Fazemos?",
+    "label1": " Trabalhamos com todos os tipos de metais e ligas de ferro;",
+    "label2": " Também operamos com sucata metálica em diversas variedades;",
+    "label3": " E temos a disposição de nossos clientes catalisadores e resíduos."
+  },
+
+  "whyUs": {
     "title": "Porque a Helou Sourcing?",
-    "content1": " Somos especializados no comércio internacional de metais e na gestão de resíduos industriais. Acreditamos que nossas ações operacionais de reciclagem de resíduos nos permitem não apenas economizar recursos minerais naturais, mas principalmente proteger o meio ambiente do uso incorreto e do descarte e disposição inadequada dos referidos resíduos." ,
+    "content1": " Somos especializados no comércio internacional de metais e na gestão de resíduos industriais. Acreditamos que nossas ações operacionais de reciclagem de resíduos nos permitem não apenas economizar recursos minerais naturais, mas principalmente proteger o meio ambiente do uso incorreto e do descarte e disposição inadequada dos referidos resíduos.",
     "forAltImg": "Sustentabilidade",
-    "content2": "Nós da Helou Sourcing, acreditamos que para fazer diferente é preciso paixão. Nos esforçamos para fazer a nossa parte. Venha conhecer mais sobre nosso trabalho e como estamos fazendo a diferença." 
+    "content2": "Nós da Helou Sourcing, acreditamos que para fazer diferente é preciso paixão. Nos esforçamos para fazer a nossa parte. Venha conhecer mais sobre nosso trabalho e como estamos fazendo a diferença."
   },
 
   "productsSectionHeader": {
     "title": "Produtos e Serviços",
     "subTitle": "Metais e ligas de ferro que comercializamos:"
   },
-     
+
   "products": [
-    { "span": "FeSi", "content": "70 / 75% C < 0,1 / 0,2% Al < 0,5 / 1,5 / 2,0%"},
-    { "span": "SiMn", "content": "Si > 14 / 16% Mn > 60 / 65% C < 2,0 / 2,5% P < 0,20 / 0,35%"},
-    { "span": "CaSi", "content": "Ca > 28 / 32% Si > 55 / 65%"},
-    { "span": "FeB", "content": "B > 15 / 18% Al < 0,5%"},
-    { "span": "FeCr", "content": "LC Cr > 60% C < 0,1%"},
-    { "span": "FeCr", "content": "HC Cr > 60% Si < 3,0 / 3,5%"},
-    { "span": "FeP", "content": "P > 21 / 25% C < 1%"},
-    { "span": "FeS", "content": "S > 28%"},
-    { "span": "FeMo", "content": "Mo > 60 / 65% Cu < 0,5 / 1,0%"},
-    { "span": "FeTi", "content": "Ti > 30 / 35% Si < 3,0%"},
-    { "span": "FeTi", "content": "Ti > 68 / 72%"},
-    { "span": "FeW", "content": "W > 72 / 75-78%"},
-    { "span": "FeV", "content": "V > 50% P < 0.1%"},
-    { "span": "FeV", "content": "V > 78-82% P < 0,1%"},
-    { "span": "Mg", "content": "Mg > 99,95%"},
-    { "span": "Mn", "content": "Mn > 99,7%"},
-    { "span": "Ca", "content": "Ca > 98,5%"},
-    { "span": "FeMnLC", "content": "Mn > 75 / 78% C < 0,1 - 0,5%"},
-    { "span": "FeMnMC", "content": "Mn > 70 / 75% - 80% C < 1,5%"},
-    { "span": "FeMnHC", "content": "Mn > 65 / 70 / 75 / 76% Si < 1,5% P < 0,20 / 0,30 / 0,35%"},
-    { "span": "FeSiMg", "content": "Si > 45-47% Mg < 4-6 / 6-8%"},
-    { "span": "Ni", "content": "Ni > 99%"},
-    { "span": "Si", "content": "Si > 98,5% Ca < 0,3% Fe < 0,5% Al < 0,5%"},
-    { "span": "Si", "content": "Si > 99,0% Ca < 0,1% Fe < 0,4% Al < 0,4%"},
-    { "span": "Si", "content": "Si > 99,0% Ca < 0,03% Fe < 0,35% Al < 0,35%"},
-    { "span": "Si", "content": "Si > 99,0% Ca < 0,03% Fe < 0,15% Al < 0,3%"},
-    { "span": "N-Mn", "content": "Mn > 90% N > 6/8%"},
-    { "span": "N-FeMn", "content": "Mn > 70/75% C < 1,5% N >6/8%"},
-    { "span": "FeAl", "content": "Al > 30/35%"}
+    {
+      "span": "FeSi",
+      "content": "70 / 75% C < 0,1 / 0,2% Al < 0,5 / 1,5 / 2,0%"
+    },
+    {
+      "span": "SiMn",
+      "content": "Si > 14 / 16% Mn > 60 / 65% C < 2,0 / 2,5% P < 0,20 / 0,35%"
+    },
+    { "span": "CaSi", "content": "Ca > 28 / 32% Si > 55 / 65%" },
+    { "span": "FeB", "content": "B > 15 / 18% Al < 0,5%" },
+    { "span": "FeCr", "content": "LC Cr > 60% C < 0,1%" },
+    { "span": "FeCr", "content": "HC Cr > 60% Si < 3,0 / 3,5%" },
+    { "span": "FeP", "content": "P > 21 / 25% C < 1%" },
+    { "span": "FeS", "content": "S > 28%" },
+    { "span": "FeMo", "content": "Mo > 60 / 65% Cu < 0,5 / 1,0%" },
+    { "span": "FeTi", "content": "Ti > 30 / 35% Si < 3,0%" },
+    { "span": "FeTi", "content": "Ti > 68 / 72%" },
+    { "span": "FeW", "content": "W > 72 / 75-78%" },
+    { "span": "FeV", "content": "V > 50% P < 0.1%" },
+    { "span": "FeV", "content": "V > 78-82% P < 0,1%" },
+    { "span": "Mg", "content": "Mg > 99,95%" },
+    { "span": "Mn", "content": "Mn > 99,7%" },
+    { "span": "Ca", "content": "Ca > 98,5%" },
+    { "span": "FeMnLC", "content": "Mn > 75 / 78% C < 0,1 - 0,5%" },
+    { "span": "FeMnMC", "content": "Mn > 70 / 75% - 80% C < 1,5%" },
+    {
+      "span": "FeMnHC",
+      "content": "Mn > 65 / 70 / 75 / 76% Si < 1,5% P < 0,20 / 0,30 / 0,35%"
+    },
+    { "span": "FeSiMg", "content": "Si > 45-47% Mg < 4-6 / 6-8%" },
+    { "span": "Ni", "content": "Ni > 99%" },
+    { "span": "Si", "content": "Si > 98,5% Ca < 0,3% Fe < 0,5% Al < 0,5%" },
+    { "span": "Si", "content": "Si > 99,0% Ca < 0,1% Fe < 0,4% Al < 0,4%" },
+    { "span": "Si", "content": "Si > 99,0% Ca < 0,03% Fe < 0,35% Al < 0,35%" },
+    { "span": "Si", "content": "Si > 99,0% Ca < 0,03% Fe < 0,15% Al < 0,3%" },
+    { "span": "N-Mn", "content": "Mn > 90% N > 6/8%" },
+    { "span": "N-FeMn", "content": "Mn > 70/75% C < 1,5% N >6/8%" },
+    { "span": "FeAl", "content": "Al > 30/35%" }
   ],
 
   "otherProducts": [
@@ -114,42 +125,26 @@
     }
   ],
 
-  "contact": { 
-    "content1" : "Para solicitar um orçamento, entre em contato conosco por telefone ou e-mail e forneceremos serviços experientes, profissionais e confiáveis.",
-    "callToAction" : "Contate-nos",
-    "content2" : "Seu parceiro para materiais estratégicos: Óxidos, Metais, Ferro Ligas e Catalisadores", 
-    "inputBox": [
-      {
-        "labelHtmlFor": "name",
-        "labelContent": "Nome",
-        "inputType": "text",
-        "inputName": "name",
-        "placeholder": "Nome Completo.."
-      },
-      {
-        "labelHtmlFor": "email",
-        "labelContent": "Email",
-        "inputType": "email",
-        "inputName": "email",
-        "placeholder": "nome@dominio.com"
-      },
-      {
-        "labelHtmlFor": "subject",
-        "labelContent": "Assunto",
-        "inputType": "text",
-        "inputName": "subject",
-        "placeholder": "Ex.: Cotação de Valores"
-      }
-    ], 
-    "labelMessage" : "Mensagem", 
-    "placeHolderMessage": "Descreva suas dúvidas..", 
-    "btn" : "", 
-    "btnValue": "Enviar Mensagem", 
-    "addressTitle": "Endereço", 
+  "contact": {
+    "content1": "Para solicitar um orçamento, entre em contato conosco por telefone ou e-mail e forneceremos serviços experientes, profissionais e confiáveis.",
+    "callToAction": "Contate-nos",
+    "content2": "Seu parceiro para materiais estratégicos: Óxidos, Metais, Ferro Ligas e Catalisadores",
+    "form": "Formulário",
+    "labelName" : "Nome", 
+    "placeHolderName": "Nome completo..", 
+    "labelEmail" : "Email", 
+    "placeHolderEmail": "nome@dominio.com", 
+    "labelSubject" : "Assunto", 
+    "placeHolderSubject": "Cotação de valores..", 
+    "labelMessage": "Mensagem",
+    "placeHolderMessage": "Descreva suas dúvidas..",
+    "btn": "",
+    "btnValue": "Enviar Mensagem",
+    "addressTitle": "Endereço",
     "addressContent": "Francesc Layret, 144 - Barcelona",
-    "addressTel": "Telefone", 
+    "addressTel": "Telefone",
     "addressContentTel": "+34 663 85 38 86",
-    "addressEmail": "Email", 
+    "addressEmail": "Email",
     "addressContentEmail": "silvia.diaz@helousourcing.com"
-  }     
+  }
 }

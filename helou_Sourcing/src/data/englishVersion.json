@@ -36,24 +36,29 @@
     "content4": "At the same time, we are committed to our suppliers to provide them with consistent market support."
   },
 
+  "whatWeDo": [
+    {
+      "img": "assets/icons/beam.png",
+      "alt": "Icon Metals",
+      "content": " Helou Sourcing deals with all kinds of metals and ferroalloys;"
+    },
+    {
+      "img": "assets/icons/scrap.png",
+      "alt": "Icon Scrap",
+      "content": " We also operate with metal scrap in several varieties;"
+    },
+    {
+      "img": "assets/icons/waste.png",
+      "alt": "Icon Waste",
+      "content": " And we have catalysts and waste at our customers' disposal."
+    }
+  ],
+
   "whatWeDoComponent": {
     "titleSection1": "What We Do?",
     "label1": " Helou Sourcing deals with all kinds of metals and ferroalloys;",
     "label2": " We also operate with metal scrap in several varieties;",
-    "label3": " And we have catalysts and waste at our customers' disposal.",
-    "titleSection2": "Also Trading in:",
-    "span1": "Cobalt",
-    "paragraph1": "(Ore/Conc, CoOH, CoSO4)",
-    "span2": "Manganês",
-    "paragraph2": "(Ore, Conc, MnSO4)",
-    "span3": "Zinc",
-    "paragraph3": "(Ore/Conc, ZnSO4, ZnO)",
-    "span4": "Copper",
-    "paragraph4": "(Ore/Conc, CuSO4, CuO)",
-    "span5": "Molybdenum",
-    "paragraph5": "(MoO3 > 57%)",
-    "titleSection3": "Non-Ferrous Metals",
-    "content": "And in all types and forms of intermediary products containing non-ferrous metals: (V, Ni, Co, W, Mo, Cu, Pb, Sn, etc…) in form of FINES, OXIDES, SLUDGES, METALLIC, SPENT CATALYSTS,etc…"
+    "label3": " And we have catalysts and waste at our customers' disposal."
   },
 
   "whyUs": {
@@ -125,29 +130,12 @@
     "callToAction": "Contact Us",
     "content2": "Your partner for strategic materials: Oxides, Metals, Ferro Alloys and Catalysts",
     "form": "Form",
-    "inputBox": [
-      {
-        "labelHtmlFor": "name",
-        "labelContent": "Name",
-        "inputType": "text",
-        "inputName": "name",
-        "placeholder": "Complete name.."
-      },
-      {
-        "labelHtmlFor": "email",
-        "labelContent": "Email",
-        "inputType": "email",
-        "inputName": "email",
-        "placeholder": "noame@domain.com"
-      },
-      {
-        "labelHtmlFor": "subject",
-        "labelContent": "Subject",
-        "inputType": "text",
-        "inputName": "subject",
-        "placeholder": "Ex.: Request a quotation.."
-      }
-    ],
+    "labelName": "Name",
+    "placeHolderName": "Complete name..",
+    "labelEmail": "Email",
+    "placeHolderEmail": "name@domain.com",
+    "labelSubject": "Subject",
+    "placeHolderSubject": "Request a quotation..",
     "labelMessage": "Message",
     "placeHolderMessage": "Write your notes or questions here..",
     "btn": "",
