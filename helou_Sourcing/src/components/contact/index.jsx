@@ -1,8 +1,8 @@
 import styles from './Contact.module.scss';
-import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import axios from 'axios';
+import MessageStatus from './MessageStatus';
 
 export default function Contact() {
 
@@ -10,7 +10,17 @@ export default function Contact() {
   const[email, setEmail] = useState('');
   const[subject, setSubject] = useState('');
   const[message, setMessage] = useState('');
-    
+  const[showSendMessage, setShowSendMessage] = useState(false);
+
+  function handleShowMessage() {    
+    setTimeout(() => {
+      setShowSendMessage(true);
+    }, 1);
+    setTimeout(() => {
+      setShowSendMessage(false);
+    }, 5000);
+  }
+
   function handleFormSubmit(event){  
     event.preventDefault(); 
 
@@ -26,7 +36,11 @@ export default function Contact() {
         'Content-Type': 'application/json'
       }
     })
-      .then(response => alert(response.data));
+      .then(response => 
+        response 
+          ? handleShowMessage()
+          : setShowSendMessage(false)
+      );
   }  
 
   const{language, HandleLanguage} = useContext(LanguageContext);
@@ -118,14 +132,14 @@ export default function Contact() {
             </div>
 
             <div className={styles.contact__container___box}>
+              {
+                showSendMessage && <MessageStatus />
+              }
               <input 
                 className={styles.contact__container___box____btnForm} 
                 type="submit" 
                 value={idiom.contact.btnValue} 
-              />
-              <span className={styles.contact__container___box____span}>
-                {}
-              </span>
+              />  
             </div>
             
           </form>

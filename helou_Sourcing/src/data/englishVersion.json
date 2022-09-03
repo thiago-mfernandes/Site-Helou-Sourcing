@@ -145,6 +145,7 @@
     "addressTel": "Phone",
     "addressContentTel": "+34 663 85 38 86",
     "addressEmail": "Email",
-    "addressContentEmail": "silvia.diaz@helousourcing.com"
+    "addressContentEmail": "silvia.diaz@helousourcing.com",
+    "messageStatus": "Message sent with sucess!"
   }
 }
