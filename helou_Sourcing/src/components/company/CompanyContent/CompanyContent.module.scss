@@ -2,10 +2,9 @@
 
 .content {
   @extend .content;
-
   //-------------------------------------->
   @include desktop {
-    margin: 1% 0;
     font-size: 1rem;
+    margin: 1% 0;
   }
 }

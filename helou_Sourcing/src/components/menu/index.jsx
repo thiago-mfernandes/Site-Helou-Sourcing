@@ -15,7 +15,6 @@ export default function Menu() {
   
   let idiom = HandleLanguage(language);
   
-
   function scrollPosition(){
     if(scrollY > 50) {
       setFixedMenu(true);
@@ -23,8 +22,8 @@ export default function Menu() {
       setFixedMenu(false);
     }
   }
-  window.addEventListener('scroll', scrollPosition);
 
+  window.addEventListener('scroll', scrollPosition);
 
   return (
     <section>

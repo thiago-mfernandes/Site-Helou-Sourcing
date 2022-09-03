@@ -1,8 +1,8 @@
-@import '../../../scss//styles.scss';
+@import '../../../scss/styles.scss';
 
 .box {
-  @include display-flexDirection(flex, column);
   @include alignItens-justifyContent(center, center);
+  @include display-flexDirection(flex, column);
   border-bottom: 1px solid $azul-primario;
   width: 100%;
   //---------------------------------------------------->
@@ -13,20 +13,14 @@
   @include desktop {
     transition: $transition;
     width: 30%;
-    @include display-flexDirection(flex, column);
     @include alignItens-justifyContent(center, center);
+    @include display-flexDirection(flex, column);
     &:hover {
       transform: translateY(-10px);
       transition: $transition;
     }
   }
 }
-
-/*
-& [name="border-none"] {
-  border-bottom: none;
-}
-*/
 
 .boxIcon {
   @include alignItens-justifyContent(center, center);

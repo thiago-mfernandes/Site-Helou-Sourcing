@@ -9,8 +9,8 @@
 }
 
 .itemAnchor {
-  text-decoration: none;
   color: $cinza;
+  text-decoration: none;
   //----------------------------->
   @include desktop {
     color: $azul-primario;

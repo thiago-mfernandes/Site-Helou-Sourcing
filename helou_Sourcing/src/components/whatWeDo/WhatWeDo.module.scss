@@ -8,7 +8,7 @@
     padding: 0;
     //----------------------------------->
     @include desktop {
-      //padding: $padding-lateral-7;
+      width: 100%;
     }
 
     &___faq {
@@ -26,12 +26,12 @@
       }
       //---------------------------------------->
       @include tablet {
-        width: 100%;
         @include alignItens-justifyContent(center, space-between);
         @include display-flexDirection(flex, row);
         flex-wrap: wrap;
         gap: 5%;
         margin-bottom: 10%;
+        width: 100%;
       }
       //------------------------------------------->
       @include desktop {
@@ -50,15 +50,20 @@
       &____boxTitle {
         //---------------------------------------->
         @include tablet {
+          @include alignItens-justifyContent(center, space-between);
+          @include display-flexDirection(flex, column);
+          flex-wrap: wrap;
           width: 100%;
         }
         //---------------------------------------->
         @include desktop {
+          @include alignItens-justifyContent(center, space-between);
+          @include display-flexDirection(flex, row);
+          flex-wrap: wrap;
           width: 100%;
         }
       }
 
-      
       &____title {
         @extend .title;
         color: $branco;
@@ -68,7 +73,7 @@
         }
         //---------------------------------------------------->
         @include desktop {
-          width: 100%;          
+          width: 100%;
         }
       }
     }

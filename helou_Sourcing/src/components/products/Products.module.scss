@@ -31,21 +31,21 @@
     width: 100%;
 
     @include desktop {
-      @include display-flexDirection(flex, row);
       @include alignItens-justifyContent(center, space-between);
+      @include display-flexDirection(flex, row);
       flex-wrap: wrap;
       margin-bottom: $mb10;
     }
 
     &___container {
-      @include display-flexDirection(flex, row);
       @include alignItens-justifyContent(flex-start, flex-start);
+      @include display-flexDirection(flex, row);
       margin-bottom: $mb5;
       width: 100%;
       //--------------------------------------->
       @include desktop {
-        @include display-flexDirection(flex, row);
         @include alignItens-justifyContent(center, flex-start);
+        @include display-flexDirection(flex, row);
         margin-bottom: $mb2;
         width: 48%;
       }
@@ -68,8 +68,8 @@
     width: 100%;
 
     @include desktop {
-      @include display-flexDirection(flex, row);
       @include alignItens-justifyContent(center, space-between);
+      @include display-flexDirection(flex, row);
     }
 
     &___img {

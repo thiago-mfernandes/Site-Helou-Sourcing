@@ -14,7 +14,6 @@ app.use(require('cors')());
 app.use(express.json());
 
 //transporter: objeto reutilizavel de transporte enviado via SMTP
-
 const transporter = nodemailer.createTransport({
   service: 'smtp.gmail.com',
   host: 'smtp.gmail.com',
@@ -52,7 +51,6 @@ app.use(express.urlencoded({ extended: true }));
 
 //aqui, o post estara recebendo uma requisicao de um form enviando dados
 app.post('/send', sendMail);
-
 
 //express.static serve os arquivos estaticos
 app.use(express.static(path.join(__dirname, 'build')));

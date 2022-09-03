@@ -4,8 +4,8 @@
   width: 100;
 
   @include desktop {
-    @include alignItens-justifyContent(flex-start, space-between);
     @include display-flexDirection(flex, row);
+    @include alignItens-justifyContent(flex-start, space-between);
     margin-bottom: $mb10;
   }
 

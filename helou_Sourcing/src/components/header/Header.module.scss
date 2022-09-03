@@ -8,12 +8,11 @@
   top: 0;
   
     &__boxContent {
-      @include display-flexDirection(flex, column);
       @include alignItens-justifyContent(center, center);
+      @include display-flexDirection(flex, column);
       @include height-width(100vh, 100%);
     }
   }
-
 
 .headerTitle {
   @extend .headerTitle;
@@ -22,7 +21,6 @@
 .container {
   @extend .container;
   height: calc(100vh);
-
   //-------------------------------->
   @include desktop {
     @include alignItens-justifyContent(center, center);
@@ -30,9 +28,8 @@
   }
   
   &__img {
-    width: 30%;
     margin: 0 0 5%;
-
+    width: 30%;
     //----------------------------->
     @include desktop {
       margin: 0 0 5%;

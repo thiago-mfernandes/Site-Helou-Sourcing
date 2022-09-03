@@ -26,7 +26,6 @@ export default function Products() {
           ))
         }
       </div>
-
       {
         idiom.otherProducts.map((item, index) => (
           <OtherProducts 
@@ -36,7 +35,6 @@ export default function Products() {
           />
         ))
       }
-
     </section>
   );
 }

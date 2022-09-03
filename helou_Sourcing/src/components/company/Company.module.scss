@@ -4,16 +4,16 @@
   @extend .sectionContainer;
   //------------------------------------------>
   @include desktop {
-    padding-top: 0;
     padding-bottom: 0;
+    padding-top: 0;
   }
 
   &__container {
     @extend .divContainer;
     //----------------------------------->
     @include desktop {
-      padding: 0;
       flex-direction: row-reverse;
+      padding: 0;
       width: 100%;
     }
 
@@ -42,8 +42,8 @@
         @include color-fontSize($cinza, 1rem);
         //------------------------------------>
         @include desktop {
-          width: 100%;
           text-align: left;
+          width: 100%;
         }
       }
 
@@ -52,9 +52,9 @@
         color: $cinza;
         //------------------------------------>
         @include desktop {
-          width: 100%;
-          text-align: left;
           margin: 0;
+          text-align: left;
+          width: 100%;
         }
       }
 
@@ -63,8 +63,8 @@
 
         //-------------------------------------->
         @include desktop {
-          margin: 1% 0;
           font-size: 1rem;
+          margin: 1% 0;
         }
       }
     }

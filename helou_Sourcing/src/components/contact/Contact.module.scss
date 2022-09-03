@@ -16,15 +16,15 @@
     @include tablet {
       @include alignItens-justifyContent(flex-start, space-between);
       @include display-flexDirection(flex, row);
-      gap: 5%;
       flex-wrap: wrap;
+      gap: 5%;
     }
     //----------------------------------->
     @include desktop {
       @include alignItens-justifyContent(flex-start, space-between);
       @include display-flexDirection(flex, row);
-      gap: 5%;
       flex-wrap: wrap;
+      gap: 5%;
       &:first-of-type {
         width: 100%;
       }
@@ -42,8 +42,8 @@
       @include desktop {
         @include display-flexDirection(flex, column);
         @include alignItens-justifyContent(center, center);
-        width: 100%;
         margin: 2.5% 0;
+        width: 100%;
       }
 
       &____content {
@@ -121,14 +121,15 @@
       }
 
       &____boxContent {
+        @include display-flexDirection(flex, column);
         background-color: $branco;
         border-radius: 8px;
         padding: 5%;
         margin-bottom: 10%;
         width: 100%;
-        @include display-flexDirection(flex, column);
         //------------------------------------------>
         @include tablet {
+          margin-top: $mt10;
           width: 40%;
 
           &:first-child {
@@ -138,8 +139,8 @@
         //------------------------------------------>
         @include desktop {
           margin-top: 5%;
-          padding-top: 10%;
           padding-right: 7.5%;
+          padding-top: 10%;
           width: 40%;
 
           &:first-child {
@@ -150,9 +151,7 @@
 
       &____content {
         @extend .content;
-        color: $cinza;
-
-        
+        color: $cinza;        
         //------------------------------------------->
         @include tablet {
           &:last-of-type {

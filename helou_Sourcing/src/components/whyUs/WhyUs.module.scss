@@ -5,8 +5,8 @@
   background-color: $cinzaClaroBg;
   //-------------------------------------->
   @include desktop {
-    @include display-flexDirection(flex, row);
     @include alignItens-justifyContent(center, space-between);
+    @include display-flexDirection(flex, row);
     padding: 10% 0;
     width: 100%;
   }
@@ -22,8 +22,8 @@
     @extend .divContainer;
     //------------------------------------->
     @include desktop {
-      @include display-flexDirection(flex, row);
       @include alignItens-justifyContent(flex-start, center);
+      @include display-flexDirection(flex, row);
       flex-wrap: wrap;
       padding: 0;
       padding-left: 2.5%;

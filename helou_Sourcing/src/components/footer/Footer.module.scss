@@ -11,6 +11,9 @@
       margin-top: $mt5;
       width: 50%;
       //------------------------->
+      @include tablet {
+        width: 20%;
+      }
       @include desktop {
         margin-top: $mt5;
         width: 15%;
@@ -18,18 +21,16 @@
     }
 
     &___copy {
-      //margin: 5%;
-      text-align: center;
       font-size: 0.8rem;
+      text-align: center;
     }
 
     &___buildBy {
+      @include color-fontSize($cinzaBg, 0.8rem);
       text-align: center;
-      font-size: 0.8rem;
-      color: $cinzaBg;
       & a {
-        text-decoration: none;
         color: $cinzaBg;
+        text-decoration: none;
         transition: $transition;
         &:hover {
           color: $azul-primario;

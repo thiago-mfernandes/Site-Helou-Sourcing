@@ -1,19 +1,19 @@
 @import "../../scss/styles.scss";
 
 .header {
-  position: fixed;
-  top: 0;
-  background-color: white;
-  padding: 20px;
-  width: 100%;
-  transition: $transition;
-  z-index: 10;
-  border-bottom: 1px solid $menuBordaBranca;
-  @include display-flexDirection(flex, row);
   @include alignItens-justifyContent(center, space-between);
+  @include display-flexDirection(flex, row);
+  background-color: white;
+  border-bottom: 1px solid $menuBordaBranca;
+  padding: 20px;
+  position: fixed;
+  transition: $transition;
+  top: 0;
+  width: 100%;
+  z-index: 10;
   //---------------------------------------->
   @include tablet {
-    @include height-width(120px, 100%);
+    @include height-width(100px, 100%);
   }
 
   //---------------------------------------->
@@ -40,12 +40,12 @@
     width: 15%;
     //---------------------------------------->
     @include tablet {
-      width: 22.5%;
+      width: 12.5%;
     }
     //---------------------------------------->
     @include desktop {
-      width: 5%;
       margin-left: 5%;
+      width: 5%;
     }
   }
 
@@ -58,8 +58,8 @@
       text-decoration: none;
       //------------------------------------------->
       @include desktop {
-        @include display-flexDirection(flex, row);
         @include alignItens-justifyContent(center, space-between);
+        @include display-flexDirection(flex, row);
         width: 80%;
       }
     }
@@ -71,20 +71,15 @@
   border-bottom: none;
   box-shadow: $box-shadow-24;
   transition: $transition;
-  /*
-  & nav ul li a {
-    color: $branco;
-  }  
-  */
 }
 
 .btnCloseMobile {
   @include color-fontSize($cinza, 3rem);
   @include height-width(50px, 25%);
   background-color: transparent;
-  padding: 0;
-  margin: 5% 0;
   border: none;
+  margin: 5% 0;
+  padding: 0;
   text-align: left;
   transition: $transition;
 
@@ -144,11 +139,10 @@
   transition: $transition;
   //----------------------------------------------->
   @include desktop {
-    @include height-width(70px, 75%);
     @include alignItens-justifyContent(flex-start, flex-end);
+    @include display-flexDirection(flex, column);
+    @include height-width(70px, 75%);
     position: none;
-    display: flex;
-    flex-direction: column;
     transform: translateX(0%);
   }
 }

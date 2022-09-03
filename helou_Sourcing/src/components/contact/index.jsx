@@ -4,6 +4,16 @@ import { useState, useContext } from 'react';
 import axios from 'axios';
 import MessageStatus from './MessageStatus';
 
+{/*
+
+  1. Pegar os valores dos valores digitados nos inputs e armazena-los em estados, para que os estados sejam passados para o back-end;
+  2. qdo clicar no botao submit, os estados serao enviados
+  3. criar a funcao de handle
+  4. colocar a propriedade de onChange nos inputs, para quando houver alteracao no campo, os estados sejam alterados
+  
+*/}
+
+
 export default function Contact() {
 
   const[name, setName] = useState('');
@@ -23,7 +33,6 @@ export default function Contact() {
 
   function handleFormSubmit(event){  
     event.preventDefault(); 
-
     const formData = {
       name: name,
       email: email,
@@ -48,8 +57,7 @@ export default function Contact() {
 
   return (
     <section className={styles.contact} id="contact">
-      <div className={styles.contact__container}>
-        
+      <div className={styles.contact__container}>        
         <div className={styles.contact__container___callToAction}>
           <p className={styles.contact__container___callToAction____content}>
             {idiom.contact.content1}
@@ -61,9 +69,7 @@ export default function Contact() {
             {idiom.contact.content2}
           </p>
         </div>
-
         <div className={styles.contact__container___box}>
-
           <form 
             onSubmit={handleFormSubmit}
             className={styles.contact__container___box____boxContent} 
@@ -74,7 +80,6 @@ export default function Contact() {
             <h2 className={styles.contact__container___box____subTitle}>
               {idiom.contact.form}
             </h2>
-
             <div className={styles.contact__container___box}>
               <label htmlFor="name">
                 {idiom.contact.labelName}
@@ -88,7 +93,6 @@ export default function Contact() {
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
-
             <div className={styles.contact__container___box}>
               <label htmlFor="email">
                 {idiom.contact.labelEmail}
@@ -102,7 +106,6 @@ export default function Contact() {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-
             <div className={styles.contact__container___box}>
               <label htmlFor="subject">
                 {idiom.contact.labelSubject}
@@ -116,7 +119,6 @@ export default function Contact() {
                 onChange={(e) => setSubject(e.target.value)}
               />
             </div>
-
             <div className={styles.contact__container___box}>
               <label htmlFor="message">
                 {idiom.contact.labelMessage}
@@ -130,7 +132,6 @@ export default function Contact() {
                 onChange={(e) => setMessage(e.target.value)}
               />
             </div>
-
             <div className={styles.contact__container___box}>
               {
                 showSendMessage && <MessageStatus />
@@ -140,12 +141,9 @@ export default function Contact() {
                 type="submit" 
                 value={idiom.contact.btnValue} 
               />  
-            </div>
-            
+            </div>            
           </form>
-
         </div>
-
         <div className={styles.contact__container___box____boxContent}>
           <p className={styles.contact__container___box____addressTitle}>
             {idiom.contact.addressTitle}
@@ -160,26 +158,16 @@ export default function Contact() {
             <a href="https://wa.me/34663853886" 
               target="_blank" rel="noreferrer">
               {idiom.contact.addressContentTel}
-            </a>
-            
+            </a>            
           </p>
           <p className={styles.contact__container___box____addressTitle}>
             {idiom.contact.addressEmail}
           </p>
           <p className={styles.contact__container___box____addressContent}>
-            <a href="mailto:silvia.diaz@helousourcing.com">{idiom.contact.addressContentEmail}</a>
-            
+            <a href="mailto:silvia.diaz@helousourcing.com">{idiom.contact.addressContentEmail}</a>            
           </p>
         </div>
       </div>
     </section>
   );
 }
-
-{/*
-
-  1. Pegar os valores dos valores digitados nos inputs e armazena-los em estados, para que os estados sejam passados para o back-end;
-  2. qdo clicar no botao submit, os estados serao enviados
-  3. criar a funcao de handle
-  4. colocar a propriedade de onChange nos inputs, para quando houver alteracao no campo, os estados sejam alterados
-*/}

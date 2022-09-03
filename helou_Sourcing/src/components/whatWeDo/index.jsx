@@ -16,20 +16,18 @@ export default function whatWeDo() {
             <h2 className={styles.whatWeDo__container___faq____title}>
               {idiom.whatWeDoComponent.titleSection1}
             </h2>
-          </div>
-
-          {
-            idiom.whatWeDo.map((item, index) => (
-              <CardWeDo 
-                key={index}
-                alt={item.alt}
-                img={item.img}
-                content={item.content}
-              />
-            ))
-          }
-
-        </div>   
+            {
+              idiom.whatWeDo.map((item, index) => (
+                <CardWeDo
+                  key={index}
+                  alt={item.alt}
+                  img={item.img}
+                  content={item.content}
+                />
+              ))
+            }  
+          </div> 
+        </div> 
       </div>
     </section>    
   );
