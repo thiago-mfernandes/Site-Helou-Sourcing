@@ -34,12 +34,12 @@ Projeto desenvolvido com o intuito de repaginar o site que estava bastante desat
 
 ## ⚙️ Funcionalidades
 
-- [x] Botão de Idioma
-- [x] Quem é a a Companhia Helou Sourcing?
-- [x] O que fazemos?
-- [x] Produtos e Serviços
-- [x] Porque a Helou Sourcing?
-- [x] Formulário de contato
+👉 - [x] Botão de Idioma
+👉 - [x] Quem é a a Companhia Helou Sourcing?
+👉 - [x] O que fazemos?
+👉 - [x] Produtos e Serviços
+👉 - [x] Porque a Helou Sourcing?
+👉 - [x] Formulário de contato
 ---
 
 ## 🎨 Layout 
