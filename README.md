@@ -122,8 +122,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - **[Axios](https://axios-http.com/ptbr/docs/intro)**
 
-- **[Emailjs](https://www.emailjs.com/)**
-
 - **[Framer Motion](https://www.framer.com/motion/)**
 
 - **[Sass](https://sass-lang.com/)**
