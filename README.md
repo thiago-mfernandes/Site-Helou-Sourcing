@@ -96,7 +96,6 @@ $ git@github.com:thiago-mfernandes/helou_Sourcing.git
 #Acesse a pasta do projeto pelo terminal/cmd
 $ cd helou_Sourcing
 
-
 #Instale as dependências do projeto
 $ npm install
 
