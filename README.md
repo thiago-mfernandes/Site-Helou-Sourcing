@@ -32,7 +32,7 @@ Projeto desenvolvido com o intuito de repaginar o site que estava bastante desat
 
 ---
 
-## ⚙️ Funcionalidades
+## ⚙ Funcionalidades
 
 - [x] Botão de Idioma
 - [x] Quem é a a Companhia Helou Sourcing?
