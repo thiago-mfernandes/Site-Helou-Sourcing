@@ -64,13 +64,13 @@ Como ficou o layout da aplicação:
 
 <p align="center">
 
-  <img alt="Imagem da pagina quem somos" src="./helou_Sourcing/src/assets/desktop-quem-somos.jpg" width="400px">
+  <img alt="Imagem da pagina quem somos" src="./helou_Sourcing/src/assets/desktop-quem-somos.jpg" width="300px">
 
-  <img alt="Imagem da pagina de filtro de produtos" src="./helou_Sourcing/src/assets/desktop-produtos-servicos.jpg" width="400px">
+  <img alt="Imagem da pagina de filtro de produtos" src="./helou_Sourcing/src/assets/desktop-produtos-servicos.jpg" width="300px">
 
-  <img alt="Imagem da pagina de porque-a-helou-sourcing" src="./helou_Sourcing/src/assets/desktop-porque-nos.jpg" width="400px">
+  <img alt="Imagem da pagina de porque-a-helou-sourcing" src="./helou_Sourcing/src/assets/desktop-porque-nos.jpg" width="300px">
 
-  <img alt="Imagem da pagina de contato" src="./helou_Sourcing/src/assets/desktop-contato.jpg" width="400px">
+  <img alt="Imagem da pagina de contato" src="./helou_Sourcing/src/assets/desktop-contato.jpg" width="300px">
 </p>
 
 ---
