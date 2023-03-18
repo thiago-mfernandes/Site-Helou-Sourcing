@@ -91,7 +91,7 @@ Além disto, é bom ter um editor de código para trabalhar com o código como o
 ```bash
 
 #Clone o repositório: 
-$ git@github.com:thiago-mfernandes/helou_Sourcing.git
+$ git clone git@github.com:thiago-mfernandes/helou_Sourcing.git
 
 #Acesse a pasta do projeto pelo terminal/cmd
 $ cd helou_Sourcing
